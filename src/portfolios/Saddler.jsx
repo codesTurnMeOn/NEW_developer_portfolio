@@ -9,8 +9,8 @@ import saddler3 from "../images/saddler3.png";
   const images = [saddler1, saddler2, saddler3];
 
 
-function Saddler(props) {
-  // const { handleNext, handlePrev, currentIndex, setCurrentIndex } = props;
+function Saddler() {
+
   // project images slider
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
