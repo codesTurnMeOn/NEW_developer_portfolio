@@ -6,7 +6,6 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import ThemeToggler from "../components/ThemeToggler";
 import { textColorContext } from "../pages/Home";
 import back_to_top from "../images/back_to_top.png";
-import back_to_top2 from "../images/back_to_top2.png";
 
 export default function NavBar() {
   const textColor = useContext(textColorContext);
@@ -57,14 +56,26 @@ export default function NavBar() {
             <Container fluid>
               <Navbar.Brand href="#home">
                 <div className="navbarBrand">
-                  <a href="https://github.com/codesTurnMeOn" target="_blank">
-                    <img src={github}></img>
+                  <a
+                    href="https://github.com/codesTurnMeOn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={github} alt="github"></img>
                   </a>
-                  <a href="https://www.linkedin.com/in/lei-wang-99045267"  target="_blank">
-                    <img src={linkedin}></img>
+                  <a
+                    href="https://www.linkedin.com/in/lei-wang-99045267"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={linkedin} alt="linkedin"></img>
                   </a>
-                  <a href="https://www.facebook.com/profile.php?id=100062636119270"  target="_blank">
-                    <img src={facebook}></img>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100062636119270"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={facebook} alt="facebook"></img>
                   </a>
                   <ThemeToggler />
                 </div>
@@ -74,7 +85,6 @@ export default function NavBar() {
                 style={{ color: "white" }}
               />
               <Navbar.Collapse id="responsive-navbar-nav">
-            
                 <Nav className="ms-auto">
                   <Nav.Link
                     href="#qualification"

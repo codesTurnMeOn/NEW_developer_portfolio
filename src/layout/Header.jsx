@@ -29,7 +29,7 @@ export default function Header(props) {
         <NavBar />
         <div id="title" className="position-relative">
           <div class="text">
-            <img src={selfie} height="150" />
+            <img src={selfie} height="150" alt="selfie" />
             <span>Hi, I'm Lei</span>
           </div>
           <div class="text2">

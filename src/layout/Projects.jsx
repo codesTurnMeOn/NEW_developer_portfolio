@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Mures from "../portfolios/Mures";
 import Saddler from "../portfolios/Saddler";
 import Choice from "../portfolios/Choice";
 import Sylinn from "../portfolios/Sylinn";
-import FooodRanger from "../portfolios/FoodRanger";
 import FoodRanger from "../portfolios/FoodRanger";
 
 export default function Projects() {
@@ -23,7 +22,7 @@ export default function Projects() {
       <Sylinn />
 
       {/* FOOD RANGER.CO */}
-      <FoodRanger/>
+      <FoodRanger />
     </div>
   );
 }

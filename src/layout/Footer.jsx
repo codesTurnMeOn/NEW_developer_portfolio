@@ -13,7 +13,7 @@ function Footer() {
             <Col>
               <div className="footerSlogan">
                 Need a website? get a Lei!
-                <img src={lei_logo} />
+                <img src={lei_logo} alt="Lei logo" />
               </div>
             </Col>
           </Row>
