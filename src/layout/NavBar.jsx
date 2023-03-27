@@ -31,7 +31,7 @@ export default function NavBar() {
   };
 
   return (
-    /* Add a class name to the Navbar based on the scroll position */
+  
     <>
       <div id="navbar">
         <Container fluid>
