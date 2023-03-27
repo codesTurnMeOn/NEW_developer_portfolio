@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $primaryFont;
+  box-sizing: border-box;
+  //reset links
+a{
+  text-decoration: none;
+  @include primaryTextLight;
+
+&:hover{
+  color: $purpleInDark;
+}
+
+}
+}
+
+//reset scroll bar
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #223E4C;
+}
+
+  ::-webkit-scrollbar-track {
+  background-color: #ffffff;
+ 
+}
+
+

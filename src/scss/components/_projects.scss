@@ -1,0 +1,47 @@
+@use "../abstracts/index" as *;
+
+#projects {
+  margin-bottom: $margin-y;
+  text-align: center;
+
+  // background-color: rgb(184, 228, 244);
+
+  h1 {
+    @include title;
+  }
+  .container {
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $margin-y;
+
+    .card {
+      box-shadow: $shadowColor;
+      text-align: center;
+    }
+  }
+  .card-slider {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+
+    .btn-prev,
+    .btn-next {
+      color: $primaryColor;
+      font-size: 5vw;
+      position: absolute;
+      top: 50%;
+      transform: translateX(0);
+      background: transparent;
+      border: none;
+    }
+
+    .btn-prev {
+      left: 0;
+    }
+
+    .btn-next {
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use "../abstracts/index" as *;
+
+#navbar {
+  @include reset-Container;
+
+  .scrolled {
+    background-color: $primaryColor;
+    .text-color {
+      color: white;
+    }
+  }
+
+  .navbarBrand {
+    display: inline-block;
+    vertical-align: middle;
+
+    img {
+      width: 2rem;
+      margin-left: 0.1vw;
+      margin-right: 2vw;
+    }
+  }
+
+  Nav {
+    font-family: $primaryFont;
+    font-size: $primaryFontSize;
+
+    img {
+      width: 1.5rem;
+    }
+  }
+}

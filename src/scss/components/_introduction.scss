@@ -1,0 +1,30 @@
+@use "../abstracts/index" as *;
+
+#intro{
+
+margin-top: $margin-y ;
+margin-bottom:$margin-y;
+// background-color: rgb(223, 202, 202);  
+
+
+ h1 {
+    @include title;
+  }
+img{
+  overflow: hidden;
+  width:45vw;
+}
+.cardTitle{
+  font-family: $titleFont;
+  font-size: $titleFontSize;
+  margin-left:19% ;
+}
+
+p{
+  font-family:$primaryFont;
+  font-size: $secondaryFontSize;
+
+}
+}
+
+

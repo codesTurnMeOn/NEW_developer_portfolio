@@ -1,0 +1,62 @@
+// $brandColor: #58244a;
+$whiteColor: 	#fafdff;
+$primaryColor: #254a5d;
+$primaryColor2:#3795BD; 
+$shadowColor: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+$darkTheme_bg_color: #202124;
+$darkTheme_bg_color2: #383838;
+$purpleInDark: #E02FEE;
+$greyShade_bg:rgb(230, 230, 230);
+// purple2 #8B3DFF
+
+$primaryFont: "Roboto";
+$primaryFontSize: 1.1rem;
+$secondaryFontSize: 1.9rem;
+$titleFont: "Plus Jakarta Sans";
+$titleFontWeight: 800;
+$titleFontSize: 3.5rem;
+$fullWidth: 100vw;
+$fullHeight: 100vh;
+$margin-y: 20vh;
+$margin-y-title-content: 6vh;
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin reset-Container {
+  padding: 0;
+  margin: 0;
+  width: $fullWidth;
+  overflow: hidden;
+  > * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@mixin title() {
+  font-family: $titleFont;
+  font-size: $titleFontSize;
+  font-weight: $titleFontWeight;
+  text-align: center;
+  margin-bottom: $margin-y-title-content;
+}
+
+@mixin darkTheme() {
+  color:white;
+  background-color:$darkTheme_bg_color2 ;
+  
+}
+
+@mixin primaryTextLight(){
+   color: white;
+  font-family: $primaryFont;
+  font-size: $primaryFontSize;
+  text-align: center;
+
+}

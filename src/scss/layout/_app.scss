@@ -1,0 +1,64 @@
+@use "../abstracts/index" as *;
+
+#dark,
+#light {
+  max-width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+
+/////////// #light//////////////
+
+#light {
+  background-color: $whiteColor;
+   //navbart text 
+.text-color{
+  color:black
+}
+
+  ._404text {
+    color: black;
+  }
+}
+
+/////////// #dark//////////////
+#dark {
+  background-color: $darkTheme_bg_color;
+ //navbart text 
+.text-color{
+  color:white;
+}
+
+
+  // 404page text color
+  ._404text {
+    color:  white;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  #intro {
+    .darkTheme {
+      @include darkTheme;
+    }
+  }
+
+  #qualification {
+    .darkTheme {
+      @include darkTheme;
+    }
+  }
+
+#projects{
+  .card {
+      @include darkTheme;
+
+  }
+}
+#backToTopBtn {
+ 
+  background-color:$darkTheme_bg_color;}
+
+}

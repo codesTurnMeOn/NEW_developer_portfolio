@@ -1,0 +1,23 @@
+@use "../abstracts/index" as *;
+
+
+#backToTopBtn {
+  width: 60px;
+  height: 60px;
+  background-color:$primaryColor2;
+  // background-image: url('./images/_404img.gif');
+  // padding: 1rem;
+  // box-sizing: border-box;
+  text-align: center;
+  position: fixed;
+  bottom: 20vh;
+  right: 0px;
+  display: none;
+  cursor: pointer;
+
+  img{width: 100%;
+  &:hover{
+    content:url('./images/back_to_top2.png')}
+  }
+
+}

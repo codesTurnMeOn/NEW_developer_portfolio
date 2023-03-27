@@ -1,0 +1,21 @@
+@use "../abstracts/index" as *;
+
+#_404container {
+  background-color: transparent;
+  background-image: url("../src/images/_404img.gif");
+  width: 100vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+._404text {
+  text-align: center;
+  font-family: $primaryFont;
+  font-size:xx-large;
+  margin-bottom: 5vh;
+  button {
+    @include primaryTextLight;
+    background-color: $purpleInDark;
+  }
+}
