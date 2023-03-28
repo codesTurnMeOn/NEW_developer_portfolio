@@ -10,10 +10,15 @@
     @include title;
   }
   .container {
-    max-width: 70vw;
+    // max-width: 70vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: $margin-y;
+    @media (max-width: 768px) {
+  .container {
+   max-width: 100vw;
+  }
+}
 
     .card {
       box-shadow: $shadowColor;
@@ -50,3 +55,5 @@
     }
   }
 }
+
+

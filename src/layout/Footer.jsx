@@ -19,7 +19,7 @@ function Footer() {
               </div>
             </Col>
           </Row>
-          <Row className="my-4">
+          <Row className="my-2">
             <Col xs={12} md={4}>
               <Link to="/*">No Privacy</Link>
             </Col>
