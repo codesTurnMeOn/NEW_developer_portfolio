@@ -5,8 +5,11 @@ import sylinn1 from "../images/sylinn1.png";
 import sylinn2 from "../images/sylinn2.png";
 import sylinn3 from "../images/sylinn3.png";
 import sylinn4 from "../images/sylinn4.png";
+import sylinn5 from "../images/sylinn5.png";
+import sylinn6 from "../images/sylinn6.png";
+import sylinn7 from "../images/sylinn7.png";
 
-const images = [sylinn1, sylinn2, sylinn3, sylinn4];
+const images = [sylinn1, sylinn2, sylinn3, sylinn4, sylinn5, sylinn6, sylinn7];
 
 function Sylinn() {
   // project images slider

@@ -275,6 +275,10 @@ body a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+#projects .container .card .w-75 {
+  padding: 1rem;
+  text-align: justify;
+}
 #projects .card-slider {
   position: relative;
   height: auto;
@@ -285,7 +289,7 @@ body a:hover {
   color: #254a5d;
   font-size: 5vw;
   position: absolute;
-  top: 50%;
+  top: 30rem;
   transform: translateX(0);
   background: transparent;
   border: none;
