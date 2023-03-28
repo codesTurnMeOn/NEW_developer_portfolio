@@ -2,7 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import lei_logo from "../images/lei_logo.png"
+import lei_logo from "../images/lei_logo.png";
+import {Link} from "react-router-dom";
+
 
 function Footer() {
   return (
@@ -19,13 +21,13 @@ function Footer() {
           </Row>
           <Row className="my-4">
             <Col xs={12} md={4}>
-              <a href="/pageNotFound">No Privacy</a>
+              <Link to="/*">No Privacy</Link>
             </Col>
             <Col xs={12} md={4} className="footerRow2">
               &#169;Lei's Web Design 2023
             </Col>
             <Col xs={12} md={4}>
-              <a href="/pageNotFound">No Security</a>
+              <Link to="/*">No Security</Link>
             </Col>
           </Row>
 
