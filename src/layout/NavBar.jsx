@@ -99,7 +99,7 @@ export default function NavBar() {
                     Projects
                   </Nav.Link>
                   <Nav.Link
-                    href="#resume"
+                    href="/*"
                     className={textColor ? "text-light" : "text-color"}
                   >
                     Contact
