@@ -56,7 +56,8 @@ function FoodRanger() {
             <Card.Text>Last updated 02/2023</Card.Text>
             <a
               href="https://github.com/codesTurnMeOn/hg_apiPortfolio"
-              target={"_blank"}
+              target="_blank"
+              rel="noreferrer"
             >
               <button>Details</button>
             </a>
