@@ -54,6 +54,12 @@ function FoodRanger() {
               JavaScript,React.js,Bootstrap5.
             </Card.Text>
             <Card.Text>Last updated 02/2023</Card.Text>
+            <a
+              href="https://github.com/codesTurnMeOn/hg_apiPortfolio"
+              target={"_blank"}
+            >
+              <button>Details</button>
+            </a>
           </Card.Header>
         </Card>
       </Container>

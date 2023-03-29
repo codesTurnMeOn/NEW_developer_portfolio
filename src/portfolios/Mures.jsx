@@ -7,7 +7,7 @@ function Mures() {
   return (
     <>
       <Container className="container">
-        <Card className=" card ">
+        <Card className="card">
           <Card.Img src={mures} alt="Card image" />
           <Card.Header>
             <Card.Title>

@@ -220,7 +220,8 @@ body a:hover {
 }
 #intro img {
   overflow: hidden;
-  width: 45vw;
+  padding: 1rem;
+  height: auto;
 }
 #intro .cardTitle {
   font-family: "Plus Jakarta Sans";
@@ -230,8 +231,22 @@ body a:hover {
 #intro p {
   font-family: "Roboto";
   font-size: 1.9rem;
+  text-align: justify;
+  padding: 1rem;
 }
 
+.flex-way {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .flex-way {
+    flex-direction: column;
+  }
+  .flex-way img {
+    width: 100%;
+  }
+}
 #qualification {
   margin-bottom: 20vh;
   /* target the Accordion.Item */
@@ -287,26 +302,32 @@ body a:hover {
   padding: 1rem;
   text-align: justify;
 }
-#projects .card-slider {
-  position: relative;
-  height: auto;
-  overflow: hidden;
-}
-#projects .card-slider .btn-prev,
-#projects .card-slider .btn-next {
+#projects .btn-prev,
+#projects .btn-next {
   color: #254a5d;
   font-size: 5vw;
   position: absolute;
   top: 30rem;
-  transform: translateX(0);
   background: transparent;
   border: none;
 }
-#projects .card-slider .btn-prev {
+@media (max-width: 768px) {
+  #projects .btn-prev,
+  #projects .btn-next {
+    top: 9rem;
+    font-size: 10vw;
+  }
+}
+#projects .btn-prev {
   left: 0;
 }
-#projects .card-slider .btn-next {
+#projects .btn-next {
   right: 0;
+}
+#projects .card a button {
+  background-color: #3795BD;
+  width: 5rem;
+  border-radius: 5px;
 }
 
 #dark,

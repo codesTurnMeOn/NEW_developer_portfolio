@@ -30,20 +30,24 @@
       }
     }
   }
-  .card-slider {
-    position: relative;
-    height: auto;
-    overflow: hidden;
-
+ 
     .btn-prev,
     .btn-next {
       color: $primaryColor;
       font-size: 5vw;
       position: absolute;
       top: 30rem;
-      transform: translateX(0);
       background: transparent;
       border: none;
+}
+ @media (max-width: 768px) {
+    .btn-prev,
+    .btn-next {
+   top: 9rem;
+  font-size: 10vw;
+  }
+
+
     }
 
     .btn-prev {
@@ -53,7 +57,12 @@
     .btn-next {
       right: 0;
     }
-  }
+
+    .card a{
+  button{background-color:$primaryColor2;width: 5rem;border-radius: 5px;}
+
 }
+  }
+
 
 

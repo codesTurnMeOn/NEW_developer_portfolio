@@ -10,10 +10,17 @@ margin-bottom:$margin-y;
  h1 {
     @include title;
   }
+
+
+
 img{
   overflow: hidden;
-  width:45vw;
+  // max-width:40vw;
+  padding:1rem;
+  height:auto;
 }
+
+
 .cardTitle{
   font-family: $titleFont;
   font-size: $titleFontSize;
@@ -23,8 +30,18 @@ img{
 p{
   font-family:$primaryFont;
   font-size: $secondaryFontSize;
-
+  text-align: justify;
+  padding:1rem;
 }
 }
 
+.flex-way{flex-direction: row }
 
+@media (max-width: 768px) {
+  .flex-way {
+    flex-direction: column;
+  }
+  .flex-way img {
+    width: 100%;
+  }
+}

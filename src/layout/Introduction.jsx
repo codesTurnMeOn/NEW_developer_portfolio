@@ -1,7 +1,9 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import intro_bg from "../images/intro_bg.png";
+import frontend_graphic from "../images/frontend_graphic.png";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 
 function Introduction() {
@@ -10,20 +12,31 @@ function Introduction() {
       <Container>
         <h1>Introduction</h1>
         <div className="darkTheme">
-          <Card className="d-flex flex-row shadow darkTheme">
-            <Card.Img src={intro_bg} />
-            <Card.Body>
-              <Card.Title className="cardTitle"></Card.Title>
-              <Card.Text>
-                <p>
-                  I'm currently doing diploma of IT (Front end and back end
-                  develop) at Holmesglen Institute. I will soon be a qualified
-                  programer who know how to design web. And that will make
-                  me...employable?
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          <Row>
+            <Card className="d-flex flex-row flex-way flex-wrap shadow darkTheme">
+              {/* <Card.Img src={intro_bg} /> */}
+
+              <Col xs={12} sm={12} md={3}>
+                <Card.Img src={frontend_graphic} />
+              </Col>
+              <Col xs={12} sm={12} md={9}>
+                <Card.Body>
+                  {/* <Card.Title className="cardTitle"></Card.Title> */}
+
+                  <Card.Text>
+                    <p>
+                      Welcome to my online portoflio! I'm currently doing
+                      diploma of IT (Front end and back end develop) at
+                      Holmesglen Institute. I will soon be a qualified programer
+                      that also process the concept of web design. If you happen
+                      to have a job offer or project contract that needs to be
+                      signed,check below and see what I could do.
+                    </p>
+                  </Card.Text>
+                </Card.Body>
+              </Col>
+            </Card>
+          </Row>
         </div>
       </Container>
     </div>

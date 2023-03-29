@@ -42,20 +42,26 @@ function Sylinn() {
           </div>
           <Card.Header>
             <Card.Title>
-              <h4><i>Sylinn Bathroom and Kitchen Supplies, 2022</i></h4>{" "}
+              <h4>
+                <i>Sylinn Bathroom and Kitchen Supplies, 2022</i>
+              </h4>{" "}
             </Card.Title>
             <Card.Text className=" w-75 mx-auto">
-              
-                Sylinn bathrooms is my last project before professional
-                front-end study, and also the last project without any UI
-                framework or JS library. Mostly likely it will be re-built with
-                frameworks for better viewport responsiveness and
-                stability.Tools used are VS Code, Dreamweaver, Photoshop.
-                Technologies are HTML5,CSS3 and vanilla JavaScript. And it is
-                also integrated with Google&#8482; search and Google Map&#8482;.
-              
+              Sylinn bathrooms is my last project before professional front-end
+              study, and also the last project without any UI framework or JS
+              library. Mostly likely it will be re-built with frameworks for
+              better viewport responsiveness and stability.Tools used are VS
+              Code, Dreamweaver, Photoshop. Technologies are HTML5,CSS3 and
+              vanilla JavaScript. And it is also integrated with Google&#8482;
+              search and Google Map&#8482;.
             </Card.Text>
             <Card.Text>Last updated 02/2023</Card.Text>
+            <a
+              href="https://github.com/codesTurnMeOn/sylinn_website"
+              target={"_blank"}
+            >
+              <button>Details</button>
+            </a>
           </Card.Header>
         </Card>
       </Container>
