@@ -27,7 +27,7 @@ function Introduction() {
                       Welcome to my online portoflio! I'm currently doing
                       diploma of IT (Front end and back end develop) at
                       Holmesglen Institute. I will soon be a qualified programer
-                      that also process the concept of web design. Have a browse
+                      that also possess the concept of web design. Have a browse
                       and check below see what I can do.
                     </p>
                   </Card.Text>
