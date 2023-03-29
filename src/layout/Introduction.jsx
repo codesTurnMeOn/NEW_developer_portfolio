@@ -5,7 +5,6 @@ import frontend_graphic from "../images/frontend_graphic.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-
 function Introduction() {
   return (
     <div id="intro">
@@ -28,9 +27,8 @@ function Introduction() {
                       Welcome to my online portoflio! I'm currently doing
                       diploma of IT (Front end and back end develop) at
                       Holmesglen Institute. I will soon be a qualified programer
-                      that also process the concept of web design. If you happen
-                      to have a job offer or project contract that needs to be
-                      signed,check below and see what I could do.
+                      that also process the concept of web design. Have a browse
+                      and check below see what I can do.
                     </p>
                   </Card.Text>
                 </Card.Body>
