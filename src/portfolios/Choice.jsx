@@ -5,8 +5,9 @@ import choice1 from "../images/choice1.png";
 import choice2 from "../images/choice2.png";
 import choice3 from "../images/choice3.png";
 import choice4 from "../images/choice4.png";
+import choice5 from "../images/choice5.png";
 
- const images = [choice1, choice2, choice3, choice4];
+ const images = [choice1, choice2, choice3, choice4,choice5];
 
 function Choice() {
 
