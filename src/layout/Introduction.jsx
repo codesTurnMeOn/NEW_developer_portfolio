@@ -12,9 +12,7 @@ function Introduction() {
         <h1>Introduction</h1>
         <div className="darkTheme">
           <Row>
-            <Card className="d-flex flex-row flex-way flex-wrap shadow darkTheme">
-              {/* <Card.Img src={intro_bg} /> */}
-
+            <Card className="d-flex flex-row  flex-wrap shadow darkTheme">
               <Col xs={12} sm={12} md={3}>
                 <Card.Img src={frontend_graphic} />
               </Col>

@@ -231,22 +231,18 @@ body a:hover {
 #intro p {
   font-family: "Roboto";
   font-size: 1.9rem;
+  font-weight: 800;
   text-align: justify;
   padding: 1rem;
 }
-
-.flex-way {
-  flex-direction: row;
-}
-
 @media (max-width: 768px) {
-  .flex-way {
-    flex-direction: column;
-  }
-  .flex-way img {
-    width: 100%;
+  #intro p {
+    font-size: calc(1.9rem + 0.1rem);
+    font-weight: bolder;
+    padding: 0;
   }
 }
+
 #qualification {
   margin-bottom: 20vh;
   /* target the Accordion.Item */
@@ -301,6 +297,12 @@ body a:hover {
 #projects .container .card .w-75 {
   padding: 1rem;
   text-align: justify;
+}
+@media (max-width: 768px) {
+  #projects .container .card .w-75 {
+    width: 100vw;
+    padding: 0;
+  }
 }
 #projects .btn-prev,
 #projects .btn-next {
@@ -408,6 +410,7 @@ body a:hover {
   right: 0px;
   display: none;
   cursor: pointer;
+  z-index: 10;
 }
 #backToTopBtn img {
   width: 100%;

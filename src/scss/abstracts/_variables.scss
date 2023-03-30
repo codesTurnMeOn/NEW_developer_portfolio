@@ -12,6 +12,7 @@ $greyShade_bg:rgb(230, 230, 230);
 $primaryFont: "Roboto";
 $primaryFontSize: 1.1rem;
 $secondaryFontSize: 1.9rem;
+ $primaryFontPlus: calc(#{$secondaryFontSize} + 0.1rem);
 $titleFont: "Plus Jakarta Sans";
 $titleFontWeight: 800;
 $titleFontSize: 3.5rem;

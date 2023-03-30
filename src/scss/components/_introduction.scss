@@ -30,18 +30,24 @@ img{
 p{
   font-family:$primaryFont;
   font-size: $secondaryFontSize;
+  font-weight: $titleFontWeight;
   text-align: justify;
   padding:1rem;
 }
-}
 
-.flex-way{flex-direction: row }
 
 @media (max-width: 768px) {
-  .flex-way {
-    flex-direction: column;
-  }
-  .flex-way img {
-    width: 100%;
+   p {
+    font-size:$primaryFontPlus;
+    font-weight: bolder;
+    padding:0;
   }
 }
+
+
+
+
+
+}
+
+
