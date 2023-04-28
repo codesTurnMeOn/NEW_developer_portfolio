@@ -1,15 +1,45 @@
-import React,{ useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import saddler1 from "../images/saddler1.png";
 import saddler2 from "../images/saddler2.png";
 import saddler3 from "../images/saddler3.png";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
-  //  iamges slider for project
-  const images = [saddler1, saddler2, saddler3];
-
+//  iamges slider for project
+const images = [saddler1, saddler2, saddler3];
 
 function Saddler() {
+  //gsap/ScrollTrigger effect
+  const ref = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.from(ref.current, {
+      opacity: 0,
+      duration: 2,
+      ease: "easeInOut",
+      scrollTrigger: {
+        trigger: ref.current,
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse",
+        once: false,
+        onEnter: () => {
+          gsap.to(ref.current, {
+            opacity: 1,
+            duration: 2,
+          });
+        },
+        onLeaveBack: () => {
+          gsap.to(ref.current, {
+            opacity: 0,
+            duration: 2,
+          });
+        },
+      },
+    });
+  }, []);
 
   // project images slider
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +55,7 @@ function Saddler() {
   return (
     <>
       <Container className="container">
-        <Card className="card">
+        <Card className="card" ref={ref}>
           <div className="card-slider">
             <img
               src={images[currentIndex]}
@@ -41,7 +71,10 @@ function Saddler() {
           </div>
           <Card.Header>
             <Card.Title>
-             <h4> <i>Tenterfield Saddler, 2015</i></h4>{" "}
+              <h4>
+                {" "}
+                <i>Tenterfield Saddler, 2015</i>
+              </h4>{" "}
             </Card.Title>
             <Card.Text className=" w-75 mx-auto">
               There are two versions of this site: a provincial look version and

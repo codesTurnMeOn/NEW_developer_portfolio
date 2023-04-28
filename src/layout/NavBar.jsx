@@ -10,7 +10,6 @@ import back_to_top from "../images/back_to_top.png";
 export default function NavBar() {
   const textColor = useContext(textColorContext);
 
-  console.log(textColor);
   //use scroll position to change Navbar background color
   const [scrollPos, setScrollPos] = useState(0);
 
@@ -31,7 +30,6 @@ export default function NavBar() {
   };
 
   return (
-  
     <>
       <div id="navbar">
         <Container fluid>
@@ -99,7 +97,7 @@ export default function NavBar() {
                     Projects
                   </Nav.Link>
                   <Nav.Link
-                    href="/*"
+                    href="/Contact"
                     className={textColor ? "text-light" : "text-color"}
                   >
                     Contact

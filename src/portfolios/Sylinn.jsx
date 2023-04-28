@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import sylinn1 from "../images/sylinn1.png";
@@ -8,10 +8,42 @@ import sylinn4 from "../images/sylinn4.png";
 import sylinn5 from "../images/sylinn5.png";
 import sylinn6 from "../images/sylinn6.png";
 import sylinn7 from "../images/sylinn7.png";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const images = [sylinn1, sylinn2, sylinn3, sylinn4, sylinn5, sylinn6, sylinn7];
 
 function Sylinn() {
+  //gsap/ScrollTrigger effect
+  const ref = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.from(ref.current, {
+      opacity: 0,
+      duration: 2,
+      ease: "easeInOut",
+      scrollTrigger: {
+        trigger: ref.current,
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse",
+        once: false,
+        onEnter: () => {
+          gsap.to(ref.current, {
+            opacity: 1,
+            duration: 2,
+          });
+        },
+        onLeaveBack: () => {
+          gsap.to(ref.current, {
+            opacity: 0,
+            duration: 2,
+          });
+        },
+      },
+    });
+  }, []);
+
   // project images slider
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
@@ -26,7 +58,7 @@ function Sylinn() {
   return (
     <>
       <Container className="container">
-        <Card className="card">
+        <Card className="card" ref={ref}>
           <div className="card-slider">
             <img
               src={images[currentIndex]}

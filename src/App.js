@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
-import { BrowserRouter,Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../src/pages/Home";
+import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 
 // Create a new context for theme
@@ -20,17 +21,16 @@ function App() {
   useEffect(() => {
     //check darkMode in localStorage, add set theme accordingly
     let darkModeValue = localStorage.getItem("darkMode");
-    if (darkModeValue === null) {
+    if (darkModeValue === "true") {
       setTheme("light");
       //set theme on the opposite to darkModeValue
-    } if (darkModeValue === "true"){setTheme("light");}
-    else
-     {
-      setTheme("dark");
+    }
+    if (darkModeValue === "false") {
+      setTheme("light");
+    } else {
+      setTheme("light");
     }
   }, []);
-
-  console.log("APP's theme is", theme);
 
   return (
     <div id={theme}>
@@ -38,7 +38,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="*" element={<PageNotFound />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* <Route path="*" element={<PageNotFound />} /> */}
           </Routes>
         </BrowserRouter>
       </ThemeContext.Provider>

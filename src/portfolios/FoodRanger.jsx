@@ -1,14 +1,46 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import foodranger1 from "../images/foodranger1.png";
 import foodranger2 from "../images/foodranger2.png";
 import foodranger3 from "../images/foodranger3.png";
 import foodranger4 from "../images/foodranger4.png";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const images = [foodranger1, foodranger2, foodranger3, foodranger4];
 
 function FoodRanger() {
+  //gsap/ScrollTrigger effect
+  const ref = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.from(ref.current, {
+      opacity: 0,
+      duration: 2,
+      ease: "easeInOut",
+      scrollTrigger: {
+        trigger: ref.current,
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse",
+        once: false,
+        onEnter: () => {
+          gsap.to(ref.current, {
+            opacity: 1,
+            duration: 2,
+          });
+        },
+        onLeaveBack: () => {
+          gsap.to(ref.current, {
+            opacity: 0,
+            duration: 2,
+          });
+        },
+      },
+    });
+  }, []);
+
   // project images slider
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
@@ -23,7 +55,7 @@ function FoodRanger() {
   return (
     <>
       <Container className="container">
-        <Card className="card">
+        <Card className="card" ref={ref}>
           <div className="card-slider">
             <img
               src={images[currentIndex]}

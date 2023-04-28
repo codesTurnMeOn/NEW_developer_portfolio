@@ -20,15 +20,15 @@ function Footer() {
             </Col>
           </Row>
           <Row className="my-2">
-            <Col xs={12} md={4}>
-              <Link to="/*">No Privacy</Link>
-            </Col>
-            <Col xs={12} md={4} className="footerRow2">
+            {/* <Col xs={12} md={4}>
+              <Link to="/*">future use</Link>
+            </Col> */}
+            <Col xs={12} className="footerRow2">
               &#169;Lei's Web Design 2023
             </Col>
-            <Col xs={12} md={4}>
-              <Link to="/*">No Security</Link>
-            </Col>
+            {/* <Col xs={12} md={4}>
+              <Link to="/*">future use</Link>
+            </Col> */}
           </Row>
 
           <Row>

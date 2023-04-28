@@ -1,13 +1,15 @@
-import React,{createContext} from "react";
+import React,{createContext,lazy,Suspense} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Introduction from "../layout/Introduction";
 import Qualifications from "../layout/Qualifications";
-import Projects from "../layout/Projects";
+// import Projects from "../layout/Projects";
 // import BackToTopBtn from "../components/BackToTopBtn";
 
   export const textColorContext = createContext(null);
+
+const LazyProjects = lazy(() => import("../layout/Projects"));
 
 function Home() {
 
@@ -20,7 +22,11 @@ function Home() {
           <Header />
           <Introduction />
           <Qualifications />
-          <Projects />
+
+          <Suspense fallback={<div>Loading...</div>}>
+            <LazyProjects/>
+            </Suspense>
+
           <Footer />
           {/* <BackToTopBtn/> */}
       </textColorContext.Provider>
