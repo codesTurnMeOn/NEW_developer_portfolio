@@ -1,45 +1,19 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import saddler1 from "../images/saddler1.png";
 import saddler2 from "../images/saddler2.png";
 import saddler3 from "../images/saddler3.png";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import UseScrollTrigger from "../components/UseScrollTrigger.js";
 
 //  iamges slider for project
 const images = [saddler1, saddler2, saddler3];
 
 function Saddler() {
+
   //gsap/ScrollTrigger effect
   const ref = useRef(null);
-  gsap.registerPlugin(ScrollTrigger);
-  useEffect(() => {
-    gsap.from(ref.current, {
-      opacity: 0,
-      duration: 2,
-      ease: "easeInOut",
-      scrollTrigger: {
-        trigger: ref.current,
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play none none reverse",
-        once: false,
-        onEnter: () => {
-          gsap.to(ref.current, {
-            opacity: 1,
-            duration: 2,
-          });
-        },
-        onLeaveBack: () => {
-          gsap.to(ref.current, {
-            opacity: 0,
-            duration: 2,
-          });
-        },
-      },
-    });
-  }, []);
+  UseScrollTrigger(ref);
 
   // project images slider
   const [currentIndex, setCurrentIndex] = useState(0);

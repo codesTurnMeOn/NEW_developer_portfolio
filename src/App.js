@@ -8,25 +8,20 @@ import PageNotFound from "./pages/PageNotFound";
 export const ThemeContext = createContext(null);
 
 function App() {
-  // const [darkMode, setDarkMode] = useState(false);
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
-    //  const darkModeStatus = darkMode;
-    setTheme((curr) => (curr === "light" ? "dark" : "light"));
-    // setDarkMode(theme === "dark" ? true : false);
-    localStorage.setItem("darkMode", theme === "dark" ? true : false);
+    setTheme((currentTheme) => {
+      const newTheme = currentTheme === "light" ? "dark" : "light";
+      localStorage.setItem("theme", newTheme);
+      return newTheme;
+    });
   };
 
+  const savedTheme = localStorage.getItem("theme");
   useEffect(() => {
-    //check darkMode in localStorage, add set theme accordingly
-    let darkModeValue = localStorage.getItem("darkMode");
-    if (darkModeValue === "true") {
-      setTheme("light");
-      //set theme on the opposite to darkModeValue
-    }
-    if (darkModeValue === "false") {
-      setTheme("light");
+    if (savedTheme) {
+      setTheme(savedTheme);
     } else {
       setTheme("light");
     }
@@ -34,12 +29,12 @@ function App() {
 
   return (
     <div id={theme}>
-      <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <ThemeContext.Provider value={{ theme, toggleTheme, savedTheme }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            {/* <Route path="*" element={<PageNotFound />} /> */}
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
       </ThemeContext.Provider>

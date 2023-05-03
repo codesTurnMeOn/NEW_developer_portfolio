@@ -6,9 +6,9 @@ export default function ThemeToggler() {
   const themeContext = useContext(ThemeContext);
  
    return (
-     <label >
+     <label>
        <Switch
-         checked={themeContext.theme === "light"}
+         checked={themeContext.savedTheme==="light" }
          onChange={themeContext.toggleTheme}
          handleDiameter={28}
          draggable={false}

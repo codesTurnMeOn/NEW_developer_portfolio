@@ -361,6 +361,10 @@ body a:hover {
 #dark h1 {
   color: white;
 }
+#dark #contact .darkTheme {
+  color: white;
+  background-color: #383838;
+}
 #dark #intro .darkTheme {
   color: white;
   background-color: #383838;

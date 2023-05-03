@@ -26,7 +26,7 @@ export default function NavBar() {
   }, []);
 
   const handleClick = () => {
-    setScrollPos(window.pageYOffset + 1);
+    setScrollPos(window.pageYOffset + 1); //?
   };
 
   return (
@@ -85,13 +85,13 @@ export default function NavBar() {
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
                   <Nav.Link
-                    href="#qualification"
+                    href="/#qualification"
                     className={textColor ? "text-light" : "text-color"}
                   >
                     Qualifications
                   </Nav.Link>
                   <Nav.Link
-                    href="#projects"
+                    href="/#projects"
                     className={textColor ? "text-light" : "text-color"}
                   >
                     Projects

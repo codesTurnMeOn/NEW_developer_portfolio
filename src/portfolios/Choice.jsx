@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import choice1 from "../images/choice1.png";
@@ -6,41 +6,15 @@ import choice2 from "../images/choice2.png";
 import choice3 from "../images/choice3.png";
 import choice4 from "../images/choice4.png";
 import choice5 from "../images/choice5.png";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import UseScrollTrigger from "../components/UseScrollTrigger.js";
 
 const images = [choice1, choice2, choice3, choice4, choice5];
 
 function Choice() {
   //gsap/ScrollTrigger effect
-  const ref = useRef(null);
-  gsap.registerPlugin(ScrollTrigger);
-  useEffect(() => {
-    gsap.from(ref.current, {
-      opacity: 0,
-      duration: 2,
-      ease: "easeInOut",
-      scrollTrigger: {
-        trigger: ref.current,
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play none none reverse",
-        once: false,
-        onEnter: () => {
-          gsap.to(ref.current, {
-            opacity: 1,
-            duration: 2,
-          });
-        },
-        onLeaveBack: () => {
-          gsap.to(ref.current, {
-            opacity: 0,
-            duration: 2,
-          });
-        },
-      },
-    });
-  }, []);
+    const ref = useRef(null);
+    UseScrollTrigger(ref);
+
 
   // project images slider
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -11,7 +11,7 @@
 
 #light {
   background-color: $whiteColor;
-   //navbart text 
+   
 .text-color{
   color:black
 }
@@ -24,7 +24,6 @@
 /////////// #dark//////////////
 #dark {
   background-color: $darkTheme_bg_color;
- //navbart text 
 .text-color{
   color:white;
 }
@@ -37,6 +36,14 @@
 
   h1 {
     color: white;
+  }
+
+
+  #contact{
+    .darkTheme {
+     
+      @include darkTheme;
+    }
   }
 
   #intro {
