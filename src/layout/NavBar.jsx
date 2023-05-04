@@ -85,6 +85,12 @@ export default function NavBar() {
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
                   <Nav.Link
+                    href="/"
+                    className={textColor ? "text-light" : "text-color"}
+                  >
+                   Home
+                  </Nav.Link>
+                  <Nav.Link
                     href="/#qualification"
                     className={textColor ? "text-light" : "text-color"}
                   >
@@ -97,7 +103,7 @@ export default function NavBar() {
                     Projects
                   </Nav.Link>
                   <Nav.Link
-                    href="/Contact"
+                    href="/contact"
                     className={textColor ? "text-light" : "text-color"}
                   >
                     Contact
