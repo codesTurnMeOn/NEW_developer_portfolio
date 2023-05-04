@@ -6,6 +6,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import ThemeToggler from "../components/ThemeToggler";
 import { textColorContext } from "../pages/Home";
 import back_to_top from "../images/back_to_top.png";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const textColor = useContext(textColorContext);
@@ -84,11 +85,13 @@ export default function NavBar() {
               />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-                  <Nav.Link
-                    href="/"
-                    className={textColor ? "text-light" : "text-color"}
-                  >
-                   Home
+                  <Nav.Link>
+                    <Link
+                      className={textColor ? "text-light" : "text-color"}
+                      to={"/"}
+                    >
+                      Home
+                    </Link>
                   </Nav.Link>
                   <Nav.Link
                     href="/#qualification"
@@ -102,11 +105,13 @@ export default function NavBar() {
                   >
                     Projects
                   </Nav.Link>
-                  <Nav.Link
-                    href="/contact"
-                    className={textColor ? "text-light" : "text-color"}
-                  >
-                    Contact
+                  <Nav.Link>
+                    <Link
+                      className={textColor ? "text-light" : "text-color"}
+                      to={"/contact"}
+                    >
+                      Contact
+                    </Link>
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
