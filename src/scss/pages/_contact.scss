@@ -1,1 +1,23 @@
 @use "../abstracts/index" as *;
+
+#contact {
+  font-family: inherit;
+  // font-weight: bolder;
+  font-size: $primaryFontSize;
+
+
+
+  p {
+    font-family: $primaryFont;
+    font-size: $primaryFontSize;
+    vertical-align: middle;
+  }
+  .contact-pic {
+    width: 25vw;
+  }
+  .contact-icon img {
+    width: 1.5rem;
+  }
+
+ 
+}

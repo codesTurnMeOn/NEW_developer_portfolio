@@ -101,6 +101,7 @@ body {
 * a,
 html a,
 body a {
+  color: black;
   text-decoration: none;
   color: white;
   font-family: "Roboto";
@@ -210,6 +211,9 @@ body a:hover {
 #intro {
   margin-top: 20vh;
   margin-bottom: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #intro h1 {
   font-family: "Plus Jakarta Sans";
@@ -221,25 +225,27 @@ body a:hover {
 #intro img {
   overflow: hidden;
   padding: 1rem;
-  height: auto;
-}
-#intro .cardTitle {
-  font-family: "Plus Jakarta Sans";
-  font-size: 3.5rem;
-  margin-left: 19%;
 }
 #intro p {
   font-family: "Roboto";
-  font-size: 1.9rem;
-  font-weight: 800;
+  font-size: 1.4rem;
   text-align: justify;
-  padding: 1rem;
+  display: inline-block;
 }
-@media (max-width: 768px) {
-  #intro p {
-    font-size: calc(1.9rem + 0.1rem);
-    font-weight: bolder;
-    padding: 0;
+#intro p #typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.3em solid #000000;
+  vertical-align: bottom;
+  animation: typing 5s steps(16) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 7em;
   }
 }
 
@@ -369,6 +375,9 @@ body a:hover {
   color: white;
   background-color: #383838;
 }
+#dark #intro #typing {
+  border-right: 0.3em solid #ffffff;
+}
 #dark #qualification .darkTheme {
   color: white;
   background-color: #383838;
@@ -421,4 +430,20 @@ body a:hover {
 }
 #backToTopBtn img:hover {
   content: url("./images/back_to_top2.png");
+}
+
+#contact {
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+#contact p {
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+#contact .contact-pic {
+  width: 25vw;
+}
+#contact .contact-icon img {
+  width: 1.5rem;
 }

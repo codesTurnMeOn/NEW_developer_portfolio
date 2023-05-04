@@ -49,8 +49,13 @@
   #intro {
     .darkTheme {
       @include darkTheme;
+      
     }
+      #typing {
+
+    border-right: 0.3em solid #ffffff;
   }
+}
 
   #qualification {
     .darkTheme {

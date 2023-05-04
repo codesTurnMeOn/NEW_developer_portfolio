@@ -1,10 +1,9 @@
-import React, { useRef} from "react";
+import React, { useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Accordion from "react-bootstrap/Accordion";
 import UseScrollTrigger from "../components/UseScrollTrigger.js";
 
 function Qualification() {
-  
   //gsap/ScrollTrigger effect
   const ref = useRef(null);
   UseScrollTrigger(ref);
@@ -61,7 +60,7 @@ function Qualification() {
             </Accordion.Item>
             <Accordion.Item eventKey="3">
               <Accordion.Header className="accordionHeader">
-                Bachelor of Art (English and International trade)
+                Bachelor of Art (Trade and Marketing)
               </Accordion.Header>
               <Accordion.Body className="darkTheme">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

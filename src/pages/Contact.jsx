@@ -1,32 +1,69 @@
-import React from "react";
+import React, { useContext } from "react";
 import NavBar from "../layout/NavBar";
 import Footer from "../layout/Footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import contact_img_light from "../images/contact_img_light.png";
+import contact_img_dark from "../images/contact_img_dark.png";
+import email from "../images/email.png";
+import phone from "../images/phone.png";
+import home from "../images/home.png";
+import { ThemeContext } from "../App";
 
 function Contact() {
+  const themeContext = useContext(ThemeContext);
   return (
-    <div id="contact">
+    <div>
       <NavBar />
 
-      <Container style={{ height: "80vh" }}>
-        <div className="my-5 py-5 text-center darkTheme">
-          <Row>
+      <Container className="my-5 px-4 text-center text-color">
+        <div id="contact">
+          <Row className="py-5 d-flex align-items-center">
             <Col xs={12} md={7}>
-              1 of 2
+              <img
+                className="contact-pic"
+                src={
+                  themeContext.theme === "light"
+                    ? contact_img_light
+                    : contact_img_dark
+                }
+                alt="contact"
+              />
             </Col>
-            <Col xs={6} md={5}>
-              2 of 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              quibusdam amet hic commodi officia facilis sit odit eum cumque
-              similique suscipit voluptate incidunt a non, animi soluta
-              corporis, ex ipsum.
+            <Col xs={12} md={5}>
+              <h1>
+                {" "}
+                Coming together is a beginning; keeping together is progress;
+                working together is success.
+              </h1>
+              <p>
+                <i>— Henry Ford </i>
+                <p> The founder of Ford Motor</p>
+              </p>
             </Col>
           </Row>
-          <Row>
-            <Col md={4}>1 of 3</Col>
-            <Col md={4}>2 of 3</Col>
-            <Col md={4}>3 of 3</Col>
+          <Row className="py-5 contact-icon">
+            <Col md={4}>
+              {" "}
+              <img src={phone} alt="phone" /> 0413354003
+            </Col>
+            <Col md={4}>
+              {" "}
+              <img src={home} alt="home" /> Keysborough Victoria 3173 Australia
+            </Col>
+            <Col md={4}>
+              {" "}
+              <img src={email} alt="email" />{" "}
+              <a
+                href="mailto:wadane@gmail.com"
+                className={
+                  themeContext.theme === "light" ? "text-dark" : "text-light"
+                }
+              >
+                wadane@gmail.com
+              </a>
+            </Col>
           </Row>
         </div>
       </Container>
