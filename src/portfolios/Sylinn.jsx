@@ -62,7 +62,7 @@ function Sylinn() {
             </Card.Text>
             <Card.Text>Last updated 02/2023</Card.Text>
             <a
-              href="https://github.com/codesTurnMeOn/sylinn_website"
+              href="https://github.com/coolkidsclubvip/sylinn_website"
               target="_blank"
               rel="noreferrer"
             >

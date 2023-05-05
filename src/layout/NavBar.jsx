@@ -56,7 +56,7 @@ export default function NavBar() {
               <Navbar.Brand href="#home">
                 <div className="navbarBrand">
                   <a
-                    href="https://github.com/codesTurnMeOn"
+                    href="https://github.com/coolkidsclubvip"
                     target="_blank"
                     rel="noreferrer"
                   >

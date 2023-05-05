@@ -60,7 +60,7 @@ function FoodRanger() {
             </Card.Text>
             <Card.Text>Last updated 02/2023</Card.Text>
             <a
-              href="https://github.com/codesTurnMeOn/hg_apiPortfolio"
+              href="https://spicytofu.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >

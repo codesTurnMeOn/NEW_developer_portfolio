@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState,useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import saddler1 from "../images/saddler1.png";
@@ -13,7 +13,9 @@ function Saddler() {
 
   //gsap/ScrollTrigger effect
   const ref = useRef(null);
-  UseScrollTrigger(ref);
+
+    UseScrollTrigger(ref);
+ 
 
   // project images slider
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,6 +31,7 @@ function Saddler() {
   return (
     <>
       <Container className="container">
+        {/* ref={ref} */}
         <Card className="card" ref={ref}>
           <div className="card-slider">
             <img

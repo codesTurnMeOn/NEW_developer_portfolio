@@ -6,6 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 function UseScrollTrigger(ref) {
   gsap.registerPlugin(ScrollTrigger);
+
   useEffect(() => {
     gsap.from(ref.current, {
       opacity: 0,
@@ -31,7 +32,7 @@ function UseScrollTrigger(ref) {
         },
       },
     });
-  }, );
+  }, []);
 }
 
 export default UseScrollTrigger;
