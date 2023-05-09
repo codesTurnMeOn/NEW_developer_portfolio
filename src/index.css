@@ -111,7 +111,7 @@ body a {
 * a:hover,
 html a:hover,
 body a:hover {
-  color: #E02FEE;
+  color: #A7A1FF;
 }
 
 ::-webkit-scrollbar {
@@ -300,6 +300,51 @@ body a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+#projects .container .card a button {
+  position: relative;
+  height: 3rem;
+  padding: 0 1rem;
+  border: 2px solid #5A7785;
+  background: #F8F8F8;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.05s linear;
+  font-family: inherit;
+}
+#projects .container .card a button:before, #projects .container .card a button:after {
+  content: "";
+  position: absolute;
+  background: #F8F8F8;
+  transition: all 0.2s linear;
+}
+#projects .container .card a button:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+#projects .container .card a button:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+#projects .container .card a button:active {
+  transform: scale(0.95);
+}
+#projects .container .card a button:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+#projects .container .card a button:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+#projects .container .card a button span {
+  font-size: "Roboto";
+  z-index: 3;
+  position: relative;
+}
 #projects .container .card .w-75 {
   padding: 1rem;
   text-align: justify;
@@ -331,11 +376,6 @@ body a:hover {
 }
 #projects .btn-next {
   right: 0;
-}
-#projects .card a button {
-  background-color: #3795BD;
-  width: 5rem;
-  border-radius: 5px;
 }
 
 #dark,
@@ -386,7 +426,20 @@ body a:hover {
   color: white;
   background-color: #383838;
 }
-#dark #backToTopBtn {
+#dark #projects .card a button,
+#dark #projects .card button:before,
+#dark #projects .card button:after {
+  background-color: #383838;
+  color: #ffffff;
+}
+#dark #contact .d-flex a button,
+#dark #contact .d-flex button:before,
+#dark #contact .d-flex button:after {
+  background-color: #202124;
+  color: #ffffff;
+}
+
+#backToTopBtn {
   background-color: #202124;
 }
 
@@ -410,13 +463,13 @@ body a:hover {
   font-family: "Roboto";
   font-size: 1.1rem;
   text-align: center;
-  background-color: #E02FEE;
+  background-color: #A7A1FF;
 }
 
 #backToTopBtn {
-  width: 60px;
-  height: 60px;
-  background-color: #3795BD;
+  width: 3rem;
+  height: 3rem;
+  background-color: #254a5d;
   text-align: center;
   position: fixed;
   bottom: 20vh;
@@ -446,4 +499,53 @@ body a:hover {
 }
 #contact .contact-icon img {
   width: 1.5rem;
+}
+#contact .d-flex a {
+  display: inline-block;
+  margin-top: 5rem;
+}
+#contact .d-flex a button {
+  position: relative;
+  height: 3rem;
+  padding: 0 1rem;
+  border: 2px solid #5A7785;
+  background: #F8F8F8;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.05s linear;
+  font-family: inherit;
+}
+#contact .d-flex a button:before, #contact .d-flex a button:after {
+  content: "";
+  position: absolute;
+  background: #F8F8F8;
+  transition: all 0.2s linear;
+}
+#contact .d-flex a button:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+#contact .d-flex a button:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+#contact .d-flex a button:active {
+  transform: scale(0.95);
+}
+#contact .d-flex a button:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+#contact .d-flex a button:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+#contact .d-flex a button span {
+  font-size: "Roboto";
+  z-index: 3;
+  position: relative;
 }

@@ -4,6 +4,7 @@
   font-family: inherit;
   // font-weight: bolder;
   font-size: $primaryFontSize;
+  // background-color: red;
 
 
 
@@ -19,5 +20,10 @@
     width: 1.5rem;
   }
 
+.d-flex a{
+  @include animatedButton;
+display: inline-block;
+margin-top: 5rem;
+}
  
 }

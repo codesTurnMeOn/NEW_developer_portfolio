@@ -5,7 +5,7 @@ $primaryColor2:#3795BD;
 $shadowColor: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 $darkTheme_bg_color: #202124;
 $darkTheme_bg_color2: #383838;
-$purpleInDark: #E02FEE;
+$purpleInDark: #A7A1FF;
 $greyShade_bg:rgb(230, 230, 230);
 // purple2 #8B3DFF
 
@@ -61,4 +61,62 @@ $margin-y-title-content: 6vh;
   font-size: $primaryFontSize;
   text-align: center;
 
+}
+
+@mixin animatedButton(){
+
+  button{ position: relative;
+ height: 3rem;
+ padding: 0 1rem;
+ border: 2px solid #5A7785;
+ background:#F8F8F8;
+ user-select: none;
+ white-space: nowrap;
+ transition: all .05s linear;
+ font-family: inherit;}
+
+
+
+button:before, button:after {
+ content: "";
+ position: absolute;
+ background: #F8F8F8;
+ transition: all .2s linear;
+}
+
+button:before {
+ width: calc(100% + 6px);
+ height: calc(100% - 16px);
+ top: 8px;
+ left: -3px;
+}
+
+button:after {
+ width: calc(100% - 16px);
+ height: calc(100% + 6px);
+ top: -3px;
+ left: 8px;
+}
+
+
+button:active {
+ transform: scale(0.95);
+}
+
+button:hover:before {
+ height: calc(100% - 32px);
+ top: 16px;
+}
+
+button:hover:after {
+ width: calc(100% - 32px);
+ left: 16px;
+}
+
+button span {
+ font-size:$primaryFont;
+ z-index: 3;
+ position: relative;
+
+}
 }

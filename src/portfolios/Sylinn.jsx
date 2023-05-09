@@ -66,7 +66,9 @@ function Sylinn() {
               target="_blank"
               rel="noreferrer"
             >
-              <button>Details</button>
+              <button>
+                <span>View Detail</span>
+              </button>
             </a>
           </Card.Header>
         </Card>

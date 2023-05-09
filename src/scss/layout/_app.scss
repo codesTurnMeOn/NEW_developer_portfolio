@@ -11,10 +11,10 @@
 
 #light {
   background-color: $whiteColor;
-   
-.text-color{
-  color:black
-}
+
+  .text-color {
+    color: black;
+  }
 
   ._404text {
     color: black;
@@ -24,24 +24,21 @@
 /////////// #dark//////////////
 #dark {
   background-color: $darkTheme_bg_color;
-.text-color{
-  color:white;
-}
-
+  .text-color {
+    color: white;
+  }
 
   // 404page text color
   ._404text {
-    color:  white;
+    color: white;
   }
 
   h1 {
     color: white;
   }
 
-
-  #contact{
+  #contact {
     .darkTheme {
-     
       @include darkTheme;
     }
   }
@@ -49,13 +46,11 @@
   #intro {
     .darkTheme {
       @include darkTheme;
-      
     }
-      #typing {
-
-    border-right: 0.3em solid #ffffff;
+    #typing {
+      border-right: 0.3em solid #ffffff;
+    }
   }
-}
 
   #qualification {
     .darkTheme {
@@ -63,18 +58,29 @@
     }
   }
 
-#projects{
-  .card {
+  #projects {
+    .card {
       @include darkTheme;
+      a button,
+      button:before,
+      button:after {
+        background-color:$darkTheme_bg_color2;
+        color: #ffffff;
+      }
+    }}
 
+    #contact {
+    .d-flex{    
+        a button,
+        button:before,
+        button:after {
+          background-color:$darkTheme_bg_color;
+          color: #ffffff;
+        }
+      }
+    }
   }
-}
-#backToTopBtn {
- 
-  background-color:$darkTheme_bg_color;}
-
-}
-
-
-
+  #backToTopBtn {
+    background-color: $darkTheme_bg_color;
+  }
 

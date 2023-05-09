@@ -31,7 +31,7 @@ function Contact() {
                 alt="contact"
               />
             </Col>
-            <Col xs={12} md={5}>
+            <Col xs={12} md={5} >
               <h1>
                 {" "}
                 Coming together is a beginning; keeping together is progress;
@@ -41,6 +41,16 @@ function Contact() {
                 <i>— Henry Ford </i>
                 <p> The founder of Ford Motor</p>
               </p>
+              <a
+                href="/resume.md"
+                target="_blank"
+                rel="noreferrer"
+                
+              >
+                <button>
+                  <span>Download My Resume</span>
+                </button>
+              </a>
             </Col>
           </Row>
           <Row className="py-5 contact-icon">
