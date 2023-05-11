@@ -115,11 +115,11 @@ body a:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 13px;
+  width: 22px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #223E4C;
+  background-color: #223e4c;
 }
 
 ::-webkit-scrollbar-track {
@@ -364,6 +364,11 @@ body a:hover {
   background: transparent;
   border: none;
 }
+#projects .btn-prev:hover,
+#projects .btn-next:hover {
+  color: white;
+  background-color: #254a5d;
+}
 @media (max-width: 768px) {
   #projects .btn-prev,
   #projects .btn-next {
@@ -488,6 +493,11 @@ body a:hover {
 #contact {
   font-family: inherit;
   font-size: 1.1rem;
+}
+#contact button span {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
 }
 #contact p {
   font-family: "Roboto";

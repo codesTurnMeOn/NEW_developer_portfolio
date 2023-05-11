@@ -7,6 +7,10 @@ import {Link} from "react-router-dom";
 
 
 function Footer() {
+  // Dynamic Date Function
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
   return (
     <div id="footer" className="flex-column">
       <Container fluid>
@@ -24,7 +28,7 @@ function Footer() {
               <Link to="/*">future use</Link>
             </Col> */}
             <Col xs={12} className="footerRow2">
-              &#169;Lei's Web Design 2023
+              {getCurrentYear()} &#169; LeisWebDev
             </Col>
             {/* <Col xs={12} md={4}>
               <Link to="/*">future use</Link>

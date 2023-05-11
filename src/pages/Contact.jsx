@@ -6,9 +6,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import contact_img_light from "../images/contact_img_light.png";
 import contact_img_dark from "../images/contact_img_dark.png";
-import email from "../images/email.png";
-import phone from "../images/phone.png";
-import home from "../images/home.png";
+import { SlScreenSmartphone } from "react-icons/sl";
+import { SlEnvolope } from "react-icons/sl";
+import { SlHome } from "react-icons/sl";
+import { SlUser } from "react-icons/sl";
 import { ThemeContext } from "../App";
 
 function Contact() {
@@ -31,7 +32,7 @@ function Contact() {
                 alt="contact"
               />
             </Col>
-            <Col xs={12} md={5} >
+            <Col xs={12} md={5}>
               <h1>
                 {" "}
                 Coming together is a beginning; keeping together is progress;
@@ -41,14 +42,11 @@ function Contact() {
                 <i>— Henry Ford </i>
                 <p> The founder of Ford Motor</p>
               </p>
-              <a
-                href="/resume.md"
-                target="_blank"
-                rel="noreferrer"
-                
-              >
+              <a href="/resume.md" target="_blank" rel="noreferrer">
                 <button>
-                  <span>Download My Resume</span>
+                  <span>
+                    <SlUser />Download My Resume
+                  </span>
                 </button>
               </a>
             </Col>
@@ -56,21 +54,23 @@ function Contact() {
           <Row className="py-5 contact-icon">
             <Col md={4}>
               {" "}
-              <img src={phone} alt="phone" /> 0413354003
+              <SlScreenSmartphone /> 0413354003
             </Col>
             <Col md={4}>
               {" "}
-              <img src={home} alt="home" /> Keysborough Victoria 3173 Australia
+              <SlHome /> Keysborough Victoria 3173 Australia
             </Col>
             <Col md={4}>
               {" "}
-              <img src={email} alt="email" />{" "}
+              {/* <img src={email} alt="email" />{" "} */}
+              <SlEnvolope />
               <a
                 href="mailto:wadane@gmail.com"
                 className={
                   themeContext.theme === "light" ? "text-dark" : "text-light"
                 }
               >
+                {" "}
                 wadane@gmail.com
               </a>
             </Col>

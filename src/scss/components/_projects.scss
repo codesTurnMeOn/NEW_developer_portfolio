@@ -21,10 +21,9 @@
     }
 
     .card {
-
-a {
-    @include animatedButton;
-  }
+      a {
+        @include animatedButton;
+      }
 
       box-shadow: $shadowColor;
       text-align: center;
@@ -51,6 +50,11 @@ a {
     top: 30rem;
     background: transparent;
     border: none;
+
+    &:hover {
+      color: white;
+      background-color: $primaryColor;
+    }
   }
   @media (max-width: 768px) {
     .btn-prev,
@@ -67,6 +71,4 @@ a {
   .btn-next {
     right: 0;
   }
-
-  
 }
