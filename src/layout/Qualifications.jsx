@@ -1,15 +1,30 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Accordion from "react-bootstrap/Accordion";
 import UseScrollTrigger from "../components/UseScrollTrigger.js";
 
 function Qualification() {
+  const QualificationRef = useRef(null);
+  useEffect(() => {
+    const anchorName = localStorage.getItem("anchor");
+
+    if (anchorName === "qualification") {
+      const projectsElement = QualificationRef.current;
+
+      setTimeout(() => {
+        projectsElement.scrollIntoView({ behavior: "smooth" });
+      }, 500);
+
+      localStorage.removeItem("anchor");
+    }
+  }, []);
+
   //gsap/ScrollTrigger effect
   const ref = useRef(null);
   UseScrollTrigger(ref);
 
   return (
-    <div id="qualification">
+    <div id="qualification" ref={QualificationRef}>
       <Container>
         <Container>
           <h1>Qualifications</h1>
