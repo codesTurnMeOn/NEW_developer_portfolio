@@ -5,6 +5,8 @@ import Choice from "../portfolios/Choice";
 import Sylinn from "../portfolios/Sylinn";
 import FoodRanger from "../portfolios/FoodRanger";
 
+
+
 export default function Projects() {
   return (
     <div id="projects">

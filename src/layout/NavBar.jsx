@@ -107,6 +107,7 @@ export default function NavBar() {
                   </Nav.Link>
                   <Nav.Link>
                     <Link
+                      id="contact"
                       className={textColor ? "text-light" : "text-color"}
                       to={"/contact"}
                     >
