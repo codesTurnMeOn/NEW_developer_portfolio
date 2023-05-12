@@ -30,21 +30,18 @@ export default function NavBar() {
     setScrollPos(window.pageYOffset + 1); //?
   };
 
-
-
-
-const handleNavClick = (anchorName) => {
-
-
-  // check if current path is "/"
-  if (window.location.pathname !== "/") {
-    // navigate to homepage
-    window.location.href = "/";
-  }
-
-  // store anchor name in localStorage
-  localStorage.setItem("anchor", anchorName);
-};
+  const handleNavClick = (anchorName) => {
+    // check if current path is "/"
+    if (window.location.pathname !== "/") {
+      // store anchor name in localStorage
+      localStorage.setItem("anchor", anchorName);
+      // navigate to homepage
+      window.location.href = "/";
+    } else {
+      // if on home page, scroll to anchors
+      window.location.href = `/#${anchorName}`;
+    }
+  };
 
   return (
     <>
@@ -111,18 +108,16 @@ const handleNavClick = (anchorName) => {
                   </Nav.Link>
                   <Nav.Link>
                     <Link
-                      href="/#qualification"
                       className={textColor ? "text-light" : "text-color"}
                       onClick={() => {
                         handleNavClick("qualification");
                       }}
                     >
-                      Qualifications{" "}
+                      Qualifications
                     </Link>
                   </Nav.Link>
                   <Nav.Link>
                     <Link
-                      href="/#projects"
                       className={textColor ? "text-light" : "text-color"}
                       onClick={() => {
                         handleNavClick("projects");
