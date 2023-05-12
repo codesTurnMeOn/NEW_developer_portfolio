@@ -109,23 +109,27 @@ const handleNavClick = (anchorName) => {
                       Home
                     </Link>
                   </Nav.Link>
-                  <Nav.Link
-                    href="/#qualification"
-                    className={textColor ? "text-light" : "text-color"}
-                    onClick={() => {
-                      handleNavClick("qualification");
-                    }}
-                  >
-                    Qualifications
+                  <Nav.Link>
+                    <Link
+                      href="/#qualification"
+                      className={textColor ? "text-light" : "text-color"}
+                      onClick={() => {
+                        handleNavClick("qualification");
+                      }}
+                    >
+                      Qualifications{" "}
+                    </Link>
                   </Nav.Link>
-                  <Nav.Link
-                    href="/#projects"
-                    className={textColor ? "text-light" : "text-color"}
-                    onClick={() => {
-                      handleNavClick("projects");
-                    }}
-                  >
-                    Projects
+                  <Nav.Link>
+                    <Link
+                      href="/#projects"
+                      className={textColor ? "text-light" : "text-color"}
+                      onClick={() => {
+                        handleNavClick("projects");
+                      }}
+                    >
+                      Projects
+                    </Link>
                   </Nav.Link>
                   <Nav.Link>
                     <Link
