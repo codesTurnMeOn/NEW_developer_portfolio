@@ -3,8 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import lei_logo from "../images/lei_logo.png";
-import {Link} from "react-router-dom";
-
 
 function Footer() {
   // Dynamic Date Function
@@ -18,7 +16,7 @@ function Footer() {
           <Row>
             <Col>
               <div className="footerSlogan">
-                Need a website? get a Lei!
+                Your idea, My inspiration.
                 <img src={lei_logo} alt="Lei logo" />
               </div>
             </Col>
