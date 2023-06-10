@@ -18,9 +18,7 @@ export default function NavBar() {
     const handleScroll = () => {
       setScrollPos(window.pageYOffset);
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
