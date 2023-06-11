@@ -1,7 +1,7 @@
 let TsParticles = {
   particles: {
     number: {
-      value: 150,
+      value: 80,
       density: {
         enable: true,
         value_area: 786,
@@ -11,7 +11,7 @@ let TsParticles = {
       value: ["#ffffff", "#E02FEE", "#F9F871", "#D8D8D8"],
     },
     shape: {
-      type: "star",
+      type: "circle",
       stroke: {
         width: 0,
         color: "#000000",

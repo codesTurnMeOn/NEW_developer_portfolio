@@ -26,8 +26,8 @@ export default function Header(props) {
 
   // particale effect when loading
   useEffect(() => {
-    let clause = window.innerWidth < 768;
-    TsParticles.particles.number.value = clause ? 40 : 70;
+    let clause = window.innerWidth < 1000;
+    TsParticles.particles.number.value = clause ? 40 : 80;
     window.particlesJS("particle", TsParticles);
   }, []);
 
