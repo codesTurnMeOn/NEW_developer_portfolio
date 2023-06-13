@@ -58,7 +58,7 @@ function FoodRanger() {
               VS Code, Photoshop. Technologies are HTML5,CSS3,
               JavaScript,React.js,Bootstrap5.
             </Card.Text>
-            <Card.Text>Last updated 02/2023</Card.Text>
+            <Card.Text></Card.Text>
             <a
               href="https://spicytofu.netlify.app/"
               target="_blank"

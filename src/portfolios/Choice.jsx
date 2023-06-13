@@ -58,7 +58,7 @@ function Choice() {
               are Dreamweaver, Photoshop. Technologies are HTML5,CSS3 and vanila
               JavaScript.
             </Card.Text>
-            <Card.Text>Last updated 2016</Card.Text>
+            <Card.Text></Card.Text>
           </Card.Header>
         </Card>
       </Container>

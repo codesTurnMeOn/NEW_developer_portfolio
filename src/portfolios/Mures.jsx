@@ -25,7 +25,7 @@ function Mures() {
               This is a web desgin work for Cert IV of design, development tool
               was photoshop.
             </Card.Text>
-            <Card.Text>Last updated 2013</Card.Text>
+            <Card.Text></Card.Text>
           </Card.Header>
         </Card>
       </Container>

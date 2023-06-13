@@ -60,7 +60,7 @@ function Sylinn() {
               vanilla JavaScript. And it is also integrated with Google&#8482;
               search and Google Map&#8482;.
             </Card.Text>
-            <Card.Text>Last updated 02/2023</Card.Text>
+            <Card.Text></Card.Text>
             <a
               href="https://github.com/coolkidsclubvip/sylinn_website"
               target="_blank"

@@ -60,7 +60,7 @@ function Saddler() {
               Dreamweaver, Photoshop and Illustrator. Technologies used are
               HTML5 and CSS3.
             </Card.Text>
-            <Card.Text>Last updated 26/02/2015</Card.Text>
+            <Card.Text></Card.Text>
           </Card.Header>
         </Card>
       </Container>
