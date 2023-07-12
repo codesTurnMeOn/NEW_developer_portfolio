@@ -1,9 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
-
 import particlesJS from "../../node_modules/particles.js/particles";
 import TsParticles from "../components/TsParticles";
-
 import selfie from "../images/selfie.png";
 import text2 from "../images/text2.png";
 import NavBar from "./NavBar";

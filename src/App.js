@@ -8,7 +8,7 @@ import PageNotFound from "./pages/PageNotFound";
 export const ThemeContext = createContext(null);
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
     setTheme((currentTheme) => {
@@ -23,7 +23,7 @@ function App() {
     if (savedTheme) {
       setTheme(savedTheme);
     } else {
-      setTheme("light");
+      setTheme("dark");
     }
   }, []);
 

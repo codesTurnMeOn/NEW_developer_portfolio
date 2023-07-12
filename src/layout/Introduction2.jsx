@@ -27,12 +27,12 @@ function Introduction2() {
   console.log("showBackground is set to:", showBackground);
 
   return (
-    <div id="intro" >
+    <div id="intro">
       <Container fluid>
         <h1>Introduction</h1>
         <div className={themeContext.theme === "light" ? "" : "darkTheme"}>
-          <Row >
-            <Col xs={12} sm={12} md={12} lg={8}>
+          <Row>
+            <Col xs={12} sm={12} md={12} lg={12} xl={8}>
               <div className="hexagonGrid">
                 <div id="cursor"></div>
 
@@ -272,10 +272,10 @@ function Introduction2() {
                 </div>
               </div>
             </Col>
-            <Col xs={12} sm={12} md={12} lg={4} className="introText">
-              <Card.Body >
+            <Col xs={12} sm={12} md={12} lg={12} xl={4} className="introText">
+              <Card.Body>
                 <Card.Text>
-                  <p >
+                  <p>
                     Hi there, I'm a junior full-stack web developer based in
                     Melbourne. After 9 years working in the
                     bathroomware/kitchenware supplies industry, I decided to

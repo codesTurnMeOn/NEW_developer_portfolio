@@ -301,3 +301,57 @@
     margin-bottom: 20vh;
   }
 }
+
+/* 笔记本电脑 */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  /* 在宽度小于 1200px 且大于等于 992px 时应用的样式 */
+  #intro {
+    margin-top: 50vh;
+  }
+  .hexagonGrid {
+    width: 150%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: -20%;
+    #cursor {
+      width: 60%;
+      height: 60%;
+      border-radius: 100%;
+      position: absolute;
+      margin-left: 20%;
+    }
+  }
+}
+
+// /* iPad */
+// @media screen and (max-width: 991px) and (min-width: 768px) {
+//   /* 在宽度小于 992px 且大于等于 768px 时应用的样式 */
+// }
+
+/* 主流智能手机 */
+@media screen and (max-width: 767px) {
+  /* 在宽度小于 768px 时应用的样式 */
+  #intro {
+    margin-top: 80vh;
+    margin-bottom: 80vh;
+    position: relative;
+  }
+  .hexagonGrid {
+    width: 200%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: -90%;
+    #cursor {
+      width: 200%;
+      height: 60%;
+      border-radius: 100%;
+      position: absolute;
+      // margin-left:50%;/
+    }
+  }
+}
