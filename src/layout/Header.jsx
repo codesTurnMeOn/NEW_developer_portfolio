@@ -31,7 +31,7 @@ export default function Header(props) {
     window.particlesJS("particle", TsParticles);
   }, []);
 
-  console.log("scrollPos IS", scrollPos);
+  // console.log("scrollPos IS", scrollPos);
   return (
     <div id="header_container">
       {" "}

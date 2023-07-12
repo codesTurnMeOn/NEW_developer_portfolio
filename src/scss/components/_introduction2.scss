@@ -1,0 +1,303 @@
+@use "../abstracts/index" as *;
+
+#intro {
+  margin-top: $margin-y;
+  margin-bottom: $margin-y;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  // overflow: hidden!important;
+  width: 100vw;
+  height: 50vh;
+  // background-color: #3fff3c;
+  z-index: 1;
+
+  //darkTheme mode
+  .darkTheme {
+    background-color: $darkTheme_bg_color !important;
+    .hexagonGrid {
+      background-color: $darkTheme_bg_color;
+    }
+    .hexagon {
+      background-color: $hexagonColorDark;
+    }
+    .hexagon::after {
+      border-top: 28.87px solid $hexagonColorDark;
+    }
+    .hexagon::before {
+      border-bottom: 28.87px solid $hexagonColorDark;
+    }
+
+    .nodejs {
+      background-image: url("./images/hexagon/nodejs_logo_dark.png");
+    }
+    .html_css_js {
+      background-image: url("./images/hexagon/html_css_js_logo_dark.png");
+    }
+    .next {
+      background-image: url("./images/hexagon/next_logo_dark.png");
+    }
+    .express {
+      background-image: url("./images/hexagon/express_logo_dark.webp");
+    }
+
+    .git {
+      background-image: url("./images/hexagon/git_logo_dark.png");
+    }
+    .ccp {
+      background-image: url("./images/hexagon/ccp_dark.png");
+    }
+    .saa {
+      background-image: url("./images/hexagon/saa_dark.png");
+    }
+  }
+
+  h1 {
+    @include title;
+  }
+
+  p {
+    font-family: $primaryFont;
+    font-size: $primaryFontSize + 0.3rem;
+    text-align: justify;
+    display: inline-block;
+
+    //// for text typing effect
+    #typing {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 0.3em solid #000000;
+      vertical-align: bottom;
+      animation: typing 5s steps(16) infinite;
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 7em;
+        }
+      }
+    }
+  }
+}
+
+// hexagonGrid effect
+.hexagonGrid {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  // background-color: red;
+  // blur div
+  z-index: 1;
+
+  #cursor {
+    border: #000000 solid 2px;
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+    position: absolute;
+    margin: 10% 15%;
+
+    box-shadow: 2px -3px 41px -1px rgba(241, 196, 15, 0.64);
+    z-index: 0;
+    // opacity: 0;
+    background: linear-gradient(
+      45deg,
+      #e8f74d,
+      #ff6600d9,
+      #ad27ad,
+      #bd2681,
+      #6512b9,
+      #ff3300de,
+      $primaryColor2,
+      $primaryColor
+    );
+    background-size: 400%;
+    animation: glower 60s linear infinite;
+    filter: blur(40px);
+
+    @keyframes glower {
+      0% {
+        background-position: 0 0;
+      }
+
+      50% {
+        background-position: 400% 0;
+      }
+
+      100% {
+        background-position: 0 0;
+      }
+    }
+  }
+
+  .row {
+    display: block;
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -35px;
+    margin-left: -33px;
+
+    .hexagon {
+      position: relative;
+      width: 100px;
+      height: 57.74px;
+      // background-color: #2b2b2b;
+      background-color: $hexagonColorLight;
+
+      margin: 32.87px 2px;
+      display: block;
+      transition: all 0.2s linear;
+      padding: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        top: 100%;
+        width: 0;
+        // border-top: 28.87px solid #2b2b2b;
+        border-top: 28.87px solid $hexagonColorLight;
+        // transition: all 0.2s linear;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        bottom: 100%;
+        // border-bottom: 28.87px solid #2b2b2b;
+        border-bottom: 28.87px solid $hexagonColorLight;
+        // transition: all 0.2s linear;
+      }
+
+      // // 鼠标悬浮 蜂窝变色
+      // &:hover {
+      //   // background: #3fff3c;
+      //   &::after {
+      //     border-top: 28.87px solid $ $hexagonColorLight;
+      //   }
+      //   &::before {
+      //     border-bottom: 28.87px solid $ $hexagonColorLight;
+      //   }
+      // }
+    }
+
+    &.row-moved {
+      margin-left: 19px;
+    }
+
+    .nodejs {
+      @include hexagonStyle;
+      // display: none ;
+      background-image: url("./images/hexagon/nodejs_logo_light.png");
+
+      // background-color: yellow !important;
+    }
+    .react {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/react_logo.png");
+    }
+    .mongodb {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/mongodb_logo.png");
+    }
+    .html_css_js {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/html_css_js_logo_light.png");
+    }
+    .bootstrap {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/bootstrap_logo.png");
+    }
+
+    .mysql {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/mysql_logo.png");
+    }
+    .sass {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/sass_logo.png");
+    }
+
+    .typescript {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/ts_logo.png");
+    }
+    .git {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/git_logo_light.png");
+    }
+    .express {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/express_logo_light.webp");
+    }
+    .next {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/next_logo_light.png");
+    }
+    .ccp {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/ccp_light.png");
+    }
+    .saa {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/saa_light.png");
+    }
+  }
+}
+
+// default style
+.default_light {
+  background: $default_light !important;
+  &::after {
+    border-top: 28.87px solid $default_light !important;
+  }
+  &::before {
+    border-bottom: 28.87px solid $default_light !important;
+  }
+  opacity: 0.5 !important;
+}
+
+.default_dark {
+  background: $default_dark !important;
+  &::after {
+    border-top: 28.87px solid $default_dark !important;
+  }
+  &::before {
+    border-bottom: 28.87px solid $default_dark !important;
+  }
+  opacity: 0.5 !important;
+}
+
+.introText {
+  background-color: $darkTheme_bg_color
+    opacify($darkTheme_bg_color, $amount: 0.5);
+
+  position: absolute;
+  // margin-top: 0;
+  margin-left: 51%;
+  padding-top: 6rem;
+  overflow: visible;
+  z-index: 3;
+}
+
+@media (max-width: 1300px) {
+  .introText {
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 0;
+    margin-bottom: 20vh;
+  }
+}

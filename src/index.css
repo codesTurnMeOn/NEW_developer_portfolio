@@ -115,7 +115,6 @@
 #title .text {
   position: absolute;
   width: 50vw;
-  background: rgb(111, 54, 86);
   background: linear-gradient(90deg, rgb(111, 54, 86) 0%, rgb(27, 56, 137) 50%, #0082b7 100%);
   color: #ffffff;
   font-size: 6vw;
@@ -218,6 +217,7 @@ body a:hover {
   width: 100vw;
   overflow: hidden;
   height: 20vh;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.9);
   background-image: url("./images/footer_bg_1.jfif");
 }
 #footer > * {
@@ -308,8 +308,8 @@ body a:hover {
 }
 
 #intro {
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-top: 30vh;
+  margin-bottom: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,7 +349,8 @@ body a:hover {
 }
 
 #qualification {
-  margin-bottom: 20vh;
+  margin-bottom: 30vh;
+  margin-top: 30vh;
   /* target the Accordion.Item */
 }
 #qualification h1 {
@@ -375,7 +376,7 @@ body a:hover {
 }
 
 #projects {
-  margin-bottom: 20vh;
+  margin-bottom: 30vh;
   text-align: center;
 }
 #projects h1 {
@@ -388,7 +389,7 @@ body a:hover {
 #projects .container {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20vh;
+  margin-bottom: 30vh;
 }
 @media (max-width: 768px) {
   #projects .container .container {
@@ -657,4 +658,287 @@ body a:hover {
   font-size: "Roboto";
   z-index: 3;
   position: relative;
+}
+
+#intro {
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+  z-index: 1;
+}
+#intro .darkTheme {
+  background-color: #202124 !important;
+}
+#intro .darkTheme .hexagonGrid {
+  background-color: #202124;
+}
+#intro .darkTheme .hexagon {
+  background-color: #202124;
+}
+#intro .darkTheme .hexagon::after {
+  border-top: 28.87px solid #202124;
+}
+#intro .darkTheme .hexagon::before {
+  border-bottom: 28.87px solid #202124;
+}
+#intro .darkTheme .nodejs {
+  background-image: url("./images/hexagon/nodejs_logo_dark.png");
+}
+#intro .darkTheme .html_css_js {
+  background-image: url("./images/hexagon/html_css_js_logo_dark.png");
+}
+#intro .darkTheme .next {
+  background-image: url("./images/hexagon/next_logo_dark.png");
+}
+#intro .darkTheme .express {
+  background-image: url("./images/hexagon/express_logo_dark.webp");
+}
+#intro .darkTheme .git {
+  background-image: url("./images/hexagon/git_logo_dark.png");
+}
+#intro .darkTheme .ccp {
+  background-image: url("./images/hexagon/ccp_dark.png");
+}
+#intro .darkTheme .saa {
+  background-image: url("./images/hexagon/saa_dark.png");
+}
+#intro h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 6vh;
+}
+#intro p {
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  text-align: justify;
+  display: inline-block;
+}
+#intro p #typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.3em solid #000000;
+  vertical-align: bottom;
+  animation: typing 5s steps(16) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 7em;
+  }
+}
+
+.hexagonGrid {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.hexagonGrid #cursor {
+  border: #000000 solid 2px;
+  width: 60%;
+  height: 60%;
+  border-radius: 100%;
+  position: absolute;
+  margin: 10% 15%;
+  box-shadow: 2px -3px 41px -1px rgba(241, 196, 15, 0.64);
+  z-index: 0;
+  background: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #3795BD, #254a5d);
+  background-size: 400%;
+  animation: glower 60s linear infinite;
+  filter: blur(40px);
+}
+@keyframes glower {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.hexagonGrid .row {
+  display: block;
+  width: 100%;
+  height: 125px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -35px;
+  margin-left: -33px;
+}
+.hexagonGrid .row .hexagon {
+  position: relative;
+  width: 100px;
+  height: 57.74px;
+  background-color: #ffffff;
+  margin: 32.87px 2px;
+  display: block;
+  transition: all 0.2s linear;
+  padding: 0;
+}
+.hexagonGrid .row .hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  top: 100%;
+  width: 0;
+  border-top: 28.87px solid #ffffff;
+}
+.hexagonGrid .row .hexagon::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  bottom: 100%;
+  border-bottom: 28.87px solid #ffffff;
+}
+.hexagonGrid .row.row-moved {
+  margin-left: 19px;
+}
+.hexagonGrid .row .nodejs {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/nodejs_logo_light.png");
+}
+.hexagonGrid .row .react {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/react_logo.png");
+}
+.hexagonGrid .row .mongodb {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/mongodb_logo.png");
+}
+.hexagonGrid .row .html_css_js {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/html_css_js_logo_light.png");
+}
+.hexagonGrid .row .bootstrap {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/bootstrap_logo.png");
+}
+.hexagonGrid .row .mysql {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/mysql_logo.png");
+}
+.hexagonGrid .row .sass {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/sass_logo.png");
+}
+.hexagonGrid .row .typescript {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/ts_logo.png");
+}
+.hexagonGrid .row .git {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/git_logo_light.png");
+}
+.hexagonGrid .row .express {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/express_logo_light.webp");
+}
+.hexagonGrid .row .next {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/next_logo_light.png");
+}
+.hexagonGrid .row .ccp {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/ccp_light.png");
+}
+.hexagonGrid .row .saa {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/saa_light.png");
+}
+
+.default_light {
+  background: #A7A1FF !important;
+  opacity: 0.5 !important;
+}
+.default_light::after {
+  border-top: 28.87px solid #A7A1FF !important;
+}
+.default_light::before {
+  border-bottom: 28.87px solid #A7A1FF !important;
+}
+
+.default_dark {
+  background: #202124 !important;
+  opacity: 0.5 !important;
+}
+.default_dark::after {
+  border-top: 28.87px solid #202124 !important;
+}
+.default_dark::before {
+  border-bottom: 28.87px solid #202124 !important;
+}
+
+.introText {
+  background-color: #202124 #202124;
+  position: absolute;
+  margin-left: 51%;
+  padding-top: 6rem;
+  overflow: visible;
+  z-index: 3;
+}
+
+@media (max-width: 1300px) {
+  .introText {
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 0;
+    margin-bottom: 20vh;
+  }
 }

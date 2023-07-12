@@ -46,6 +46,7 @@
   #intro {
     .darkTheme {
       @include darkTheme;
+     
     }
     #typing {
       border-right: 0.3em solid #ffffff;
@@ -80,6 +81,7 @@
       }
     }
   }
+  
   #backToTopBtn {
     background-color: $darkTheme_bg_color;
   }

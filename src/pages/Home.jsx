@@ -4,6 +4,8 @@ import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Introduction from "../layout/Introduction";
 import Qualifications from "../layout/Qualifications";
+import Introduction2 from "../layout/Introduction2";
+
 // import Projects from "../layout/Projects";
 // import BackToTopBtn from "../components/BackToTopBtn";
 
@@ -17,10 +19,10 @@ function Home() {
 
 
   return (
-    <>
+    <div >
       <textColorContext.Provider value={"text-light"}>
           <Header />
-          <Introduction />
+          <Introduction2 />
           <Qualifications />
 
           <Suspense fallback={<div>Loading...</div>}>
@@ -30,7 +32,7 @@ function Home() {
           <Footer />
           {/* <BackToTopBtn/> */}
       </textColorContext.Provider>
-    </>
+    </div>
   );
 }
 

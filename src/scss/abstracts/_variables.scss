@@ -7,6 +7,10 @@ $darkTheme_bg_color: #202124;
 $darkTheme_bg_color2: #383838;
 $purpleInDark: #A7A1FF;
 $greyShade_bg:rgb(230, 230, 230);
+$hexagonColorLight:$whiteColor ;
+$hexagonColorDark:$darkTheme_bg_color;
+$default_light:$purpleInDark;
+$default_dark:$darkTheme_bg_color;
 
 
 $primaryFont: "Roboto";
@@ -18,7 +22,7 @@ $titleFontWeight: 800;
 $titleFontSize: 3.5rem;
 $fullWidth: 100vw;
 $fullHeight: 100vh;
-$margin-y: 20vh;
+$margin-y: 30vh;
 $margin-y-title-content: 6vh;
 
 @mixin flexbox() {
@@ -62,6 +66,16 @@ $margin-y-title-content: 6vh;
   text-align: center;
 
 }
+
+
+@mixin hexagonStyle(){
+  background-repeat: no-repeat;
+      background-size: contain;
+      background-position-x: center;
+       transition: opacity ease-out 1s;
+}
+
+
 
 @mixin animatedButton(){
 
