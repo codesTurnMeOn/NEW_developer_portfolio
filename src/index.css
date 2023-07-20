@@ -192,7 +192,7 @@ body a {
 * a:hover,
 html a:hover,
 body a:hover {
-  color: #A7A1FF;
+  color: #a7a1ff;
 }
 
 ::-webkit-scrollbar {
@@ -405,17 +405,18 @@ body a:hover {
   position: relative;
   height: 3rem;
   padding: 0 1rem;
-  border: 2px solid #5A7785;
-  background: #F8F8F8;
+  border: 2px solid #5a7785;
+  background: #f8f8f8;
   user-select: none;
   white-space: nowrap;
   transition: all 0.05s linear;
   font-family: inherit;
 }
-#projects .container .card a button:before, #projects .container .card a button:after {
+#projects .container .card a button:before,
+#projects .container .card a button:after {
   content: "";
   position: absolute;
-  background: #F8F8F8;
+  background: #f8f8f8;
   transition: all 0.2s linear;
 }
 #projects .container .card a button:before {
@@ -569,7 +570,7 @@ body a:hover {
   font-family: "Roboto";
   font-size: 1.1rem;
   text-align: center;
-  background-color: #A7A1FF;
+  background-color: #a7a1ff;
 }
 
 #backToTopBtn {
@@ -619,17 +620,18 @@ body a:hover {
   position: relative;
   height: 3rem;
   padding: 0 1rem;
-  border: 2px solid #5A7785;
-  background: #F8F8F8;
+  border: 2px solid #5a7785;
+  background: #f8f8f8;
   user-select: none;
   white-space: nowrap;
   transition: all 0.05s linear;
   font-family: inherit;
 }
-#contact .d-flex a button:before, #contact .d-flex a button:after {
+#contact .d-flex a button:before,
+#contact .d-flex a button:after {
   content: "";
   position: absolute;
-  background: #F8F8F8;
+  background: #f8f8f8;
   transition: all 0.2s linear;
 }
 #contact .d-flex a button:before {
@@ -752,7 +754,7 @@ body a:hover {
   margin: 10% 15%;
   box-shadow: 2px -3px 41px -1px rgba(241, 196, 15, 0.64);
   z-index: 0;
-  background: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #3795BD, #254a5d);
+  background: linear-gradient(45deg, #e8f74d, rgba(255, 102, 0, 0.8509803922), #ad27ad, #bd2681, #6512b9, rgba(255, 51, 0, 0.8705882353), #3795bd, #254a5d);
   background-size: 400%;
   animation: glower 60s linear infinite;
   filter: blur(40px);
@@ -819,6 +821,13 @@ body a:hover {
   transition: opacity ease-out 1s;
   background-image: url("./images/hexagon/nodejs_logo_light.png");
 }
+.hexagonGrid .row .svelte {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/svelte_logo.png");
+}
 .hexagonGrid .row .react {
   background-repeat: no-repeat;
   background-size: contain;
@@ -868,6 +877,20 @@ body a:hover {
   transition: opacity ease-out 1s;
   background-image: url("./images/hexagon/ts_logo.png");
 }
+.hexagonGrid .row .graphql {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/graphql_logo.png");
+}
+.hexagonGrid .row .docker {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-out 1s;
+  background-image: url("./images/hexagon/docker_logo.png");
+}
 .hexagonGrid .row .git {
   background-repeat: no-repeat;
   background-size: contain;
@@ -905,14 +928,14 @@ body a:hover {
 }
 
 .default_light {
-  background: #A7A1FF !important;
+  background: #a7a1ff !important;
   opacity: 0.5 !important;
 }
 .default_light::after {
-  border-top: 28.87px solid #A7A1FF !important;
+  border-top: 28.87px solid #a7a1ff !important;
 }
 .default_light::before {
-  border-bottom: 28.87px solid #A7A1FF !important;
+  border-bottom: 28.87px solid #a7a1ff !important;
 }
 
 .default_dark {

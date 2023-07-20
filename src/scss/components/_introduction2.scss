@@ -205,6 +205,11 @@
 
       // background-color: yellow !important;
     }
+
+    .svelte {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/svelte_logo.png");
+    }
     .react {
       @include hexagonStyle;
       background-image: url("./images/hexagon/react_logo.png");
@@ -235,6 +240,15 @@
       @include hexagonStyle;
       background-image: url("./images/hexagon/ts_logo.png");
     }
+ .graphql {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/graphql_logo.png");
+    }
+    .docker {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/docker_logo.png");
+    }
+
     .git {
       @include hexagonStyle;
       background-image: url("./images/hexagon/git_logo_light.png");
@@ -355,3 +369,8 @@
     }
   }
 }
+
+
+
+
+

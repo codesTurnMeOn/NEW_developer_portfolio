@@ -5,6 +5,8 @@ import frontend_graphic from "../images/frontend_graphic.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { ThemeContext } from "../App";
+import Balancer from "react-wrap-balancer";
+import TechStack from "./TechStack";
 
 function Introduction2() {
   const themeContext = useContext(ThemeContext);
@@ -63,7 +65,16 @@ function Introduction2() {
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
-                  <div class="hexagon"></div>
+                  <div
+                    className={`hexagon nodejs ${
+                      themeContext.theme === "light"
+                        ? "default_light"
+                        : "default_dark"
+                    }`}
+                    onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    style={{ opacity: showBackground ? 1 : 0 }}
+                  ></div>
+
                   <div
                     className={`hexagon html_css_js ${
                       themeContext.theme === "light"
@@ -94,7 +105,7 @@ function Introduction2() {
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div
-                    className={`hexagon nodejs ${
+                    className={`hexagon svelte ${
                       themeContext.theme === "light"
                         ? "default_light"
                         : "default_dark"
@@ -226,7 +237,15 @@ function Introduction2() {
                     onMouseEnter={(e) => handleMouseEnter(e.target)}
                     style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
-                  <div class="hexagon"></div>
+                  <div
+                    className={`hexagon graphql ${
+                      themeContext.theme === "light"
+                        ? "default_light"
+                        : "default_dark"
+                    }`}
+                    onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    style={{ opacity: showBackground ? 1 : 0 }}
+                  ></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
@@ -246,7 +265,15 @@ function Introduction2() {
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
-                  <div class="hexagon"></div>
+                  <div
+                    className={`hexagon docker ${
+                      themeContext.theme === "light"
+                        ? "default_light"
+                        : "default_dark"
+                    }`}
+                    onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    style={{ opacity: showBackground ? 1 : 0 }}
+                  ></div>
                   <div
                     className={`hexagon git ${
                       themeContext.theme === "light"
@@ -275,20 +302,30 @@ function Introduction2() {
             <Col xs={12} sm={12} md={12} lg={12} xl={4} className="introText">
               <Card.Body>
                 <Card.Text>
-                  <p>
-                    Hi there, I'm a junior full-stack web developer based in
-                    Melbourne. After 9 years working in the
-                    bathroomware/kitchenware supplies industry, I decided to
-                    return to web development area where I started with a
-                    cerfificate IV in web design back in 2013. I am currently
-                    studying Diploma of IT, specializing in front and back-end
-                    web development at Holmesglen Institute.
-                  </p>
-
-                  <p>
-                    As the ever-evolving field of web, my stack will be
-                    constantly building and <span>expanding......</span>
-                  </p>
+                  <Balancer>
+                    <p>
+                      {" "}
+                      I'm a budget traveller, a dog person and full-stack web
+                      developer based in Melbourne Australia. I love building
+                      things on web and always embrace changes.
+                    </p>{" "}
+                    <p>
+                      After 9 years working in the bathroomware/kitchenware
+                      supplies industry, I decided to return to web development
+                      area where I started with a certificate IV in web design.
+                    </p>
+                    <p>
+                      I am specialized in front-end, back-end and in between web
+                      dev. Here are the technologies I was currently working
+                      with:
+                    </p>
+                    {/* <span>
+                      ["HTML","CSS","Javascript",node.js","Svelte.js","React.js","Express.js",
+                      "Next.js","MongoDB","MySQL","Bootstrap0","Sass","Typescript","GraphQL","Docker","Git"]
+                    </span> */}
+                    <TechStack />
+                  
+                  </Balancer>
                 </Card.Text>
               </Card.Body>
             </Col>
