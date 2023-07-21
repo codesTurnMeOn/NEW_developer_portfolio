@@ -4,6 +4,7 @@ import Saddler from "../portfolios/Saddler";
 import Choice from "../portfolios/Choice";
 import Sylinn from "../portfolios/Sylinn";
 import FoodRanger from "../portfolios/FoodRanger";
+import NutsNews from "../portfolios/NutsNews";
 
 export default function Projects() {
 
@@ -28,6 +29,13 @@ export default function Projects() {
   return (
     <div id="projects" ref={projectsRef}>
       <h1>Projects</h1>
+{/* Nuts News */}
+<NutsNews/>
+      {/* FOOD RANGER.CO */}
+      <FoodRanger />
+      {/* SLINN BATHROOMS */}
+      <Sylinn />
+
       {/* MURES */}
       <Mures />
 
@@ -36,12 +44,6 @@ export default function Projects() {
 
       {/* CHOICE BATHROOMS */}
       <Choice />
-
-      {/* SLINN BATHROOMS */}
-      <Sylinn />
-
-      {/* FOOD RANGER.CO */}
-      <FoodRanger />
     </div>
   );
 }

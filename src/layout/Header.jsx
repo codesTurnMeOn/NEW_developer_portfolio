@@ -49,7 +49,9 @@ export default function Header(props) {
         <div id="title" className="position-relative">
           <div class="text">
             <img src={selfie} height="auto" alt="selfie" />
-            <span>Hi, I'm Lei</span>
+            <span >
+            Hi, I'm Lei
+            </span>
           </div>
           <div class="text2">
             <img src={text2} alt="I MAKE WEBSITES" className="img-fluid" />

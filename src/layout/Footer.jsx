@@ -17,7 +17,7 @@ function Footer() {
           <Row>
             <Col>
               <div className="footerSlogan">
-                Your idea, My inspiration.
+                Your Need, My Inspiration.
                 <img src={lei_logo} alt="Lei logo" />
               </div>
             </Col>
