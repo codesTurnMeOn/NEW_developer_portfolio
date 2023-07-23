@@ -2,7 +2,7 @@
 
 #intro {
   margin-top: $margin-y;
-  margin-bottom: $margin-y;
+  margin-bottom: $margin-y+5;
   // display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@
 
   p {
     font-family: $primaryFont;
-    font-size: $primaryFontSize + 0.3rem;
+    font-size: $primaryFontSize + 0.2rem;
     text-align: justify;
     display: inline-block;
 
@@ -302,9 +302,10 @@
   position: absolute;
   // margin-top: 0;
   margin-left: 51%;
-  padding-top: 6rem;
+  padding-top: 1rem;
   overflow: visible;
   z-index: 3;
+ 
 }
 
 @media (max-width: 1300px) {

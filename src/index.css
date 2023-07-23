@@ -401,6 +401,10 @@ body a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+#projects .container .card .card-slider {
+  height: 80vh;
+  overflow: hidden;
+}
 #projects .container .card a button {
   position: relative;
   height: 3rem;
@@ -665,7 +669,7 @@ body a:hover {
 
 #intro {
   margin-top: 30vh;
-  margin-bottom: 30vh;
+  margin-bottom: 35vh;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -717,7 +721,7 @@ body a:hover {
 }
 #intro p {
   font-family: "Roboto";
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: justify;
   display: inline-block;
 }
@@ -953,7 +957,7 @@ body a:hover {
   background-color: #202124 #202124;
   position: absolute;
   margin-left: 51%;
-  padding-top: 6rem;
+  padding-top: 1rem;
   overflow: visible;
   z-index: 3;
 }

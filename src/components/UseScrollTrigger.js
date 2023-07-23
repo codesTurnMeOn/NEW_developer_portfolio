@@ -14,8 +14,8 @@ function UseScrollTrigger(ref) {
       ease: "easeInOut",
       scrollTrigger: {
         trigger: ref.current,
-        start: "top 80%",
-        end: "bottom 20%",
+        start: "top 70%",
+        end: "bottom 30%",
         toggleActions: "play none none reverse",
         once: false,
         onEnter: () => {

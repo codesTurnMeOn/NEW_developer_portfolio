@@ -22,6 +22,12 @@
     }
 
     .card {
+
+
+      .card-slider {
+        height: 80vh;
+        overflow: hidden;
+      }
       a {
         @include animatedButton;
       }

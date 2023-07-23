@@ -65,7 +65,7 @@ function Saddler() {
               rel="noreferrer"
             >
               <button>
-                <span>View Detail</span>
+                <span>Live Site</span>
               </button>
             </a>
           </Card.Header>

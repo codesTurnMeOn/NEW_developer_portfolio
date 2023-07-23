@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import frontend_graphic from "../images/frontend_graphic.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { ThemeContext } from "../App";
@@ -305,26 +304,24 @@ function Introduction2() {
                   <Balancer>
                     <p>
                       {" "}
-                      I'm a budget traveller, a dog person and full-stack web
-                      developer based in Melbourne Australia. I love building
-                      things on web and always embrace changes.
+                      I'm a budget traveler, a dog person, and a passionate
+                      full-stack web developer based in Melbourne. I have a
+                      profound love for building things on the web and always
+                      embrace positive changes.
                     </p>{" "}
                     <p>
-                      After 9 years working in the bathroomware/kitchenware
-                      supplies industry, I decided to return to web development
-                      area where I started with a certificate IV in web design.
+                      After gaining 9 years of valuable experience in the
+                      bathroomware supplies industry, I made the decision to
+                      return to my roots in web development, starting with a
+                      certificate IV in web design.
                     </p>
                     <p>
-                      I am specialized in front-end, back-end and in between web
-                      dev. Here are the technologies I was currently working
-                      with:
+                      I specialize in front-end web dev and back-end with the help of Node stack and have
+                      expertise in a wide range of technologies. Here are the
+                      technologies I am currently working with:
                     </p>
-                    {/* <span>
-                      ["HTML","CSS","Javascript",node.js","Svelte.js","React.js","Express.js",
-                      "Next.js","MongoDB","MySQL","Bootstrap0","Sass","Typescript","GraphQL","Docker","Git"]
-                    </span> */}
+                    
                     <TechStack />
-                  
                   </Balancer>
                 </Card.Text>
               </Card.Body>
