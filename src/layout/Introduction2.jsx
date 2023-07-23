@@ -1,34 +1,35 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { ThemeContext } from "../App";
-import Balancer from "react-wrap-balancer";
 import TechStack from "./TechStack";
 
 function Introduction2() {
   const themeContext = useContext(ThemeContext);
 
-  // const [showCursor, setShowCursor] = useState(false);
-  const [showBackground, setShowBackground] = useState(false);
+  const handleSetBackGround = () => {
+    const hexagons = document.querySelectorAll(".hexagon");
 
-  // shower background image when hovering over
-  const handleMouseEnter = (target) => {
-    console.log("target is ", target);
-    // replace default background with individual background of skill image
-    if (target.classList.contains("default_light")) {
-      target.classList.remove("default_light");
-    } else if (target.classList.contains("default_dark")) {
-      target.classList.remove("default_dark");
-    } else return;
-    target.style.opacity = 1;
+    for (let i = 0; i < hexagons.length; i++) {
+      if (hexagons[i].classList.contains("default_light")) {
+        hexagons[i].classList.remove("default_light");
+      } else if (hexagons[i].classList.contains("default_dark")) {
+        hexagons[i].classList.remove("default_dark");
+      }
+      hexagons[i].style.opacity = 1;
+    }
   };
 
-  console.log("showBackground is set to:", showBackground);
+  //set a delay timer to show skill background
+  const setTimer = function () {
+    setTimeout(handleSetBackGround, 2000);
+    return () => clearTimeout(setTimer);
+  };
 
   return (
-    <div id="intro">
+    <div id="intro" onMouseMove={setTimer}>
       <Container fluid>
         <h1>Introduction</h1>
         <div className={themeContext.theme === "light" ? "" : "darkTheme"}>
@@ -70,8 +71,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
 
                   <div
@@ -80,8 +81,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
@@ -109,8 +110,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon react ${
@@ -118,8 +119,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon express ${
@@ -127,8 +128,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon next ${
@@ -136,8 +137,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
@@ -162,8 +163,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon bootstrap ${
@@ -171,8 +172,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon sass ${
@@ -180,8 +181,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon ccp ${
@@ -189,8 +190,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon saa ${
@@ -198,8 +199,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
@@ -224,8 +225,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon typescript ${
@@ -233,8 +234,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon graphql ${
@@ -242,8 +243,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
@@ -270,8 +271,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div
                     className={`hexagon git ${
@@ -279,8 +280,8 @@ function Introduction2() {
                         ? "default_light"
                         : "default_dark"
                     }`}
-                    onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    style={{ opacity: showBackground ? 1 : 0 }}
+                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
+                    // style={{ opacity: showBackground ? 1 : 0 }}
                   ></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
@@ -301,28 +302,28 @@ function Introduction2() {
             <Col xs={12} sm={12} md={12} lg={12} xl={4} className="introText">
               <Card.Body>
                 <Card.Text>
-                  <Balancer>
-                    <p>
-                      {" "}
-                      I'm a budget traveler, a dog person, and a passionate
-                      full-stack web developer based in Melbourne. I have a
-                      profound love for building things on the web and always
-                      embrace positive changes.
-                    </p>{" "}
-                    <p>
-                      After gaining 9 years of valuable experience in the
-                      bathroomware supplies industry, I made the decision to
-                      return to my roots in web development, starting with a
-                      certificate IV in web design.
-                    </p>
-                    <p>
-                      I specialize in front-end web dev and back-end with the help of Node stack and have
-                      expertise in a wide range of technologies. Here are the
-                      technologies I am currently working with:
-                    </p>
-                    
-                    <TechStack />
-                  </Balancer>
+                  {/* <Balancer> */}
+                  <p>
+                    {" "}
+                    I'm a budget traveler, a dog person, and a passionate
+                    full-stack web developer based in Melbourne. I have a
+                    profound love for building things on the web and always
+                    embrace positive changes.
+                  </p>{" "}
+                  <p>
+                    After gaining 9 years of valuable experience in the
+                    bathroomware supplies industry, I made the decision to
+                    return to my roots in web development, starting with a
+                    certificate IV in web design.
+                  </p>
+                  <p>
+                    I specialize in front-end web dev and back-end with the help
+                    of Node stack and have expertise in a wide range of
+                    technologies. Here are the technologies I am currently
+                    working with:
+                  </p>
+                  <TechStack />
+                  {/* </Balancer> */}
                 </Card.Text>
               </Card.Body>
             </Col>

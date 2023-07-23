@@ -466,7 +466,7 @@ body a:hover {
   color: #254a5d;
   font-size: 5vw;
   position: absolute;
-  top: 30rem;
+  top: 35vh;
   background: transparent;
   border: none;
 }
@@ -667,6 +667,23 @@ body a:hover {
   position: relative;
 }
 
+#typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.3em solid #000000;
+  vertical-align: bottom;
+  animation: typing 5s steps(5) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 7em;
+  }
+}
+
 #intro {
   margin-top: 30vh;
   margin-bottom: 35vh;
@@ -793,7 +810,7 @@ body a:hover {
   background-color: #ffffff;
   margin: 32.87px 2px;
   display: block;
-  transition: all 0.2s linear;
+  transition: all 3s ease-in-out;
   padding: 0;
 }
 .hexagonGrid .row .hexagon::after {
@@ -822,112 +839,112 @@ body a:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/nodejs_logo_light.png");
 }
 .hexagonGrid .row .svelte {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/svelte_logo.png");
 }
 .hexagonGrid .row .react {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/react_logo.png");
 }
 .hexagonGrid .row .mongodb {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/mongodb_logo.png");
 }
 .hexagonGrid .row .html_css_js {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/html_css_js_logo_light.png");
 }
 .hexagonGrid .row .bootstrap {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/bootstrap_logo.png");
 }
 .hexagonGrid .row .mysql {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/mysql_logo.png");
 }
 .hexagonGrid .row .sass {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/sass_logo.png");
 }
 .hexagonGrid .row .typescript {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/ts_logo.png");
 }
 .hexagonGrid .row .graphql {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/graphql_logo.png");
 }
 .hexagonGrid .row .docker {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/docker_logo.png");
 }
 .hexagonGrid .row .git {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/git_logo_light.png");
 }
 .hexagonGrid .row .express {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/express_logo_light.webp");
 }
 .hexagonGrid .row .next {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/next_logo_light.png");
 }
 .hexagonGrid .row .ccp {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/ccp_light.png");
 }
 .hexagonGrid .row .saa {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/saa_light.png");
 }
 

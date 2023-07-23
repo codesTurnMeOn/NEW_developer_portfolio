@@ -66,7 +66,7 @@ $margin-y-title-content: 6vh;
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
-  transition: opacity ease-out 1s;
+  transition: opacity ease-in 3s;
 }
 
 @mixin animatedButton() {

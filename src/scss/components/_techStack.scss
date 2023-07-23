@@ -1,0 +1,19 @@
+@use "../abstracts/index" as *;
+
+//// for text typing effect
+#typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.3em solid #000000;
+  vertical-align: bottom;
+  animation: typing 5s steps(5) infinite;
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 7em;
+    }
+  }
+}

@@ -72,6 +72,8 @@ function TechStack() {
           <span style={textStyle}>"MongoDB"</span>
           <span style={textStyle}>, </span>
           <span style={textStyle}>"MySQL"</span>
+          <span style={textStyle}>, </span>
+          <span style={textStyle}>"Docker"</span>
           {"]"}
           <br />
           {/* AWS category */}
@@ -84,7 +86,7 @@ function TechStack() {
           <br />
           <span style={categoryStyle}>{'"Graphic": '}</span>
           {"[ "}
-          <span style={textStyle}>"Photoshop"</span>
+          <span style={textStyle} id="typing">"Photoshop"</span>
           {" ]"}
           <br />
           <span style={bracketStyle}>{"}"}</span>
