@@ -19,6 +19,9 @@
   ._404text {
     color: black;
   }
+
+
+
 }
 
 /////////// #dark//////////////
@@ -46,11 +49,10 @@
   #intro {
     .darkTheme {
       @include darkTheme;
-     
+
+    
     }
-    #typing {
-      border-right: 0.3em solid #ffffff;
-    }
+    
   }
 
   #qualification {
@@ -65,24 +67,24 @@
       a button,
       button:before,
       button:after {
-        background-color:$darkTheme_bg_color2;
+        background-color: $darkTheme_bg_color2;
         color: #ffffff;
-      }
-    }}
-
-    #contact {
-    .d-flex{    
-        a button,
-        button:before,
-        button:after {
-          background-color:$darkTheme_bg_color;
-          color: #ffffff;
-        }
       }
     }
   }
-  
-  #backToTopBtn {
-    background-color: $darkTheme_bg_color;
-  }
 
+  #contact {
+    .d-flex {
+      a button,
+      button:before,
+      button:after {
+        background-color: $darkTheme_bg_color;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+#backToTopBtn {
+  background-color: $darkTheme_bg_color;
+}

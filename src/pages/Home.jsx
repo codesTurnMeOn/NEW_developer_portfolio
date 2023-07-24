@@ -2,7 +2,6 @@ import React,{createContext,lazy,Suspense} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
-import Introduction from "../layout/Introduction";
 import Qualifications from "../layout/Qualifications";
 import Introduction2 from "../layout/Introduction2";
 

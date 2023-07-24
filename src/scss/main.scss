@@ -3,7 +3,7 @@
 @use './base/base';
 @use './layout/footer';
 @use './layout/NavBar';
-@use './components/introduction';
+@use './components/introduction2';
 @use './components/qualification';
 @use './components/projects';
 @use './layout/app';
@@ -12,4 +12,3 @@
 @use './pages/contact';
 @use './components/techStack';
 
-@use './components/introduction2';

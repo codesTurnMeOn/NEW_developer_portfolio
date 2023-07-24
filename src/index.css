@@ -310,383 +310,7 @@ body a:hover {
 
 #intro {
   margin-top: 30vh;
-  margin-bottom: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#intro h1 {
-  font-family: "Plus Jakarta Sans";
-  font-size: 3.5rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 6vh;
-}
-#intro img {
-  overflow: hidden;
-  padding: 1rem;
-}
-#intro p {
-  font-family: "Roboto";
-  font-size: 1.4rem;
-  text-align: justify;
-  display: inline-block;
-}
-#intro p #typing {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 0.3em solid #000000;
-  vertical-align: bottom;
-  animation: typing 5s steps(16) infinite;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 7em;
-  }
-}
-
-#qualification {
-  margin-bottom: 30vh;
-  margin-top: 30vh;
-  /* target the Accordion.Item */
-}
-#qualification h1 {
-  font-family: "Plus Jakarta Sans";
-  font-size: 3.5rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 6vh;
-}
-#qualification .my-accordion {
-  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23ffffff%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
-  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill=%27white%27 fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
-}
-#qualification div {
-  /* target the Accordion header */
-}
-#qualification div button {
-  background-color: #254a5d;
-  color: white;
-}
-#qualification div .accordion-body {
-  background-color: rgb(230, 230, 230);
-}
-
-#projects {
-  margin-bottom: 30vh;
-  text-align: center;
-}
-#projects h1 {
-  font-family: "Plus Jakarta Sans";
-  font-size: 3.5rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 6vh;
-}
-#projects .container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30vh;
-}
-@media (max-width: 768px) {
-  #projects .container .container {
-    max-width: 100vw;
-  }
-}
-#projects .container .card {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-#projects .container .card .card-slider {
-  height: 80vh;
-  overflow: hidden;
-}
-#projects .container .card a button {
-  position: relative;
-  height: 3rem;
-  padding: 0 1rem;
-  border: 2px solid #5a7785;
-  background: #f8f8f8;
-  user-select: none;
-  white-space: nowrap;
-  transition: all 0.05s linear;
-  font-family: inherit;
-}
-#projects .container .card a button:before,
-#projects .container .card a button:after {
-  content: "";
-  position: absolute;
-  background: #f8f8f8;
-  transition: all 0.2s linear;
-}
-#projects .container .card a button:before {
-  width: calc(100% + 6px);
-  height: calc(100% - 16px);
-  top: 8px;
-  left: -3px;
-}
-#projects .container .card a button:after {
-  width: calc(100% - 16px);
-  height: calc(100% + 6px);
-  top: -3px;
-  left: 8px;
-}
-#projects .container .card a button:active {
-  transform: scale(0.95);
-}
-#projects .container .card a button:hover:before {
-  height: calc(100% - 32px);
-  top: 16px;
-}
-#projects .container .card a button:hover:after {
-  width: calc(100% - 32px);
-  left: 16px;
-}
-#projects .container .card a button span {
-  font-size: "Roboto";
-  z-index: 3;
-  position: relative;
-}
-#projects .container .card .w-75 {
-  padding: 1rem;
-  text-align: justify;
-}
-@media (max-width: 768px) {
-  #projects .container .card .w-75 {
-    width: 100vw;
-    padding: 0;
-  }
-}
-#projects .btn-prev,
-#projects .btn-next {
-  color: #254a5d;
-  font-size: 5vw;
-  position: absolute;
-  top: 35vh;
-  background: transparent;
-  border: none;
-}
-#projects .btn-prev:hover,
-#projects .btn-next:hover {
-  color: white;
-  background-color: #254a5d;
-}
-@media (max-width: 768px) {
-  #projects .btn-prev,
-  #projects .btn-next {
-    top: 9rem;
-    font-size: 10vw;
-  }
-}
-#projects .btn-prev {
-  left: 0;
-}
-#projects .btn-next {
-  right: 0;
-}
-
-#dark,
-#light {
-  max-width: 100vw;
-  height: auto;
-  overflow: hidden;
-}
-
-#light {
-  background-color: #ffffff;
-}
-#light .text-color {
-  color: black;
-}
-#light ._404text {
-  color: black;
-}
-
-#dark {
-  background-color: #202124;
-}
-#dark .text-color {
-  color: white;
-}
-#dark ._404text {
-  color: white;
-}
-#dark h1 {
-  color: white;
-}
-#dark #contact .darkTheme {
-  color: white;
-  background-color: #383838;
-}
-#dark #intro .darkTheme {
-  color: white;
-  background-color: #383838;
-}
-#dark #intro #typing {
-  border-right: 0.3em solid #ffffff;
-}
-#dark #qualification .darkTheme {
-  color: white;
-  background-color: #383838;
-}
-#dark #projects .card {
-  color: white;
-  background-color: #383838;
-}
-#dark #projects .card a button,
-#dark #projects .card button:before,
-#dark #projects .card button:after {
-  background-color: #383838;
-  color: #ffffff;
-}
-#dark #contact .d-flex a button,
-#dark #contact .d-flex button:before,
-#dark #contact .d-flex button:after {
-  background-color: #202124;
-  color: #ffffff;
-}
-
-#backToTopBtn {
-  background-color: #202124;
-}
-
-#_404container {
-  background-color: transparent;
-  background-image: url("../src/images/_404img.gif");
-  width: 100vw;
-  height: 80vh;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-._404text {
-  text-align: center;
-  font-family: "Roboto";
-  font-size: xx-large;
-  margin-bottom: 5vh;
-}
-._404text button {
-  color: white;
-  font-family: "Roboto";
-  font-size: 1.1rem;
-  text-align: center;
-  background-color: #a7a1ff;
-}
-
-#backToTopBtn {
-  width: 3rem;
-  height: 3rem;
-  background-color: #254a5d;
-  text-align: center;
-  position: fixed;
-  bottom: 20vh;
-  right: 0px;
-  display: none;
-  cursor: pointer;
-  z-index: 10;
-}
-#backToTopBtn img {
-  width: 100%;
-}
-#backToTopBtn img:hover {
-  content: url("./images/back_to_top2.png");
-}
-
-#contact {
-  font-family: inherit;
-  font-size: 1.1rem;
-}
-#contact button span {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-}
-#contact p {
-  font-family: "Roboto";
-  font-size: 1.1rem;
-  vertical-align: middle;
-}
-#contact .contact-pic {
-  width: 25vw;
-}
-#contact .contact-icon img {
-  width: 1.5rem;
-}
-#contact .d-flex a {
-  display: inline-block;
-  margin-top: 5rem;
-}
-#contact .d-flex a button {
-  position: relative;
-  height: 3rem;
-  padding: 0 1rem;
-  border: 2px solid #5a7785;
-  background: #f8f8f8;
-  user-select: none;
-  white-space: nowrap;
-  transition: all 0.05s linear;
-  font-family: inherit;
-}
-#contact .d-flex a button:before,
-#contact .d-flex a button:after {
-  content: "";
-  position: absolute;
-  background: #f8f8f8;
-  transition: all 0.2s linear;
-}
-#contact .d-flex a button:before {
-  width: calc(100% + 6px);
-  height: calc(100% - 16px);
-  top: 8px;
-  left: -3px;
-}
-#contact .d-flex a button:after {
-  width: calc(100% - 16px);
-  height: calc(100% + 6px);
-  top: -3px;
-  left: 8px;
-}
-#contact .d-flex a button:active {
-  transform: scale(0.95);
-}
-#contact .d-flex a button:hover:before {
-  height: calc(100% - 32px);
-  top: 16px;
-}
-#contact .d-flex a button:hover:after {
-  width: calc(100% - 32px);
-  left: 16px;
-}
-#contact .d-flex a button span {
-  font-size: "Roboto";
-  z-index: 3;
-  position: relative;
-}
-
-#typing {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 0.3em solid #000000;
-  vertical-align: bottom;
-  animation: typing 5s steps(5) infinite;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 7em;
-  }
-}
-
-#intro {
-  margin-top: 30vh;
-  margin-bottom: 35vh;
+  margin-bottom: 60vh;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -742,22 +366,6 @@ body a:hover {
   text-align: justify;
   display: inline-block;
 }
-#intro p #typing {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 0.3em solid #000000;
-  vertical-align: bottom;
-  animation: typing 5s steps(16) infinite;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 7em;
-  }
-}
 
 .hexagonGrid {
   width: 100%;
@@ -810,7 +418,6 @@ body a:hover {
   background-color: #ffffff;
   margin: 32.87px 2px;
   display: block;
-  transition: all 3s ease-in-out;
   padding: 0;
 }
 .hexagonGrid .row .hexagon::after {
@@ -1031,5 +638,386 @@ body a:hover {
     height: 60%;
     border-radius: 100%;
     position: absolute;
+  }
+}
+#qualification {
+  margin-bottom: 30vh;
+  margin-top: 30vh;
+  /* target the Accordion.Item */
+}
+#qualification h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 6vh;
+}
+#qualification .my-accordion {
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23ffffff%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill=%27white%27 fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
+}
+#qualification .holmesglen {
+  background-color: red;
+  background-image: url("./images/hg_logo.png");
+  background-position: 95% 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+}
+#qualification .holmesglen p {
+  width: 75%;
+}
+#qualification .oc {
+  background-image: url("./images/oc_logo.png");
+  background-position: 95% 90%;
+  background-repeat: no-repeat;
+  background-size: 23%;
+  background-blend-mode: overlay;
+}
+#qualification .oc p {
+  width: 75%;
+}
+#qualification .utas {
+  background-image: url("./images/utas_logo.png");
+  background-position: 95% 100%;
+  background-repeat: no-repeat;
+  background-size: 24%;
+  background-blend-mode: overlay;
+}
+#qualification .utas p {
+  width: 75%;
+}
+#qualification .sisu {
+  background-image: url("./images/sisu_logo.png");
+  background-position: 100% 90%;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-blend-mode: exclusion;
+}
+#qualification .sisu p {
+  width: 75%;
+}
+#qualification div {
+  /* target the Accordion header */
+}
+#qualification div button {
+  background-color: #254a5d;
+  color: white;
+}
+#qualification div .accordion-body {
+  background-color: rgba(230, 230, 230, 0.742);
+}
+
+#projects {
+  margin-bottom: 30vh;
+  text-align: center;
+}
+#projects h1 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 6vh;
+}
+#projects .container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30vh;
+}
+@media (max-width: 768px) {
+  #projects .container .container {
+    max-width: 100vw;
+  }
+}
+#projects .container .card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+#projects .container .card .card-slider {
+  height: 80vh;
+  overflow: hidden;
+}
+#projects .container .card a button {
+  position: relative;
+  height: 3rem;
+  padding: 0 1rem;
+  border: 2px solid #5a7785;
+  background: #f8f8f8;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.05s linear;
+  font-family: inherit;
+}
+#projects .container .card a button:before,
+#projects .container .card a button:after {
+  content: "";
+  position: absolute;
+  background: #f8f8f8;
+  transition: all 0.2s linear;
+}
+#projects .container .card a button:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+#projects .container .card a button:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+#projects .container .card a button:active {
+  transform: scale(0.95);
+}
+#projects .container .card a button:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+#projects .container .card a button:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+#projects .container .card a button span {
+  font-size: "Roboto";
+  z-index: 3;
+  position: relative;
+}
+#projects .container .card .w-75 {
+  padding: 1rem;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  #projects .container .card .w-75 {
+    width: 100vw;
+    padding: 0;
+  }
+}
+#projects .btn-prev,
+#projects .btn-next {
+  color: #254a5d;
+  font-size: 5vw;
+  position: absolute;
+  top: 35vh;
+  background: transparent;
+  border: none;
+}
+#projects .btn-prev:hover,
+#projects .btn-next:hover {
+  color: white;
+  background-color: #254a5d;
+}
+@media (max-width: 768px) {
+  #projects .btn-prev,
+  #projects .btn-next {
+    top: 9rem;
+    font-size: 10vw;
+  }
+}
+#projects .btn-prev {
+  left: 0;
+}
+#projects .btn-next {
+  right: 0;
+}
+
+#dark,
+#light {
+  max-width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+
+#light {
+  background-color: #ffffff;
+}
+#light .text-color {
+  color: black;
+}
+#light ._404text {
+  color: black;
+}
+
+#dark {
+  background-color: #202124;
+}
+#dark .text-color {
+  color: white;
+}
+#dark ._404text {
+  color: white;
+}
+#dark h1 {
+  color: white;
+}
+#dark #contact .darkTheme {
+  color: white;
+  background-color: #383838;
+}
+#dark #intro .darkTheme {
+  color: white;
+  background-color: #383838;
+}
+#dark #qualification .darkTheme {
+  color: white;
+  background-color: #383838;
+}
+#dark #projects .card {
+  color: white;
+  background-color: #383838;
+}
+#dark #projects .card a button,
+#dark #projects .card button:before,
+#dark #projects .card button:after {
+  background-color: #383838;
+  color: #ffffff;
+}
+#dark #contact .d-flex a button,
+#dark #contact .d-flex button:before,
+#dark #contact .d-flex button:after {
+  background-color: #202124;
+  color: #ffffff;
+}
+
+#backToTopBtn {
+  background-color: #202124;
+}
+
+#_404container {
+  background-color: transparent;
+  background-image: url("../src/images/_404img.gif");
+  width: 100vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+._404text {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: xx-large;
+  margin-bottom: 5vh;
+}
+._404text button {
+  color: white;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: #a7a1ff;
+}
+
+#backToTopBtn {
+  width: 3rem;
+  height: 3rem;
+  background-color: #254a5d;
+  text-align: center;
+  position: fixed;
+  bottom: 20vh;
+  right: 0px;
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+}
+#backToTopBtn img {
+  width: 100%;
+}
+#backToTopBtn img:hover {
+  content: url("./images/back_to_top2.png");
+}
+
+#contact {
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+#contact button span {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+#contact p {
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+#contact .contact-pic {
+  width: 25vw;
+}
+#contact .contact-icon img {
+  width: 1.5rem;
+}
+#contact .d-flex a {
+  display: inline-block;
+  margin-top: 5rem;
+}
+#contact .d-flex a button {
+  position: relative;
+  height: 3rem;
+  padding: 0 1rem;
+  border: 2px solid #5a7785;
+  background: #f8f8f8;
+  user-select: none;
+  white-space: nowrap;
+  transition: all 0.05s linear;
+  font-family: inherit;
+}
+#contact .d-flex a button:before,
+#contact .d-flex a button:after {
+  content: "";
+  position: absolute;
+  background: #f8f8f8;
+  transition: all 0.2s linear;
+}
+#contact .d-flex a button:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+#contact .d-flex a button:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+#contact .d-flex a button:active {
+  transform: scale(0.95);
+}
+#contact .d-flex a button:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+#contact .d-flex a button:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+#contact .d-flex a button span {
+  font-size: "Roboto";
+  z-index: 3;
+  position: relative;
+}
+
+.typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2em solid #ffffff;
+  vertical-align: bottom;
+  animation: typing 4s steps(8) none, blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0.77em;
+  }
+  to {
+    width: 5em;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: #202124;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
   }
 }

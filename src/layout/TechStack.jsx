@@ -1,13 +1,17 @@
 import React from "react";
 
-function TechStack() {
+function TechStack({ isLoaded }) {
+  // if (isLoaded === true) {
+  //   const typingElement = document.getElementById("typing");
+  //   // typingElement.style.animationPlayState = "running";
+  // } else return;
+
   const vsCodeOrange = "#d69d85";
   const vsCodePurple = "#a348a4";
   const vsCodeBlue = "#3992db";
-  const vsCodeGreen = "#4caf50"; 
+  const vsCodeGreen = "#4caf50";
 
   const codeThemeStyle = {
-  
     lineHeight: 1.6,
   };
 
@@ -86,7 +90,10 @@ function TechStack() {
           <br />
           <span style={categoryStyle}>{'"Graphic": '}</span>
           {"[ "}
-          <span style={textStyle} id="typing">"Photoshop"</span>
+          <span style={textStyle} className={isLoaded?"typing":""}>
+            {isLoaded?"Photoshop":""}
+          </span>
+
           {" ]"}
           <br />
           <span style={bracketStyle}>{"}"}</span>

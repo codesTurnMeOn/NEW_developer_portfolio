@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
@@ -8,8 +8,11 @@ import TechStack from "./TechStack";
 
 function Introduction2() {
   const themeContext = useContext(ThemeContext);
+  const [isLoaded,setIsLoaded]=useState(false)
 
   const handleSetBackGround = () => {
+
+
     const hexagons = document.querySelectorAll(".hexagon");
 
     for (let i = 0; i < hexagons.length; i++) {
@@ -24,8 +27,10 @@ function Introduction2() {
 
   //set a delay timer to show skill background
   const setTimer = function () {
+    setIsLoaded(true)
     setTimeout(handleSetBackGround, 2000);
     return () => clearTimeout(setTimer);
+    
   };
 
   return (
@@ -322,7 +327,7 @@ function Introduction2() {
                     technologies. Here are the technologies I am currently
                     working with:
                   </p>
-                  <TechStack />
+                  <TechStack isLoaded={isLoaded}/>
                   {/* </Balancer> */}
                 </Card.Text>
               </Card.Body>
