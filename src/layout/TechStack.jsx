@@ -58,6 +58,8 @@ function TechStack({ isLoaded }) {
           <span style={textStyle}>"Sass"</span>
           <span style={textStyle}>, </span>
           <span style={textStyle}>"Typescript"</span>
+          <span style={textStyle}>, </span>
+          <span style={textStyle}>"EJS"</span>
           {"]"}
           <br />
           <span style={categoryStyle}>{'"Back-end": '}</span>
@@ -76,9 +78,18 @@ function TechStack({ isLoaded }) {
           <span style={textStyle}>"MongoDB"</span>
           <span style={textStyle}>, </span>
           <span style={textStyle}>"MySQL"</span>
-          <span style={textStyle}>, </span>
-          <span style={textStyle}>"Docker"</span>
+
           {"]"}
+          <br />
+          {/* Dev Tools */}
+          <span style={categoryStyle}>{'"Dev Tools": '}</span>
+          {"[ "}
+          <span style={textStyle}>"Docker"</span>
+          <span style={textStyle}>, </span>
+          <span style={textStyle}>"Github"</span>
+          <span style={textStyle}>, </span>
+          <span style={textStyle}>"Vite"</span>
+          {" ]"}
           <br />
           {/* AWS category */}
           <span style={categoryStyle}>{'"AWS": '}</span>
@@ -90,8 +101,8 @@ function TechStack({ isLoaded }) {
           <br />
           <span style={categoryStyle}>{'"Graphic": '}</span>
           {"[ "}
-          <span style={textStyle} className={isLoaded?"typing":""}>
-            {isLoaded?"Photoshop":""}
+          <span style={textStyle} className={isLoaded ? "typing" : ""}>
+            {isLoaded ? "Photoshop" : ""}
           </span>
 
           {" ]"}

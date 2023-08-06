@@ -310,7 +310,7 @@ body a:hover {
 
 #intro {
   margin-top: 30vh;
-  margin-bottom: 60vh;
+  margin-bottom: 70vh;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -586,19 +586,38 @@ body a:hover {
   z-index: 3;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
+  #intro {
+    margin-top: 30vh;
+    margin-bottom: 100vh;
+  }
   .introText {
     position: relative;
     margin-top: 10vh;
     margin-left: 0;
     margin-bottom: 20vh;
   }
+  .hexagonGrid {
+    width: 150%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: -20%;
+  }
+  .hexagonGrid #cursor {
+    width: 60%;
+    height: 32%;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 20%;
+  }
 }
 /* 笔记本电脑 */
 @media screen and (max-width: 1199px) and (min-width: 768px) {
   /* 在宽度小于 1200px 且大于等于 992px 时应用的样式 */
   #intro {
-    margin-top: 50vh;
+    margin-top: 30vh;
+    margin-bottom: 120vh;
   }
   .hexagonGrid {
     width: 150%;
@@ -619,8 +638,8 @@ body a:hover {
 @media screen and (max-width: 767px) {
   /* 在宽度小于 768px 时应用的样式 */
   #intro {
-    margin-top: 80vh;
-    margin-bottom: 80vh;
+    margin-top: 30vh;
+    margin-bottom: 130vh;
     position: relative;
   }
   .hexagonGrid {

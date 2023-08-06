@@ -2,7 +2,7 @@
 
 #intro {
   margin-top: $margin-y;
-  margin-bottom: $margin-y + 30;
+  margin-bottom: $margin-y + 40;
   // display: flex;
   justify-content: center;
   align-items: center;
@@ -61,8 +61,6 @@
     font-size: $primaryFontSize + 0.2rem;
     text-align: justify;
     display: inline-block;
-
-
   }
 }
 
@@ -290,12 +288,30 @@
   z-index: 3;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
+  #intro {
+    margin-top: 30vh;
+    margin-bottom: 100vh;
+  }
   .introText {
     position: relative;
     margin-top: 10vh;
     margin-left: 0;
     margin-bottom: 20vh;
+  }
+  .hexagonGrid {
+    width: 150%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: -20%;
+    #cursor {
+      width: 60%;
+      height: 32%;
+      border-radius: 100%;
+      position: absolute;
+      margin-left: 20%;
+    }
   }
 }
 
@@ -303,7 +319,8 @@
 @media screen and (max-width: 1199px) and (min-width: 768px) {
   /* 在宽度小于 1200px 且大于等于 992px 时应用的样式 */
   #intro {
-    margin-top: 50vh;
+    margin-top: 30vh;
+    margin-bottom: 120vh;
   }
   .hexagonGrid {
     width: 150%;
@@ -330,8 +347,8 @@
 @media screen and (max-width: 767px) {
   /* 在宽度小于 768px 时应用的样式 */
   #intro {
-    margin-top: 80vh;
-    margin-bottom: 80vh;
+    margin-top: 30vh;
+    margin-bottom: 130vh;
     position: relative;
   }
   .hexagonGrid {

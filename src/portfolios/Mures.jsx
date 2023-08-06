@@ -18,7 +18,7 @@ function Mures() {
           <Card.Header>
             <Card.Title>
               <h4>
-                <i>Mures Tasminia, 2013</i>
+                <i>Mures Tasmania, 2013</i>
               </h4>{" "}
             </Card.Title>
             <Card.Text>
