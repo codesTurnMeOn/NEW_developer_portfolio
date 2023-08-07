@@ -195,16 +195,16 @@ body a:hover {
   color: #a7a1ff;
 }
 
-::-webkit-scrollbar {
-  width: 22px;
+*::-webkit-scrollbar {
+  width: 12px;
 }
 
-::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background-color: #223e4c;
 }
 
-::-webkit-scrollbar-track {
-  background-color: #ffffff;
+*::-webkit-scrollbar-track {
+  color: transparent;
 }
 
 #footer {
