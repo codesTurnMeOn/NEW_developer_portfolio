@@ -5,6 +5,12 @@
   max-width: 100vw;
   height: auto;
   overflow: hidden;
+
+.thumb-vertical{
+  background-color: rgba(112, 112, 112, 0.526);
+  width: 15px!important;
+  z-index: 0;
+}
 }
 
 /////////// #light//////////////
@@ -19,9 +25,6 @@
   ._404text {
     color: black;
   }
-
-
-
 }
 
 /////////// #dark//////////////
@@ -49,10 +52,7 @@
   #intro {
     .darkTheme {
       @include darkTheme;
-
-    
     }
-    
   }
 
   #qualification {

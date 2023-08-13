@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
-import particlesJS from "../../node_modules/particles.js/particles";
+import particlesJS from "../../node_modules/particles.js/particles"; //must be here
 import TsParticles from "../components/TsParticles";
 import selfie from "../images/selfie.png";
 import text2 from "../images/text2.png";
@@ -10,17 +10,6 @@ import { ThemeContext } from "../App";
 export default function Header(props) {
   const themeContext = useContext(ThemeContext);
 
-  const [scrollPos, setScrollPos] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPos(window.pageYOffset);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   // particale effect when loading
   useEffect(() => {
@@ -29,7 +18,8 @@ export default function Header(props) {
     window.particlesJS("particle", TsParticles);
   }, []);
 
-  // console.log("scrollPos IS", scrollPos);
+  console.log("themeContext.scrollTop in header is: ", themeContext.scrollTop);
+
   return (
     <div id="header_container">
       {" "}
@@ -49,16 +39,14 @@ export default function Header(props) {
         <div id="title" className="position-relative">
           <div class="text">
             <img src={selfie} height="auto" alt="selfie" />
-            <span >
-            Hi, I'm Lei
-            </span>
+            <span>Hi, I'm Lei</span>
           </div>
           <div class="text2">
             <img src={text2} alt="I MAKE WEBSITES" className="img-fluid" />
           </div>
         </div>
 
-        <div className={scrollPos > 150 ? "noShow" : "scrollIcon"}>
+        <div className={themeContext.scrollTop > 150 ? "noShow" : "scrollIcon"}>
           <i className="scroll"></i>
         </div>
       </Container>

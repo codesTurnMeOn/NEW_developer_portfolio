@@ -11,7 +11,7 @@ import UseScrollTrigger from "../components/UseScrollTrigger.js";
 //  iamges slider for project
 const images = [nutsnews1, nutsnews2, nutsnews3, nutsnews4];
 
-function Saddler() {
+function NutsNews() {
   //gsap/ScrollTrigger effect
   const ref = useRef(null);
 
@@ -75,4 +75,4 @@ function Saddler() {
   );
 }
 
-export default Saddler;
+export default NutsNews;

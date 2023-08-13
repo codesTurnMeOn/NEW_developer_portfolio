@@ -5,11 +5,12 @@ import Footer from "../layout/Footer";
 import Qualifications from "../layout/Qualifications";
 import Introduction2 from "../layout/Introduction2";
 
+
 export const textColorContext = createContext(null);
 
 const LazyProjects = lazy(() => import("../layout/Projects"));
 
-function Home() {
+function Home({ scrollTop }) {
   //use useContext hook to make nav text color light only in Home component
 
   return (

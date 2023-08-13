@@ -7,25 +7,20 @@ import ThemeToggler from "../components/ThemeToggler";
 import { textColorContext } from "../pages/Home";
 import back_to_top from "../images/back_to_top.png";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../App";
 
 export default function NavBar() {
   const textColor = useContext(textColorContext);
-
+  const themeContext = useContext(ThemeContext);
   //use scroll position to change Navbar background color
   const [scrollPos, setScrollPos] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollPos(window.pageYOffset);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    setScrollPos(themeContext.scrollTop);
+  }, [themeContext.scrollTop]);
 
   const handleClick = () => {
-    setScrollPos(window.pageYOffset + 1); //?
+    setScrollPos(themeContext.scrollTop + 1); //?
   };
 
   const handleNavClick = (anchorName) => {
@@ -143,7 +138,7 @@ export default function NavBar() {
         id="backToTopBtn"
         style={scrollPos > 1000 ? { display: "block" } : { display: "none" }}
       >
-        <a href="#header_container">
+        <a as={Link} href="#header_container">
           <img src={back_to_top} alt="back to top" />
         </a>
       </div>

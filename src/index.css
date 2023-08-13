@@ -195,18 +195,6 @@ body a:hover {
   color: #a7a1ff;
 }
 
-*::-webkit-scrollbar {
-  width: 12px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #223e4c;
-}
-
-*::-webkit-scrollbar-track {
-  color: transparent;
-}
-
 #footer {
   display: -webkit-box;
   display: -moz-box;
@@ -844,6 +832,12 @@ body a:hover {
   max-width: 100vw;
   height: auto;
   overflow: hidden;
+}
+#dark .thumb-vertical,
+#light .thumb-vertical {
+  background-color: rgba(112, 112, 112, 0.526);
+  width: 15px !important;
+  z-index: 0;
 }
 
 #light {
