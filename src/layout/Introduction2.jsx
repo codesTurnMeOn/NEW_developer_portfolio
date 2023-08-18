@@ -28,7 +28,7 @@ function Introduction2() {
   //set a delay timer to show skill background
   const setTimer = function () {
     setIsLoaded(true)
-    setTimeout(handleSetBackGround, 2000);
+    setTimeout(handleSetBackGround, 1000);
     return () => clearTimeout(setTimer);
     
   };
