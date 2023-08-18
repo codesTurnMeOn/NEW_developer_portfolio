@@ -88,7 +88,7 @@ function TechStack({ isLoaded }) {
           <span style={textStyle}>, </span>
           <span style={textStyle}>"Github"</span>
           <span style={textStyle}>, </span>
-          <span style={textStyle}>"Vite"</span>
+          <span style={textStyle}>"Dreamweaver"</span>
           {" ]"}
           <br />
           {/* AWS category */}

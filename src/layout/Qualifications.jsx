@@ -38,14 +38,25 @@ function Qualification() {
               <Accordion.Body className="darkTheme holmesglen ">
                 <p>
                   {" "}
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  I have acquired the skills to effectively work with a diverse
+                  range of technologies for rapid website prototyping and
+                  development. On the front end, I am proficient in React.js,
+                  JavaScript, object-oriented programming principles,
+                  asynchronous programming, TypeScript, unit testing, GIT,
+                  Node.js, NPM, SASS, HTML5, CSS3, responsive design, user
+                  interface and user experience design, as well as SEO and
+                  accessibility essentials.
+                  <br />
+                  On the back end, my expertise extends to Node.js for
+                  server-side scripting, utilizing NPM and Express.js. I am
+                  experienced in database design, encompassing MongoDB, MySQL,
+                  and Firebase, and can confidently design Restful APIs. I have
+                  basic knowledge of Docker, and proficiency in cloud deployment
+                  techniques as a certified AWS cloud practioner and Solutions
+                  Architect-Associate(to be acquired in Sept 2023). With this
+                  comprehensive skill set, I am well-equipped to contribute
+                  effectively to web development projects and ensure their
+                  successful execution across the web stack.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
@@ -54,13 +65,17 @@ function Qualification() {
                 Certificate IV of Design (Web Design)
               </Accordion.Header>
               <Accordion.Body className="darkTheme oc">
-               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p>
+                  Throughout my journey towards this certificate, I've attained
+                  expertise in a comprehensive range of skills vital to web
+                  design. These encompass Introduction to Web Design, HTML and
+                  CSS, Responsive Web Design, User Experience (UX) Design, Web
+                  Graphics and Visual Design, Typography, JavaScript
+                  Fundamentals, Web Development Tools, Web Design Principles,
+                  Usability and Accessibility, and more. This diverse skill set
+                  equips me to create impactful and user-centered web
+                  experiences.
+                </p>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
@@ -69,14 +84,17 @@ function Qualification() {
               </Accordion.Header>
               <Accordion.Body className="darkTheme utas">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  During my journey at UTAS, I have gained substantial knowledge
+                  in key areas. These include a comprehensive understanding of
+                  international business strategies, global market dynamics,
+                  cross-cultural management, international trade and finance, as
+                  well as supply chain management in a global context.
+                  Furthermore, I have honed analytical skills through case
+                  studies and real-world scenarios, enabling me to make informed
+                  decisions in complex international business environments. This
+                  program has equipped me with a solid foundation to navigate
+                  the intricacies of the global business landscape and
+                  contribute effectively to international business endeavors.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
@@ -85,13 +103,14 @@ function Qualification() {
                 Bachelor of Art (Trade and Marketing)
               </Accordion.Header>
               <Accordion.Body className="darkTheme sisu">
-               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>
+                  Studying Economics and English at the English Department of
+                  Economics and Trade at SISU, I've developed sharp analytical skills and gained
+                  insights into economic theories, international trade dynamics,
+                  and financial principles. This experience has enhanced my
+                  readiness for the complexities of the global business
+                  landscape.
+                </p>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

@@ -63,7 +63,7 @@ function UseScrollTrigger(ref) {
     };
   }, [ref.current]); //reset trigger when different component mount
 
-  console.log("trigger is", trigger);
+
 }
 
 export default UseScrollTrigger;
