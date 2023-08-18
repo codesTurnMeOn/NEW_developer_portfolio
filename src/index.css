@@ -925,13 +925,13 @@ body a:hover {
   right: 0px;
   display: none;
   cursor: pointer;
-  z-index: 10;
 }
 #backToTopBtn img {
   width: 100%;
 }
 #backToTopBtn img:hover {
   content: url("./images/back_to_top2.png");
+  background-color: none;
 }
 
 #contact {

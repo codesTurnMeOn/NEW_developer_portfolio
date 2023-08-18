@@ -10,12 +10,13 @@
   right: 0px;
   display: none;
   cursor: pointer;
-  z-index: 10;
+  // z-index: 10;
 
   img {
     width: 100%;
     &:hover {
       content: url("./images/back_to_top2.png");
+      background-color: none;
     }
   }
 }

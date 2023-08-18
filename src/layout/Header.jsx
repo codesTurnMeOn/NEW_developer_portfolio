@@ -18,7 +18,7 @@ export default function Header(props) {
     window.particlesJS("particle", TsParticles);
   }, []);
 
-  console.log("themeContext.scrollTop in header is: ", themeContext.scrollTop);
+  // console.log("themeContext.scrollTop in header is: ", themeContext.scrollTop);
 
   return (
     <div id="header_container">

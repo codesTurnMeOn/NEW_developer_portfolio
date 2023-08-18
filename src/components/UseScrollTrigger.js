@@ -62,7 +62,7 @@ function UseScrollTrigger(ref) {
     });
   }, [trigger]);
 
-  console.log("trigger is", trigger);
+  // console.log("trigger is", trigger);
 }
 
 export default UseScrollTrigger;

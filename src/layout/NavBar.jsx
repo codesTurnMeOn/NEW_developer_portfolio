@@ -5,7 +5,7 @@ import github from "../images/github.png";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import ThemeToggler from "../components/ThemeToggler";
 import { textColorContext } from "../pages/Home";
-import back_to_top from "../images/back_to_top.png";
+import back_to_top1 from "../images/back_to_top1.png";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../App";
 
@@ -139,7 +139,7 @@ export default function NavBar() {
         style={scrollPos > 1000 ? { display: "block" } : { display: "none" }}
       >
         <a as={Link} href="#header_container">
-          <img src={back_to_top} alt="back to top" />
+          <img src={back_to_top1} alt="back to top" />
         </a>
       </div>
     </>

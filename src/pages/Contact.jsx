@@ -42,10 +42,11 @@ function Contact() {
                 <i>— Henry Ford </i>
                 <p> The founder of Ford Motor</p>
               </p>
-              <a href="/resume.md" target="_blank" rel="noreferrer">
+              <a href="/CV__LeiWang.pdf" target="_blank" rel="noreferrer">
                 <button>
                   <span>
-                    <SlUser />Download My Resume
+                    <SlUser />
+                    Download My Resume
                   </span>
                 </button>
               </a>
