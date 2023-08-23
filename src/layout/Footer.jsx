@@ -16,9 +16,9 @@ function Footer() {
         <Container>
           <Row>
             <Col>
-              <div className="footerSlogan">
+              <div className="footerSlogan ">
                 Your Need, My Inspiration.
-                <img src={lei_logo} alt="Lei logo" />
+                <img src={lei_logo} alt="Lei logo" className="floating"/>
               </div>
             </Col>
           </Row>

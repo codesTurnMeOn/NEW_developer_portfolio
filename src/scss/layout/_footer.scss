@@ -28,41 +28,67 @@
     );
     margin: 0px;
     font-size: auto;
-    position: relative;
-    // lei_logo shake effect
-    &:hover img {
-      animation: shake 0.8s;
-    }
-    @keyframes shake {
-      10%,
-      90% {
-        transform: translate3d(-1px, 0, 0);
-      }
+    display: block;
 
-      20%,
-      80% {
-        transform: translate3d(2px, 0, 0);
-      }
+.floating {  
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, -10px); }
+    100%   { transform: translate(0, -0px); }    
+}
 
-      30%,
-      50%,
-      70% {
-        transform: translate3d(-4px, 0, 0);
-      }
 
-      40%,
-      60% {
-        transform: translate3d(4px, 0, 0);
-      }
-    }
+
+
+
+
+
+
+    // &:hover img {
+    //   animation: shake 0.8s;
+    // }
+    // @keyframes shake {
+    //   10%,
+    //   90% {
+    //     transform: translate3d(-1px, 0, 0);
+    //   }
+
+    //   20%,
+    //   80% {
+    //     transform: translate3d(2px, 0, 0);
+    //   }
+
+    //   30%,
+    //   50%,
+    //   70% {
+    //     transform: translate3d(-4px, 0, 0);
+    //   }
+
+    //   40%,
+    //   60% {
+    //     transform: translate3d(4px, 0, 0);
+    //   }
+    // }
   }
 
   img {
     width: 3rem;
     vertical-align: text-bottom;
-    margin-left: 1rem;
-  }
+    margin-left: 1rem; }
+        // lei_logo shake effect
+
+ 
 }
+
+
 
 @media (max-width: 768px) {
   #footer {

@@ -66,6 +66,8 @@ function TechStack({ isLoaded }) {
           {"["}
           <span style={textStyle}>"Node.js"</span>
           <span style={textStyle}>, </span>
+          <span style={textStyle}>"PHP"</span>
+          <span style={textStyle}>, </span>
           <span style={textStyle}>"Express.js"</span>
           <span style={textStyle}>, </span>
           <span style={textStyle}>"Next.js"</span>
@@ -77,8 +79,9 @@ function TechStack({ isLoaded }) {
           {"["}
           <span style={textStyle}>"MongoDB"</span>
           <span style={textStyle}>, </span>
-          <span style={textStyle}>"MySQL"</span>
-
+          <span style={textStyle}>"MySQL"</span>{" "}
+          <span style={textStyle}>, </span>
+          <span style={textStyle}>"Firestore"</span>
           {"]"}
           <br />
           {/* Dev Tools */}
@@ -104,7 +107,6 @@ function TechStack({ isLoaded }) {
           <span style={textStyle} className={isLoaded ? "typing" : ""}>
             {isLoaded ? "Photoshop" : ""}
           </span>
-
           {" ]"}
           <br />
           <span style={bracketStyle}>{"}"}</span>

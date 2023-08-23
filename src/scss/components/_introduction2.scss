@@ -34,6 +34,7 @@
     .html_css_js {
       background-image: url("./images/hexagon/html_css_js_logo_dark.png");
     }
+    
     .next {
       background-image: url("./images/hexagon/next_logo_dark.png");
     }
@@ -179,6 +180,8 @@
       margin-left: 19px;
     }
 
+
+      // Light mode
     .nodejs {
       @include hexagonStyle;
       // display: none ;
@@ -203,6 +206,10 @@
       @include hexagonStyle;
       background-image: url("./images/hexagon/html_css_js_logo_light.png");
     }
+     .php {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/php_logo.png");
+    }
     .bootstrap {
       @include hexagonStyle;
       background-image: url("./images/hexagon/bootstrap_logo.png");
@@ -224,6 +231,10 @@
     .graphql {
       @include hexagonStyle;
       background-image: url("./images/hexagon/graphql_logo.png");
+    }
+     .firestore {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/firestore_logo.png");
     }
     .docker {
       @include hexagonStyle;
