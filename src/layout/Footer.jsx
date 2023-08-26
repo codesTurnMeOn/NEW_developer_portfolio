@@ -4,7 +4,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import lei_logo from "../images/lei_logo.png";
 
-
 function Footer() {
   // Dynamic Date Function
   const getCurrentYear = () => {
@@ -17,8 +16,8 @@ function Footer() {
           <Row>
             <Col>
               <div className="footerSlogan ">
-                Your Need, My Inspiration.
-                <img src={lei_logo} alt="Lei logo" className="floating"/>
+                Your Idea, My Inspiration.
+                <img src={lei_logo} alt="Lei logo" className="floating" />
               </div>
             </Col>
           </Row>
@@ -28,7 +27,6 @@ function Footer() {
             </Col> */}
             <Col xs={12} className="footerRow2">
               {getCurrentYear()} &#169; LeisWebDev
-              
             </Col>
             {/* <Col xs={12} md={4}>
               <Link to="/*">future use</Link>

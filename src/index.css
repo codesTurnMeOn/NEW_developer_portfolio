@@ -235,11 +235,13 @@ body a:hover {
   display: block;
 }
 #footer .footerSlogan .floating {
+  position: absolute;
+  width: 120px;
   animation-name: floating;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-left: 0px;
+  margin-left: 1vw;
   margin-top: 0px;
 }
 @keyframes floating {

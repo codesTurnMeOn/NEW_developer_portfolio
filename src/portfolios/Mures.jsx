@@ -22,8 +22,7 @@ function Mures() {
               </h4>{" "}
             </Card.Title>
             <Card.Text>
-              This is a web desgin work for Cert IV of design, development tool
-              was photoshop.
+              This is a web desgin work for Cert IV of design, development tools used are Photoshop and Dreamweaver.
             </Card.Text>
             <Card.Text></Card.Text>
           </Card.Header>
