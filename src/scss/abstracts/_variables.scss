@@ -1,4 +1,4 @@
-$whiteColor: #f8f8f8;
+$whiteColor: #ECECEC;
 $primaryColor: #254a5d;
 $primaryColor2: #3795bd;
 $shadowColor: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
@@ -82,8 +82,8 @@ $margin-y-title-content: 6vh;
     position: relative;
     height: 3rem;
     padding: 0 1rem;
-    border: 2px solid #5a7785;
-    background: #f8f8f8;
+    border: 2px solid $primaryColor;
+    background: $whiteColor;
     user-select: none;
     white-space: nowrap;
     transition: all 0.05s linear;

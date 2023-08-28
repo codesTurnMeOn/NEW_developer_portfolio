@@ -15,7 +15,7 @@
 #header_container .scrollIcon {
   width: 30px;
   height: 50px;
-  border: 3px solid #f8f8f8;
+  border: 3px solid #ECECEC;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
 }
 #header_container .scrollIcon:after {
   content: "scroll down";
-  color: #f8f8f8;
+  color: #ECECEC;
   font-family: "Roboto";
   font-weight: 300;
   width: 100px;
@@ -37,7 +37,7 @@
   animation: scrollText 2s infinite;
 }
 #header_container i.scroll {
-  background: #f8f8f8;
+  background: #ECECEC;
   width: 6px;
   height: 14px;
   display: block;
@@ -117,7 +117,7 @@
   position: absolute;
   width: 50vw;
   background: linear-gradient(90deg, rgb(111, 54, 86) 0%, rgb(27, 56, 137) 50%, #0082b7 100%);
-  color: #f8f8f8;
+  color: #ECECEC;
   font-size: 6vw;
   font-weight: 800;
   width: 40%;
@@ -411,7 +411,7 @@ body a:hover {
   position: relative;
   width: 100px;
   height: 57.74px;
-  background-color: #f8f8f8;
+  background-color: #ECECEC;
   margin: 32.87px 2px;
   display: block;
   padding: 0;
@@ -424,7 +424,7 @@ body a:hover {
   border-right: 50px solid transparent;
   top: 100%;
   width: 0;
-  border-top: 28.87px solid #f8f8f8;
+  border-top: 28.87px solid #ECECEC;
 }
 .hexagonGrid .row .hexagon::before {
   content: "";
@@ -433,7 +433,7 @@ body a:hover {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   bottom: 100%;
-  border-bottom: 28.87px solid #f8f8f8;
+  border-bottom: 28.87px solid #ECECEC;
 }
 .hexagonGrid .row.row-moved {
   margin-left: 19px;
@@ -566,14 +566,14 @@ body a:hover {
 }
 
 .default_light {
-  background: #f8f8f8 !important;
+  background: #ECECEC !important;
   opacity: 0.5 !important;
 }
 .default_light::after {
-  border-top: 28.87px solid #f8f8f8 !important;
+  border-top: 28.87px solid #ECECEC !important;
 }
 .default_light::before {
-  border-bottom: 28.87px solid #f8f8f8 !important;
+  border-bottom: 28.87px solid #ECECEC !important;
 }
 
 .default_dark {
@@ -755,6 +755,7 @@ body a:hover {
   }
 }
 #projects .container .card {
+  background-color: #ECECEC;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   text-align: center;
 }
@@ -766,8 +767,8 @@ body a:hover {
   position: relative;
   height: 3rem;
   padding: 0 1rem;
-  border: 2px solid #5a7785;
-  background: #f8f8f8;
+  border: 2px solid #254a5d;
+  background: #ECECEC;
   user-select: none;
   white-space: nowrap;
   transition: all 0.05s linear;
@@ -777,7 +778,7 @@ body a:hover {
 #projects .container .card a button:after {
   content: "";
   position: absolute;
-  background: #f8f8f8;
+  background: #ECECEC;
   transition: all 0.2s linear;
 }
 #projects .container .card a button:before {
@@ -860,7 +861,7 @@ body a:hover {
 }
 
 #light {
-  background-color: #f8f8f8;
+  background-color: #ECECEC;
 }
 #light .text-color {
   color: black;
@@ -987,8 +988,8 @@ body a:hover {
   position: relative;
   height: 3rem;
   padding: 0 1rem;
-  border: 2px solid #5a7785;
-  background: #f8f8f8;
+  border: 2px solid #254a5d;
+  background: #ECECEC;
   user-select: none;
   white-space: nowrap;
   transition: all 0.05s linear;
@@ -998,7 +999,7 @@ body a:hover {
 #contact .d-flex a button:after {
   content: "";
   position: absolute;
-  background: #f8f8f8;
+  background: #ECECEC;
   transition: all 0.2s linear;
 }
 #contact .d-flex a button:before {
