@@ -15,7 +15,7 @@
 #header_container .scrollIcon {
   width: 30px;
   height: 50px;
-  border: 3px solid #ffffff;
+  border: 3px solid #ececec;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
 }
 #header_container .scrollIcon:after {
   content: "scroll down";
-  color: #ffffff;
+  color: #ececec;
   font-family: "Roboto";
   font-weight: 300;
   width: 100px;
@@ -37,7 +37,7 @@
   animation: scrollText 2s infinite;
 }
 #header_container i.scroll {
-  background: #ffffff;
+  background: #ececec;
   width: 6px;
   height: 14px;
   display: block;
@@ -117,7 +117,7 @@
   position: absolute;
   width: 50vw;
   background: linear-gradient(90deg, rgb(111, 54, 86) 0%, rgb(27, 56, 137) 50%, #0082b7 100%);
-  color: #ffffff;
+  color: #ececec;
   font-size: 6vw;
   font-weight: 800;
   width: 40%;
@@ -407,7 +407,7 @@ body a:hover {
   position: relative;
   width: 100px;
   height: 57.74px;
-  background-color: #ffffff;
+  background-color: #ececec;
   margin: 32.87px 2px;
   display: block;
   padding: 0;
@@ -420,7 +420,7 @@ body a:hover {
   border-right: 50px solid transparent;
   top: 100%;
   width: 0;
-  border-top: 28.87px solid #ffffff;
+  border-top: 28.87px solid #ececec;
 }
 .hexagonGrid .row .hexagon::before {
   content: "";
@@ -429,7 +429,7 @@ body a:hover {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   bottom: 100%;
-  border-bottom: 28.87px solid #ffffff;
+  border-bottom: 28.87px solid #ececec;
 }
 .hexagonGrid .row.row-moved {
   margin-left: 19px;
@@ -562,14 +562,14 @@ body a:hover {
 }
 
 .default_light {
-  background: #ffffff !important;
+  background: #ececec !important;
   opacity: 0.5 !important;
 }
 .default_light::after {
-  border-top: 28.87px solid #ffffff !important;
+  border-top: 28.87px solid #ececec !important;
 }
 .default_light::before {
-  border-bottom: 28.87px solid #ffffff !important;
+  border-bottom: 28.87px solid #ececec !important;
 }
 
 .default_dark {
@@ -856,7 +856,7 @@ body a:hover {
 }
 
 #light {
-  background-color: #ffffff;
+  background-color: #ececec;
 }
 #light .text-color {
   color: black;
@@ -908,6 +908,7 @@ body a:hover {
 
 #backToTopBtn {
   background-color: #202124;
+  z-index: 99;
 }
 
 #_404container {
