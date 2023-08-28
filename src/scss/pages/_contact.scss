@@ -19,6 +19,7 @@
   }
   .contact-pic {
     width: 25vw;
+     @include noCopy
   }
   .contact-icon img {
     width: 1.5rem;

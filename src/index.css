@@ -15,7 +15,7 @@
 #header_container .scrollIcon {
   width: 30px;
   height: 50px;
-  border: 3px solid #ececec;
+  border: 3px solid #f8f8f8;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
 }
 #header_container .scrollIcon:after {
   content: "scroll down";
-  color: #ececec;
+  color: #f8f8f8;
   font-family: "Roboto";
   font-weight: 300;
   width: 100px;
@@ -37,7 +37,7 @@
   animation: scrollText 2s infinite;
 }
 #header_container i.scroll {
-  background: #ececec;
+  background: #f8f8f8;
   width: 6px;
   height: 14px;
   display: block;
@@ -117,7 +117,7 @@
   position: absolute;
   width: 50vw;
   background: linear-gradient(90deg, rgb(111, 54, 86) 0%, rgb(27, 56, 137) 50%, #0082b7 100%);
-  color: #ececec;
+  color: #f8f8f8;
   font-size: 6vw;
   font-weight: 800;
   width: 40%;
@@ -127,6 +127,8 @@
   transform: translate(-50%, -51%);
   z-index: 2;
   overflow: visible;
+  user-select: none;
+  pointer-events: none;
 }
 #title .text span {
   display: inline-block;
@@ -243,6 +245,8 @@ body a:hover {
   animation-timing-function: ease-in-out;
   margin-left: 1vw;
   margin-top: 0px;
+  user-select: none;
+  pointer-events: none;
 }
 @keyframes floating {
   0% {
@@ -407,7 +411,7 @@ body a:hover {
   position: relative;
   width: 100px;
   height: 57.74px;
-  background-color: #ececec;
+  background-color: #f8f8f8;
   margin: 32.87px 2px;
   display: block;
   padding: 0;
@@ -420,7 +424,7 @@ body a:hover {
   border-right: 50px solid transparent;
   top: 100%;
   width: 0;
-  border-top: 28.87px solid #ececec;
+  border-top: 28.87px solid #f8f8f8;
 }
 .hexagonGrid .row .hexagon::before {
   content: "";
@@ -429,7 +433,7 @@ body a:hover {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   bottom: 100%;
-  border-bottom: 28.87px solid #ececec;
+  border-bottom: 28.87px solid #f8f8f8;
 }
 .hexagonGrid .row.row-moved {
   margin-left: 19px;
@@ -562,14 +566,14 @@ body a:hover {
 }
 
 .default_light {
-  background: #ececec !important;
+  background: #f8f8f8 !important;
   opacity: 0.5 !important;
 }
 .default_light::after {
-  border-top: 28.87px solid #ececec !important;
+  border-top: 28.87px solid #f8f8f8 !important;
 }
 .default_light::before {
-  border-bottom: 28.87px solid #ececec !important;
+  border-bottom: 28.87px solid #f8f8f8 !important;
 }
 
 .default_dark {
@@ -856,7 +860,7 @@ body a:hover {
 }
 
 #light {
-  background-color: #ececec;
+  background-color: #f8f8f8;
 }
 #light .text-color {
   color: black;
@@ -969,6 +973,8 @@ body a:hover {
 }
 #contact .contact-pic {
   width: 25vw;
+  user-select: none;
+  pointer-events: none;
 }
 #contact .contact-icon img {
   width: 1.5rem;

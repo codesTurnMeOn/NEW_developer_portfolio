@@ -37,11 +37,11 @@ export default function Header(props) {
         </div>
         <NavBar />
         <div id="title" className="position-relative">
-          <div class="text">
-            <img src={selfie} height="auto" alt="selfie" />
+          <div className="text">
+            <img src={selfie} height="auto" alt="selfie" className="noCopy" />
             <span>Hi, I'm Lei</span>
           </div>
-          <div class="text2">
+          <div className="text2">
             <img src={text2} alt="I MAKE WEBSITES" className="img-fluid" />
           </div>
         </div>
