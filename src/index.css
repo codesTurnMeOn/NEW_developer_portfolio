@@ -690,7 +690,6 @@ body a:hover {
   background-image: url("./images/hg_logo.png");
   background-position: 95% 100%;
   background-repeat: no-repeat;
-  background-blend-mode: lighten;
 }
 #qualification .holmesglen p {
   width: 75%;
@@ -718,6 +717,7 @@ body a:hover {
   background-position: 100% 90%;
   background-repeat: no-repeat;
   background-size: 28%;
+  background-blend-mode: exclusion;
 }
 #qualification .sisu p {
   width: 75%;
@@ -767,7 +767,7 @@ body a:hover {
   position: relative;
   height: 3rem;
   padding: 0 1rem;
-  border: 2px solid #254a5d;
+  border: 2px solid #3795bd;
   background: #ECECEC;
   user-select: none;
   white-space: nowrap;
@@ -988,7 +988,7 @@ body a:hover {
   position: relative;
   height: 3rem;
   padding: 0 1rem;
-  border: 2px solid #254a5d;
+  border: 2px solid #3795bd;
   background: #ECECEC;
   user-select: none;
   white-space: nowrap;

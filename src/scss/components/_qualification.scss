@@ -21,7 +21,7 @@
   background-image: url("./images/hg_logo.png");
    background-position:95% 100%;
   background-repeat: no-repeat;
-   background-blend-mode:lighten;
+  //  background-blend-mode:lighten;
 p{
   width: 75%;
 }
@@ -43,7 +43,7 @@ p{
   background-position:95% 100%;
   background-repeat: no-repeat;
   background-size: 20%;
-    // background-blend-mode:overlay;
+  
 p{
   width: 75%;
 }
@@ -54,7 +54,7 @@ p{
   background-position:100% 90%;
   background-repeat: no-repeat;
   background-size: 28%;
-  // background-blend-mode:exclusion;
+  background-blend-mode:exclusion;
 p{
   width: 75%;
 }
