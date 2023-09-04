@@ -50,10 +50,11 @@ function NutsNews() {
               This is an Express.js application that utilizes EJS for frontend
               rendering and connects to a MongoDB database in the cloud. The
               backend is designed with a RESTful API, incorporating token-based
-              authentication. The application is deployed directly on an AWS EC2
-              instance. By clicking the "Live Site" button below, you can log in
-              using the username "user" and password "123456" to interact with
-              it with restricted permissions.
+              authentication and authorisation. The application is deployed on
+              an AWS EC2 instance. By clicking the "Live Site" button below, you
+              can log in using the username "user" and password "123456" to
+              interact with it with restricted permissions to create or
+              discharge a pet.
             </Card.Text>
             <Card.Text></Card.Text>
             <a href="http://13.239.119.168/" target="_blank" rel="noreferrer">
