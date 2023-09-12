@@ -55,14 +55,14 @@ function Sylinn() {
               Sylinn bathrooms is my last project before professional front-end
               study, and also the last project without any UI framework or JS
               library. Mostly likely it will be re-built with frameworks for
-              better viewport responsiveness and stability.Tools used are VS
+              better viewport responsiveness and stability. Only bathtub section is completed as a template for now.Tools used are VS
               Code, Dreamweaver, Photoshop. Technologies are HTML5,CSS3 and
               vanilla JavaScript. And it is also integrated with Google&#8482;
-              search and Google Map&#8482;.
+              search and Google Map&#8482;.It is deployed on AWS Amplify, a full-stack development platform.
             </Card.Text>
             <Card.Text></Card.Text>
             <a
-              href="https://github.com/coolkidsclubvip/sylinn_website"
+              href="https://main.d1na11wlqkneh0.amplifyapp.com/index.html"
               target="_blank"
               rel="noreferrer"
             >
