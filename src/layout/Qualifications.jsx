@@ -52,8 +52,8 @@ function Qualification() {
                   experienced in database design, encompassing MongoDB, MySQL,
                   and Firebase, and can confidently design Restful APIs. I have
                   basic knowledge of Docker, and proficiency in cloud deployment
-                  techniques as a certified AWS cloud practioner and Solutions
-                  Architect-Associate(to be acquired in Sept 2023). With this
+                  techniques as a certified AWS cloud practitioner and Solutions
+                  Architect-Associate. With this
                   comprehensive skill set, I am well-equipped to contribute
                   effectively to web development projects and ensure their
                   successful execution across the web stack.

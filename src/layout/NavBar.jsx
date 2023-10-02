@@ -20,7 +20,7 @@ export default function NavBar() {
   }, [themeContext.scrollTop]);
 
   const handleClick = () => {
-    setScrollPos(themeContext.scrollTop + 1); //?
+    setScrollPos(themeContext.scrollTop + 1); // when click === scroll, nav bar background still shows
   };
 
   const handleNavClick = (anchorName) => {
