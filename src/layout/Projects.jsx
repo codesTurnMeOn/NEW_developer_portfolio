@@ -3,9 +3,11 @@ import Mures from "../portfolios/Mures";
 import Saddler from "../portfolios/Saddler";
 import Choice from "../portfolios/Choice";
 import Sylinn from "../portfolios/Sylinn";
-import FoodRanger from "../portfolios/FoodRanger";
+// import FoodRanger from "../portfolios/FoodRanger";
+import MPTM from "../portfolios/MPTM";
 import NutsNews from "../portfolios/NutsNews";
 import Mogush from "../portfolios/Mogush.jsx";
+import Allyoucan from "../portfolios/Allyoucan";
 
 export default function Projects() {
   const projectsRef = useRef(null);
@@ -26,23 +28,30 @@ export default function Projects() {
   return (
     <div id="projects" ref={projectsRef}>
       <h1>Projects</h1>
+
+      {/* Allyoucan */}
+      <Allyoucan />
+
       {/* Nuts News */}
       <NutsNews />
+      {/* MPTM */}
+
+      <MPTM />
+
       {/* Mogush_vet EMR */}
       <Mogush />
       {/* FOOD RANGER.CO */}
-      <FoodRanger />
+      {/* <FoodRanger /> */}
       {/* SLINN BATHROOMS */}
       <Sylinn />
-
-      {/* MURES */}
-      <Mures />
 
       {/* TENTERFIELD SADDLER */}
       <Saddler />
 
       {/* CHOICE BATHROOMS */}
       <Choice />
+      {/* MURES */}
+      <Mures />
     </div>
   );
 }

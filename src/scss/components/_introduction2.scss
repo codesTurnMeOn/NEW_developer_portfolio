@@ -219,6 +219,12 @@
       @include hexagonStyle;
       background-image: url("./images/hexagon/mysql_logo.png");
     }
+
+      .vanillaExtract {
+      @include hexagonStyle;
+      background-image: url("./images/hexagon/vanillaextract_logo.png");
+    }
+
     .sass {
       @include hexagonStyle;
       background-image: url("./images/hexagon/sass_logo.png");

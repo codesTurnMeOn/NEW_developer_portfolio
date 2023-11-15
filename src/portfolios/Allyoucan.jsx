@@ -1,17 +1,17 @@
 import React, { useRef, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import nutsnews1 from "../images/nutsnews1.png";
-import nutsnews2 from "../images/nutsnews2.png";
-import nutsnews3 from "../images/nutsnews3.png";
-import nutsnews4 from "../images/nutsnews4.png";
+import Allyoucan_1 from "../images/Allyoucan_1.png";
+import Allyoucan_2 from "../images/Allyoucan_2.png";
+import Allyoucan_3 from "../images/Allyoucan_3.png";
+import Allyoucan_4 from "../images/Allyoucan_4.png";
+import Allyoucan_5 from "../images/Allyoucan_5.png";
 import UseScrollTrigger from "../components/UseScrollTrigger.js";
 
-
 //  iamges slider for project
-const images = [nutsnews1, nutsnews2, nutsnews3, nutsnews4];
+const images = [Allyoucan_1, Allyoucan_2, Allyoucan_3, Allyoucan_4,Allyoucan_5];
 
-function NutsNews() {
+function Allyoucan() {
   //gsap/ScrollTrigger effect
   const ref = useRef(null);
 
@@ -31,7 +31,6 @@ function NutsNews() {
   return (
     <>
       <Container className="container">
-      
         <Card className="card" ref={ref}>
           <div className="card-slider">
             <img src={images[currentIndex]} alt="Nuts News" className="w-100" />
@@ -44,20 +43,16 @@ function NutsNews() {
           </div>
           <Card.Header>
             <Card.Title>
-              <h4>  
-                <i>Nuts News, 2023</i>
+              <h4>
+                <i>Allyoucan Travel Agency, 2023</i>
               </h4>
             </Card.Title>
             <Card.Text className=" w-75 mx-auto">
-                Nuts News web site is a server side rendering site. It is built
-                with Next.js Framework for good SEO,optimized image loading and
-                more. The construction of this particular site involves CSR,SSG
-                and SSR. Other technologies used are
-                HTML5, CSS3, JavaScript, Bootstrap and Sass.
+              Allyoucan Travel Agency is the Capstone project for my Holmesglen's diploma study. It is built with Wordpress and Astra child theme, and is hosted with Godaddy.It is my First Wordpress project. It uses plugins for translation between English and Mandarin, and a form to send enquiry to admin's email address. Yoast is utilized to optimize SEO, and Wordfence is for website security. This project was accomplished by a group of 6 members, and my role was mainly for client liaison and UI ( hero and footer section ).
             </Card.Text>
             <Card.Text></Card.Text>
             <a
-              href="https://newsapi-nextjs-two.vercel.app/"
+              href="https://allyoucantravel.com.au/"
               target="_blank"
               rel="noreferrer"
             >
@@ -72,4 +67,4 @@ function NutsNews() {
   );
 }
 
-export default NutsNews;
+export default Allyoucan;

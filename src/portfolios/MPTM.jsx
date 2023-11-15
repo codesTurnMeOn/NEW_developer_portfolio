@@ -1,17 +1,18 @@
 import React, { useRef, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import nutsnews1 from "../images/nutsnews1.png";
-import nutsnews2 from "../images/nutsnews2.png";
-import nutsnews3 from "../images/nutsnews3.png";
-import nutsnews4 from "../images/nutsnews4.png";
+import mptm_1 from "../images/mptm_1.png";
+import mptm_2 from "../images/mptm_2.png";
+import mptm_3 from "../images/mptm_3.png";
+import mptm_4 from "../images/mptm_4.png";
+import mptm_5 from "../images/mptm_5.png";
+
 import UseScrollTrigger from "../components/UseScrollTrigger.js";
 
-
 //  iamges slider for project
-const images = [nutsnews1, nutsnews2, nutsnews3, nutsnews4];
+const images = [mptm_1, mptm_2, mptm_3, mptm_4, mptm_5];
 
-function NutsNews() {
+function MPTM() {
   //gsap/ScrollTrigger effect
   const ref = useRef(null);
 
@@ -31,10 +32,10 @@ function NutsNews() {
   return (
     <>
       <Container className="container">
-      
+   
         <Card className="card" ref={ref}>
           <div className="card-slider">
-            <img src={images[currentIndex]} alt="Nuts News" className="w-100" />
+            <img src={images[currentIndex]} alt="MPTM" className="w-100" />
             <button className="btn-prev" onClick={handlePrev}>
               &#8678;
             </button>
@@ -44,20 +45,24 @@ function NutsNews() {
           </div>
           <Card.Header>
             <Card.Title>
-              <h4>  
-                <i>Nuts News, 2023</i>
+              <h4>
+                <i>Melbourne Public Toilet Map (MPTM), 2023</i>
               </h4>
             </Card.Title>
             <Card.Text className=" w-75 mx-auto">
-                Nuts News web site is a server side rendering site. It is built
-                with Next.js Framework for good SEO,optimized image loading and
-                more. The construction of this particular site involves CSR,SSG
-                and SSR. Other technologies used are
-                HTML5, CSS3, JavaScript, Bootstrap and Sass.
+              This is an Express.js application that empowered by ApolloServer
+              with GraphQL fetching and sending data to a MongoDB database. And
+              the backend uses JWT and Bcrypt to secure the routes. The frontend
+              is again built with React, and integrated with Google Map API.
+              User entered data are being validated by Joi. The backend is
+              deployed with Render and the frontend is with Netlify as this
+              portfolio. By clicking the "Live Site" button below, you are
+              welcome to log in using the username "admin@admin.com" and
+              password "123456" to interact with this application.
             </Card.Text>
             <Card.Text></Card.Text>
             <a
-              href="https://newsapi-nextjs-two.vercel.app/"
+              href="https://melbourne-public-toilet-map-mptm.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -72,4 +77,4 @@ function NutsNews() {
   );
 }
 
-export default NutsNews;
+export default MPTM;

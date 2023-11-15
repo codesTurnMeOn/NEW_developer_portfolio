@@ -494,6 +494,13 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/mysql_logo.png");
 }
+.hexagonGrid .row .vanillaExtract {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  transition: opacity ease-in 3s;
+  background-image: url("./images/hexagon/vanillaextract_logo.png");
+}
 .hexagonGrid .row .sass {
   background-repeat: no-repeat;
   background-size: contain;

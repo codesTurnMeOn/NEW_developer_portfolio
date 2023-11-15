@@ -57,6 +57,8 @@ function TechStack({ isLoaded }) {
           <span style={textStyle}>, </span>
           <span style={textStyle}>"Sass"</span>
           <span style={textStyle}>, </span>
+          <span style={textStyle}>"Vanilla Extract"</span>
+          <span style={textStyle}>, </span>
           <span style={textStyle}>"Typescript"</span>
           <span style={textStyle}>, </span>
           <span style={textStyle}>"EJS"</span>

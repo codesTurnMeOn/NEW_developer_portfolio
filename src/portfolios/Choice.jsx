@@ -12,9 +12,8 @@ const images = [choice1, choice2, choice3, choice4, choice5];
 
 function Choice() {
   //gsap/ScrollTrigger effect
-    const ref = useRef(null);
-    UseScrollTrigger(ref);
-
+  const ref = useRef(null);
+  UseScrollTrigger(ref);
 
   // project images slider
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,7 +46,7 @@ function Choice() {
           <Card.Header>
             <Card.Title>
               <h4>
-                <i>Choice Bathroom and Kitchen Supplies, 2014</i>
+                <i>Choice Bathroom and Kitchen Supplies, 2015</i>
               </h4>{" "}
             </Card.Title>
             <Card.Text className=" w-75 mx-auto">
