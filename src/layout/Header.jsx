@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import particlesJS from "../../node_modules/particles.js/particles"; //must be here
 import TsParticles from "../components/TsParticles";

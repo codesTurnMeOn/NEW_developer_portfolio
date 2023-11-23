@@ -1,11 +1,12 @@
-$whiteColor: #ECECEC;
+$whiteColor: #F5F5F7;
 $primaryColor: #254a5d;
 $primaryColor2: #3795bd;
 $shadowColor: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 $darkTheme_bg_color: #202124;
 $darkTheme_bg_color2: #383838;
 $purpleInDark: #a7a1ff;
-$greyShade_bg: rgba(230, 230, 230, 0.742);
+// $greyShade_bg: rgba(230, 230, 230, 0.742);
+$greyShade_bg: $whiteColor;
 $hexagonColorLight: $whiteColor;
 $hexagonColorDark: $darkTheme_bg_color;
 $default_light: $whiteColor;

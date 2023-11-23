@@ -8,6 +8,7 @@ import MPTM from "../portfolios/MPTM";
 import NutsNews from "../portfolios/NutsNews";
 import Mogush from "../portfolios/Mogush.jsx";
 import Allyoucan from "../portfolios/Allyoucan";
+import Sylinn_full_stack from "../portfolios/Sylinn_full_stack";
 
 export default function Projects() {
   const projectsRef = useRef(null);
@@ -28,29 +29,24 @@ export default function Projects() {
   return (
     <div id="projects" ref={projectsRef}>
       <h1>Projects</h1>
-
-      {/* Allyoucan */}
+      <Sylinn_full_stack/>
+   
       <Allyoucan />
-
-      {/* Nuts News */}
+      
       <NutsNews />
-      {/* MPTM */}
-
+    
       <MPTM />
-
-      {/* Mogush_vet EMR */}
+       
       <Mogush />
-      {/* FOOD RANGER.CO */}
+     
       {/* <FoodRanger /> */}
-      {/* SLINN BATHROOMS */}
+ 
       <Sylinn />
-
-      {/* TENTERFIELD SADDLER */}
+ 
       <Saddler />
-
-      {/* CHOICE BATHROOMS */}
+ 
       <Choice />
-      {/* MURES */}
+    
       <Mures />
     </div>
   );

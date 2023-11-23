@@ -23,9 +23,12 @@
 
     .card {
       background-color: $whiteColor;
+      
 
       .card-slider {
-        height: 80vh;
+        // height: 80vh;
+        height: auto;
+        max-height: 120vh;
         overflow: hidden;
       }
       a {
@@ -34,6 +37,10 @@
 
       box-shadow: $shadowColor;
       text-align: center;
+
+      h4{
+        padding-top: 50px;
+      }
 
       .w-75 {
         padding: 1rem;

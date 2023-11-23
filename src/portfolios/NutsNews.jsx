@@ -31,7 +31,6 @@ function NutsNews() {
   return (
     <>
       <Container className="container">
-      
         <Card className="card" ref={ref}>
           <div className="card-slider">
             <img src={images[currentIndex]} alt="Nuts News" className="w-100" />
@@ -44,16 +43,23 @@ function NutsNews() {
           </div>
           <Card.Header>
             <Card.Title>
-              <h4>  
+              <h4>
                 <i>Nuts News, 2023</i>
               </h4>
             </Card.Title>
             <Card.Text className=" w-75 mx-auto">
-                Nuts News web site is a server side rendering site. It is built
-                with Next.js Framework for good SEO,optimized image loading and
-                more. The construction of this particular site involves CSR,SSG
-                and SSR. Other technologies used are
-                HTML5, CSS3, JavaScript, Bootstrap and Sass.
+              Nuts News is a server-side rendering website meticulously crafted
+              for optimal performance and enhanced Search Engine Optimization
+              (SEO). Developed with the Next.js framework, this site leverages
+              Client-Side Rendering (CSR), Static Site Generation (SSG), and
+              Server-Side Rendering (SSR) techniques. The use of these advanced
+              rendering strategies ensures superior SEO capabilities, optimized
+              image loading, and overall improved user experience. In addition
+              to Next.js, the technological stack includes HTML5, CSS3,
+              JavaScript, Bootstrap, and CSS modules with Sass. This
+              comprehensive blend of technologies contributes to the
+              professional and polished design of the Nuts News website,
+              delivering a seamless and feature-rich platform for users.
             </Card.Text>
             <Card.Text></Card.Text>
             <a

@@ -52,9 +52,13 @@ function NutsNews() {
               backend is designed with a RESTful API, incorporating token-based
               authentication and authorisation. The application is deployed on
               an AWS EC2 instance. By clicking the "Live Site" button below, you
-              can log in using the username "user" and password "123456" to
+              can log in to
               interact with it with restricted permissions to create or
               discharge a pet.
+              <br />
+              <br />
+              Username: user <br />
+              Password: 123456
             </Card.Text>
             <Card.Text></Card.Text>
             <a href="http://13.239.119.168/" target="_blank" rel="noreferrer">

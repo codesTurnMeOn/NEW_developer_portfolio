@@ -15,7 +15,7 @@
 #header_container .scrollIcon {
   width: 30px;
   height: 50px;
-  border: 3px solid #ECECEC;
+  border: 3px solid #F5F5F7;
   border-radius: 30px;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
 }
 #header_container .scrollIcon:after {
   content: "scroll down";
-  color: #ECECEC;
+  color: #F5F5F7;
   font-family: "Roboto";
   font-weight: 300;
   width: 100px;
@@ -37,7 +37,7 @@
   animation: scrollText 2s infinite;
 }
 #header_container i.scroll {
-  background: #ECECEC;
+  background: #F5F5F7;
   width: 6px;
   height: 14px;
   display: block;
@@ -117,7 +117,7 @@
   position: absolute;
   width: 50vw;
   background: linear-gradient(90deg, rgb(111, 54, 86) 0%, rgb(27, 56, 137) 50%, #0082b7 100%);
-  color: #ECECEC;
+  color: #F5F5F7;
   font-size: 6vw;
   font-weight: 800;
   width: 40%;
@@ -411,7 +411,7 @@ body a:hover {
   position: relative;
   width: 100px;
   height: 57.74px;
-  background-color: #ECECEC;
+  background-color: #F5F5F7;
   margin: 32.87px 2px;
   display: block;
   padding: 0;
@@ -424,7 +424,7 @@ body a:hover {
   border-right: 50px solid transparent;
   top: 100%;
   width: 0;
-  border-top: 28.87px solid #ECECEC;
+  border-top: 28.87px solid #F5F5F7;
 }
 .hexagonGrid .row .hexagon::before {
   content: "";
@@ -433,7 +433,7 @@ body a:hover {
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
   bottom: 100%;
-  border-bottom: 28.87px solid #ECECEC;
+  border-bottom: 28.87px solid #F5F5F7;
 }
 .hexagonGrid .row.row-moved {
   margin-left: 19px;
@@ -573,14 +573,14 @@ body a:hover {
 }
 
 .default_light {
-  background: #ECECEC !important;
+  background: #F5F5F7 !important;
   opacity: 0.5 !important;
 }
 .default_light::after {
-  border-top: 28.87px solid #ECECEC !important;
+  border-top: 28.87px solid #F5F5F7 !important;
 }
 .default_light::before {
-  border-bottom: 28.87px solid #ECECEC !important;
+  border-bottom: 28.87px solid #F5F5F7 !important;
 }
 
 .default_dark {
@@ -681,6 +681,11 @@ body a:hover {
   margin-top: 30vh;
   /* target the Accordion.Item */
 }
+@media screen and (max-width: 768px) {
+  #qualification {
+    margin-top: 150vh;
+  }
+}
 #qualification h1 {
   font-family: "Plus Jakarta Sans";
   font-size: 3.5rem;
@@ -737,7 +742,7 @@ body a:hover {
   color: white;
 }
 #qualification div .accordion-body {
-  background-color: rgba(230, 230, 230, 0.742);
+  background-color: #F5F5F7;
 }
 
 #projects {
@@ -762,12 +767,13 @@ body a:hover {
   }
 }
 #projects .container .card {
-  background-color: #ECECEC;
+  background-color: #F5F5F7;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 #projects .container .card .card-slider {
-  height: 80vh;
+  height: auto;
+  max-height: 120vh;
   overflow: hidden;
 }
 #projects .container .card a button {
@@ -775,7 +781,7 @@ body a:hover {
   height: 3rem;
   padding: 0 1rem;
   border: 2px solid #3795bd;
-  background: #ECECEC;
+  background: #F5F5F7;
   user-select: none;
   white-space: nowrap;
   transition: all 0.05s linear;
@@ -785,7 +791,7 @@ body a:hover {
 #projects .container .card a button:after {
   content: "";
   position: absolute;
-  background: #ECECEC;
+  background: #F5F5F7;
   transition: all 0.2s linear;
 }
 #projects .container .card a button:before {
@@ -815,6 +821,9 @@ body a:hover {
   font-size: "Roboto";
   z-index: 3;
   position: relative;
+}
+#projects .container .card h4 {
+  padding-top: 50px;
 }
 #projects .container .card .w-75 {
   padding: 1rem;
@@ -868,7 +877,7 @@ body a:hover {
 }
 
 #light {
-  background-color: #ECECEC;
+  background-color: #F5F5F7;
 }
 #light .text-color {
   color: black;
@@ -996,7 +1005,7 @@ body a:hover {
   height: 3rem;
   padding: 0 1rem;
   border: 2px solid #3795bd;
-  background: #ECECEC;
+  background: #F5F5F7;
   user-select: none;
   white-space: nowrap;
   transition: all 0.05s linear;
@@ -1006,7 +1015,7 @@ body a:hover {
 #contact .d-flex a button:after {
   content: "";
   position: absolute;
-  background: #ECECEC;
+  background: #F5F5F7;
   transition: all 0.2s linear;
 }
 #contact .d-flex a button:before {

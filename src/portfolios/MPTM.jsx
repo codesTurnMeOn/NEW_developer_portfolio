@@ -49,15 +49,19 @@ function MPTM() {
               </h4>
             </Card.Title>
             <Card.Text className=" w-75 mx-auto">
-              This is an Express.js application that empowered by ApolloServer
-              with GraphQL fetching and sending data to a MongoDB database. And
-              the backend uses JWT and Bcrypt to secure the routes. The frontend
-              is again built with React, and integrated with Google Map API.
-              User entered data are being validated by Joi. The backend is
-              deployed with Render and the frontend is with Netlify as this
-              portfolio. By clicking the "Live Site" button below, you are
-              welcome to log in using the username "admin@admin.com" and
-              password "123456" to interact with this application.
+              This is an Express.js application empowered by Apollo Server,
+              utilizing GraphQL for fetching and sending data to a MongoDB
+              database. The backend incorporates JWT and Bcrypt to enhance route
+              security. On the frontend, React is employed, and integration with
+              the Google Maps API enhances its functionality. User-entered data
+              undergoes validation through Joi. The backend is deployed using
+              Render, while the frontend is hosted on Netlify, serving as the
+              portfolio for this application. To interact with the live site,
+              simply click the 'Live Site' button below. You are welcome to log
+              in using the following credentials: <br />
+              <br />
+              Username: admin@admin.com <br />
+              Password: 123456
             </Card.Text>
             <Card.Text></Card.Text>
             <a

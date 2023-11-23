@@ -4,6 +4,7 @@ import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Qualifications from "../layout/Qualifications";
 import Introduction2 from "../layout/Introduction2";
+import {Container,Spinner} from "react-bootstrap"
 
 
 export const textColorContext = createContext(null);
@@ -18,9 +19,9 @@ function Home({ scrollTop }) {
       <textColorContext.Provider value={"text-light"}>
         <Header />
         <Introduction2 />
-        <Qualifications />
+        <Qualifications   />
 
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Container><Spinner/></Container>}>
           <LazyProjects />
         </Suspense>
 

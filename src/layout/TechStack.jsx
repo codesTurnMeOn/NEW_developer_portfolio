@@ -1,12 +1,7 @@
 import React from "react";
 
 function TechStack({ isLoaded }) {
-  // if (isLoaded === true) {
-  //   const typingElement = document.getElementById("typing");
-  //   // typingElement.style.animationPlayState = "running";
-  // } else return;
-
-  const vsCodeOrange = "#d69d85";
+  const vsCodeOrange = "#c28a72";
   const vsCodePurple = "#a348a4";
   const vsCodeBlue = "#3992db";
   const vsCodeGreen = "#4caf50";
