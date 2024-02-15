@@ -44,8 +44,6 @@ function TechStack({ isLoaded }) {
           <span style={textStyle}>, </span>
           <span style={textStyle}>"Javascript"</span>
           <span style={textStyle}>, </span>
-          <span style={textStyle}>"Svelte.js"</span>
-          <span style={textStyle}>, </span>
           <span style={textStyle}>"React.js"</span>
           <span style={textStyle}>, </span>
           <span style={textStyle}>"Bootstrap"</span>
@@ -97,6 +95,8 @@ function TechStack({ isLoaded }) {
           <span style={textStyle}>"Cloud Practitioner"</span>
           <span style={textStyle}>, </span>
           <span style={textStyle}>"Solutions Architect-Associate"</span>
+          <span style={textStyle}>, </span>
+          <span style={textStyle}>"Developer-Associate"</span>
           {" ]"}
           <br />
           <span style={categoryStyle}>{'"Graphic": '}</span>

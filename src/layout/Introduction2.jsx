@@ -111,7 +111,7 @@ function Introduction2() {
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div
-                    className={`hexagon svelte ${
+                    className={`hexagon typescript ${
                       themeContext.theme === "light"
                         ? "default_light"
                         : "default_dark"
@@ -267,13 +267,7 @@ function Introduction2() {
                         : "default_dark"
                     }`}
                   ></div>
-                  <div
-                    className={`hexagon typescript ${
-                      themeContext.theme === "light"
-                        ? "default_light"
-                        : "default_dark"
-                    }`}
-                  ></div>
+                  <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>

@@ -116,7 +116,7 @@
 #title .text {
   position: absolute;
   width: 50vw;
-  background: linear-gradient(90deg, rgb(111, 54, 86) 0%, rgb(27, 56, 137) 50%, #0082b7 100%);
+  background: linear-gradient(90deg, #0082b7 0%, rgb(27, 56, 137) 50%, rgb(111, 54, 86) 100%);
   color: #F5F5F7;
   font-size: 6vw;
   font-weight: 800;
