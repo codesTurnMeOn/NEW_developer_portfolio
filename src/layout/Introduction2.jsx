@@ -67,15 +67,7 @@ function Introduction2() {
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
-                  <div
-                    className={`hexagon nodejs ${
-                      themeContext.theme === "light"
-                        ? "default_light"
-                        : "default_dark"
-                    }`}
-                    // onMouseEnter={(e) => handleMouseEnter(e.target)}
-                    // style={{ opacity: showBackground ? 1 : 0 }}
-                  ></div>
+                  <div class="hexagon"></div>
 
                   <div
                     className={`hexagon html_css_js ${
@@ -111,7 +103,7 @@ function Introduction2() {
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div
-                    className={`hexagon typescript ${
+                    className={`hexagon nodejs ${
                       themeContext.theme === "light"
                         ? "default_light"
                         : "default_dark"
@@ -177,7 +169,7 @@ function Introduction2() {
                     }`}
                   ></div>
                   <div
-                    className={`hexagon ccp ${
+                    className={`hexagon dva ${
                       themeContext.theme === "light"
                         ? "default_light"
                         : "default_dark"
@@ -267,7 +259,13 @@ function Introduction2() {
                         : "default_dark"
                     }`}
                   ></div>
-                  <div class="hexagon"></div>
+                  <div
+                    className={`hexagon typescript ${
+                      themeContext.theme === "light"
+                        ? "default_light"
+                        : "default_dark"
+                    }`}
+                  ></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>

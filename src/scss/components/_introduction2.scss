@@ -45,8 +45,9 @@
     .git {
       background-image: url("./images/hexagon/git_logo_dark.png");
     }
-    .ccp {
-      background-image: url("./images/hexagon/ccp_dark.png");
+    .dva {
+      background-image: url("./images/hexagon/dva_dark.png");
+      
     }
     .saa {
       background-image: url("./images/hexagon/saa_dark.png");
@@ -259,9 +260,9 @@
       @include hexagonStyle;
       background-image: url("./images/hexagon/next_logo_light.png");
     }
-    .ccp {
+    .dva {
       @include hexagonStyle;
-      background-image: url("./images/hexagon/ccp_light.png");
+      background-image: url("./images/hexagon/dva_light.png");
     }
     .saa {
       @include hexagonStyle;

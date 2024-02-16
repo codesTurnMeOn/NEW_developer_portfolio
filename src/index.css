@@ -343,8 +343,8 @@ body a:hover {
 #intro .darkTheme .git {
   background-image: url("./images/hexagon/git_logo_dark.png");
 }
-#intro .darkTheme .ccp {
-  background-image: url("./images/hexagon/ccp_dark.png");
+#intro .darkTheme .dva {
+  background-image: url("./images/hexagon/dva_dark.png");
 }
 #intro .darkTheme .saa {
   background-image: url("./images/hexagon/saa_dark.png");
@@ -557,12 +557,12 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/next_logo_light.png");
 }
-.hexagonGrid .row .ccp {
+.hexagonGrid .row .dva {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
   transition: opacity ease-in 3s;
-  background-image: url("./images/hexagon/ccp_light.png");
+  background-image: url("./images/hexagon/dva_light.png");
 }
 .hexagonGrid .row .saa {
   background-repeat: no-repeat;
