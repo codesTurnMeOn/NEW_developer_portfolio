@@ -1,22 +1,22 @@
-import React, { useContext, useEffect} from "react";
+import React, { useContext, useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import particlesJS from "../../node_modules/particles.js/particles"; //must be here
+import particlesJS from "particles.js"; //must be here
 import TsParticles from "../components/TsParticles";
 import selfie from "../images/selfie.png";
 import text2 from "../images/text2.png";
 import NavBar from "./NavBar";
 import { ThemeContext } from "../App";
+import heroVideo from "../images/heroVideo.mp4";
 
 export default function Header(props) {
   const themeContext = useContext(ThemeContext);
 
-
-  // particale effect when loading
-  useEffect(() => {
-    let clause = window.innerWidth < 1000;
-    TsParticles.particles.number.value = clause ? 40 : 80;
-    window.particlesJS("particle", TsParticles);
-  }, []);
+  // // particale effect when loading
+  // useEffect(() => {
+  //   let clause = window.innerWidth < 1000;
+  //   TsParticles.particles.number.value = clause ? 40 : 80;
+  //   window.particlesJS("particle", TsParticles);
+  // }, []);
 
   // console.log("themeContext.scrollTop in header is: ", themeContext.scrollTop);
 
@@ -25,26 +25,16 @@ export default function Header(props) {
       {" "}
       <Container fluid>
         <div id="header_bg">
-          {/* particle goes here */}
-          <div className="wallpaper">
-            <div
-              id="particle"
-              className={
-                themeContext.theme === "light" ? "bg_light" : "bg_dark"
-              }
-            ></div>
-          </div>
+          <video autoPlay loop muted class="video">
+            <source src={heroVideo} type="video/mp4" />
+          </video>
+          <div
+            id="particle"
+            className={themeContext.theme === "light" ? "bg_light" : "bg_dark"}
+          ></div>
         </div>
         <NavBar />
-        <div id="title" className="position-relative">
-          <div className="text">
-            <img src={selfie} height="auto" alt="selfie" className="noCopy" />
-            <span>Hi, I'm Lei</span>
-          </div>
-          <div className="text2">
-            <img src={text2} alt="I MAKE WEBSITES" className="img-fluid" />
-          </div>
-        </div>
+ 
 
         <div className={themeContext.scrollTop > 150 ? "noShow" : "scrollIcon"}>
           <i className="scroll"></i>
