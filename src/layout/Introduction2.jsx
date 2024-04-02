@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState,useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
@@ -22,11 +22,14 @@ function Introduction2() {
       hexagons[i].style.opacity = 1;
     }
   };
+  useEffect(() => {
+    handleSetBackGround();
+  }, []); // This empty dependency array ensures that the effect runs only once after the component mounts
 
   //set a delay timer to show skill background
   const setTimer = function () {
     setIsLoaded(true);
-    setTimeout(handleSetBackGround, 1000);
+    // setTimeout(handleSetBackGround, 1000);// No longer use delay timer on background.
     return () => clearTimeout(setTimer);
   };
 
@@ -284,7 +287,6 @@ function Introduction2() {
             <Col xs={12} sm={12} md={12} lg={12} xl={4} className="introText">
               <Card.Body>
                 <Card.Text>
-                  {/* <Balancer> */}
                   <p>
                     {" "}
                     I'm a budget traveler, a dog person, and a passionate
@@ -305,7 +307,6 @@ function Introduction2() {
                     working with:
                   </p>
                   <TechStack isLoaded={isLoaded} />
-                  {/* </Balancer> */}
                 </Card.Text>
               </Card.Body>
             </Col>
