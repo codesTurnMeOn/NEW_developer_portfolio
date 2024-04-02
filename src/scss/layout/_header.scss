@@ -62,11 +62,16 @@
     }
   }
 
-  // new
+  // new video background
   .video {
     width: 100vw;
     height: auto;
     margin-top: -60px;
+    @media screen and (max-width: 767px) {
+      margin-top: 00px;
+      width: 150%;
+      transform: translateX(-16%);
+    }
   }
 
   .wallpaper {

@@ -69,6 +69,13 @@
   height: auto;
   margin-top: -60px;
 }
+@media screen and (max-width: 767px) {
+  #header_container .video {
+    margin-top: 0px;
+    width: 150%;
+    transform: translateX(-16%);
+  }
+}
 #header_container .wallpaper {
   background-image: url("/public/wallpaper.webp");
   background-repeat: no-repeat;
