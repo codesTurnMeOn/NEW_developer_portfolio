@@ -52,8 +52,7 @@ function Sylinn() {
               </h4>{" "}
             </Card.Title>
             <Card.Text className=" w-75 mx-auto">
-              Sylinn bathrooms is my last project before professional front-end
-              study, and also the last project without any UI framework or JS
+              Sylinn bathrooms is my last project without any UI framework or JS
               library. Mostly likely it will be re-built with frameworks for
               better viewport responsiveness and stability. Only bathtub section
               is completed as a template for now.Tools used are VS Code,

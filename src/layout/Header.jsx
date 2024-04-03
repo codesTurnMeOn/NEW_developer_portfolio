@@ -21,20 +21,23 @@ export default function Header(props) {
   // console.log("themeContext.scrollTop in header is: ", themeContext.scrollTop);
 
   return (
-    <div id="header_container">
-      {" "}
+    <div
+      id="header_container"
+      className={`overlay ${
+        themeContext.theme === "light" ? "overlay_light" : "overlay_dark"
+      }`}
+    >
       <Container fluid>
         <div id="header_bg">
           <video autoPlay loop muted class="video">
             <source src={heroVideo} type="video/mp4" />
           </video>
-          <div
+          {/* <div
             id="particle"
             className={themeContext.theme === "light" ? "bg_light" : "bg_dark"}
-          ></div>
+          ></div> */}
         </div>
         <NavBar />
- 
 
         <div className={themeContext.scrollTop > 150 ? "noShow" : "scrollIcon"}>
           <i className="scroll"></i>
