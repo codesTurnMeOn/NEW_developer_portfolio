@@ -708,6 +708,11 @@ body a:hover {
     margin-top: 180vh;
   }
 }
+@media screen and (max-width: 400px) {
+  #qualification {
+    margin-top: 210vh;
+  }
+}
 #qualification h1 {
   font-family: "Plus Jakarta Sans";
   font-size: 3.5rem;
