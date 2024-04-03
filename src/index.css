@@ -705,7 +705,7 @@ body a:hover {
 }
 @media screen and (max-width: 768px) {
   #qualification {
-    margin-top: 150vh;
+    margin-top: 180vh;
   }
 }
 #qualification h1 {
@@ -728,6 +728,15 @@ body a:hover {
 #qualification .holmesglen p {
   width: 75%;
 }
+@media screen and (max-width: 768px) {
+  #qualification .holmesglen {
+    background-size: 80%;
+    background-position: 100% 100%;
+  }
+  #qualification .holmesglen p {
+    width: 100%;
+  }
+}
 #qualification .oc {
   background-image: url("./images/oc_logo.png");
   background-position: 95% 90%;
@@ -736,6 +745,15 @@ body a:hover {
 }
 #qualification .oc p {
   width: 75%;
+}
+@media screen and (max-width: 768px) {
+  #qualification .oc {
+    background-size: 100%;
+    background-position: 100% 100%;
+  }
+  #qualification .oc p {
+    width: 100%;
+  }
 }
 #qualification .utas {
   background-image: url("./images/utas_logo.png");
@@ -746,6 +764,15 @@ body a:hover {
 #qualification .utas p {
   width: 75%;
 }
+@media screen and (max-width: 768px) {
+  #qualification .utas {
+    background-size: 90%;
+    background-position: 100% 100%;
+  }
+  #qualification .utas p {
+    width: 100%;
+  }
+}
 #qualification .sisu {
   background-image: url("./images/sisu_logo.png");
   background-position: 100% 90%;
@@ -755,6 +782,15 @@ body a:hover {
 }
 #qualification .sisu p {
   width: 75%;
+}
+@media screen and (max-width: 768px) {
+  #qualification .sisu {
+    background-size: 100%;
+    background-position: 100% 100%;
+  }
+  #qualification .sisu p {
+    width: 100%;
+  }
 }
 #qualification div {
   /* target the Accordion header */

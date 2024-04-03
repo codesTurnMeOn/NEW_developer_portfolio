@@ -5,7 +5,7 @@
   margin-top: $margin-y;
 
   @media screen and (max-width: 768px) {
-    margin-top: $margin-y * 5; //WTF? 5?
+    margin-top: $margin-y * 6; //WTF? 6?
   }
 
   h1 {
@@ -27,6 +27,13 @@
     p {
       width: 75%;
     }
+    @media screen and (max-width: 768px) {
+      p {
+        width: 100%;
+      }
+      background-size: 80%;
+      background-position: 100% 100%;
+    }
   }
 
   .oc {
@@ -37,6 +44,14 @@
     //  background-blend-mode:overlay;
     p {
       width: 75%;
+    }
+
+    @media screen and (max-width: 768px) {
+      p {
+        width: 100%;
+      }
+      background-size: 100%;
+      background-position: 100% 100%;
     }
   }
 
@@ -49,6 +64,13 @@
     p {
       width: 75%;
     }
+    @media screen and (max-width: 768px) {
+      p {
+        width: 100%;
+      }
+      background-size: 90%;
+      background-position: 100% 100%;
+    }
   }
 
   .sisu {
@@ -59,6 +81,13 @@
     background-blend-mode: exclusion;
     p {
       width: 75%;
+    }
+    @media screen and (max-width: 768px) {
+      p {
+        width: 100%;
+      }
+      background-size: 100%;
+      background-position: 100% 100%;
     }
   }
 
