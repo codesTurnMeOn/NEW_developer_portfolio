@@ -9,7 +9,13 @@ import Allyoucan_5 from "../images/Allyoucan_5.png";
 import UseScrollTrigger from "../components/UseScrollTrigger.js";
 
 //  iamges slider for project
-const images = [Allyoucan_1, Allyoucan_2, Allyoucan_3, Allyoucan_4,Allyoucan_5];
+const images = [
+  Allyoucan_1,
+  Allyoucan_2,
+  Allyoucan_3,
+  Allyoucan_4,
+  Allyoucan_5,
+];
 
 function Allyoucan() {
   //gsap/ScrollTrigger effect
@@ -48,7 +54,12 @@ function Allyoucan() {
               </h4>
             </Card.Title>
             <Card.Text className=" w-75 mx-auto">
-              Allyoucan Travel Agency is the Capstone project for my Holmesglen's diploma study. It is built with Wordpress and Astra child theme, and is hosted with Godaddy.It is my First Wordpress project. It uses plugins for translation between English and Mandarin, and a form to send enquiry to admin's email address. Yoast is utilized to optimize SEO, and Wordfence is for website security. This project was accomplished by a group of 6 members, and my role was mainly for client liaison and UI ( hero and footer section ).
+              Allyoucan Travel Agency is my first agency work. It is built with
+              Wordpress and Astra child theme, and is hosted with Godaddy.It is
+              my First Wordpress project in production mode. It uses plugins for
+              translation between English and Mandarin, and a form to send
+              enquiry to admin's email address. Yoast is utilized to optimize
+              SEO, and Wordfence is for website security.
             </Card.Text>
             <Card.Text></Card.Text>
             <a
