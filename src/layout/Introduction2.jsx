@@ -70,7 +70,13 @@ function Introduction2() {
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
                   <div class="hexagon"></div>
-                  <div class="hexagon"></div>
+                  <div
+                    className={`hexagon wordpress ${
+                      themeContext.theme === "light"
+                        ? "default_light"
+                        : "default_dark"
+                    }`}
+                  ></div>
 
                   <div
                     className={`hexagon html_css_js ${

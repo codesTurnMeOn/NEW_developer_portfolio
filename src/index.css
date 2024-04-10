@@ -372,6 +372,9 @@ body a:hover {
 #intro .darkTheme .nodejs {
   background-image: url("./images/hexagon/nodejs_logo_dark.png");
 }
+#intro .darkTheme .wordpress {
+  background-image: url("./images/hexagon/Wordpress_Blue_logo.png");
+}
 #intro .darkTheme .html_css_js {
   background-image: url("./images/hexagon/html_css_js_logo_dark.png");
 }
@@ -486,12 +489,12 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/nodejs_logo_light.png");
 }
-.hexagonGrid .row .svelte {
+.hexagonGrid .row .wordpress {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
   transition: opacity ease-in 3s;
-  background-image: url("./images/hexagon/svelte_logo.png");
+  background-image: url("./images/hexagon/Wordpress_Blue_logo.png");
 }
 .hexagonGrid .row .react {
   background-repeat: no-repeat;

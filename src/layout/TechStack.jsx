@@ -79,6 +79,16 @@ function TechStack({ isLoaded }) {
           <span style={textStyle}>"Firestore"</span>
           {"]"}
           <br />
+          {/* E-comm */}
+          <span style={categoryStyle}>{'"E-Commerce/CMS": '}</span>
+          {"[ "}
+          <span style={textStyle}>"Wordpress"</span>
+          <span style={textStyle}>, </span>
+          <span style={textStyle}>"Shopify"</span>
+          <span style={textStyle}>, </span>
+          <span style={textStyle}>"OpenCart"</span>
+          {" ]"}
+          <br />
           {/* Dev Tools */}
           <span style={categoryStyle}>{'"Dev Tools": '}</span>
           {"[ "}

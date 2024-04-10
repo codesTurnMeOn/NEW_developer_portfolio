@@ -31,10 +31,14 @@
     .nodejs {
       background-image: url("./images/hexagon/nodejs_logo_dark.png");
     }
+
+   .wordpress {
+      background-image: url("./images/hexagon/Wordpress_Blue_logo.png");
+    }
     .html_css_js {
       background-image: url("./images/hexagon/html_css_js_logo_dark.png");
     }
-    
+
     .next {
       background-image: url("./images/hexagon/next_logo_dark.png");
     }
@@ -47,7 +51,6 @@
     }
     .dva {
       background-image: url("./images/hexagon/dva_dark.png");
-      
     }
     .saa {
       background-image: url("./images/hexagon/saa_dark.png");
@@ -181,8 +184,7 @@
       margin-left: 19px;
     }
 
-
-      // Light mode
+    // Light mode
     .nodejs {
       @include hexagonStyle;
       // display: none ;
@@ -191,9 +193,9 @@
       // background-color: yellow !important;
     }
 
-    .svelte {
+    .wordpress {
       @include hexagonStyle;
-      background-image: url("./images/hexagon/svelte_logo.png");
+      background-image: url("./images/hexagon/Wordpress_Blue_logo.png");
     }
     .react {
       @include hexagonStyle;
@@ -207,7 +209,7 @@
       @include hexagonStyle;
       background-image: url("./images/hexagon/html_css_js_logo_light.png");
     }
-     .php {
+    .php {
       @include hexagonStyle;
       background-image: url("./images/hexagon/php_logo.png");
     }
@@ -221,7 +223,7 @@
       background-image: url("./images/hexagon/mysql_logo.png");
     }
 
-      .vanillaExtract {
+    .vanillaExtract {
       @include hexagonStyle;
       background-image: url("./images/hexagon/vanillaextract_logo.png");
     }
@@ -239,7 +241,7 @@
       @include hexagonStyle;
       background-image: url("./images/hexagon/graphql_logo.png");
     }
-     .firestore {
+    .firestore {
       @include hexagonStyle;
       background-image: url("./images/hexagon/firestore_logo.png");
     }
