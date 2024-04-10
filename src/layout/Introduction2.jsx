@@ -1,4 +1,4 @@
-import React, { useContext, useState,useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
@@ -29,12 +29,12 @@ function Introduction2() {
   //set a delay timer to show skill background
   const setTimer = function () {
     setIsLoaded(true);
-    // setTimeout(handleSetBackGround, 1000);// No longer use delay timer on background.
+    setTimeout(handleSetBackGround, 500); // No longer use delay timer on background.
     return () => clearTimeout(setTimer);
   };
 
   return (
-    <div id="intro" onMouseMove={setTimer}>
+    <div id="intro" onMouseEnter={setTimer}>
       <Container fluid>
         <h1>Introduction</h1>
         <div className={themeContext.theme === "light" ? "" : "darkTheme"}>
