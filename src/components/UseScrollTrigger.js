@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -14,12 +14,12 @@ function UseScrollTrigger(ref) {
         entries.forEach((entry) => {
           // 当目标元素进入视窗时
           if (entry.isIntersecting) {
-            // set trigger opposite 
+            // set trigger opposite
             setTrigger(!trigger);
           }
         });
       },
-      { threshold: 0.3} // 定义元素可见的阈值
+      { threshold: 0.3 } // 定义元素可见的阈值
     );
 
     // 开始观察目标元素

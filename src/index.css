@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 #header_container.overlay::before {
   content: "";
   position: absolute;
@@ -27,10 +28,12 @@
   height: 110vh;
   position: relative;
 }
-#header_container > * {
+
+#header_container>* {
   margin: 0;
   padding: 0;
 }
+
 #header_container .scrollIcon {
   width: 30px;
   height: 50px;
@@ -40,9 +43,10 @@
   justify-content: center;
   position: absolute;
   margin-left: 50%;
-  bottom: 2rem;
+  bottom: 13%;
   z-index: 99;
 }
+
 #header_container .scrollIcon:after {
   content: "scroll down";
   color: #F5F5F7;
@@ -55,6 +59,7 @@
   text-align: center;
   animation: scrollText 2s infinite;
 }
+
 #header_container i.scroll {
   background: #F5F5F7;
   width: 6px;
@@ -63,31 +68,37 @@
   border-radius: 40px;
   animation: scrollWheel 2s infinite;
 }
+
 @keyframes scrollWheel {
   0% {
     opacity: 1;
     transform: translateY(40%);
   }
+
   100% {
     opacity: 0.7;
     transform: translateY(130%);
   }
 }
+
 @keyframes scrollText {
   0% {
     opacity: 1;
     transform: translateY(120%);
   }
+
   100% {
     opacity: 0;
     transform: translateY(180%);
   }
 }
+
 #header_container .video {
   width: 100vw;
   height: auto;
   margin-top: -60px;
 }
+
 @media screen and (max-width: 767px) {
   #header_container .video {
     margin-top: 0px;
@@ -95,6 +106,7 @@
     transform: translateX(-16%);
   }
 }
+
 #header_container .wallpaper {
   background-image: url("/public/wallpaper.webp");
   background-repeat: no-repeat;
@@ -103,19 +115,23 @@
   height: 100%;
   z-index: -2;
 }
+
 #header_container .wallpaper #particle {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 99;
 }
+
 #header_container .wallpaper #particle.bg_light {
   opacity: 1;
 }
+
 #header_container .wallpaper #particle.bg_dark {
   background: #202124;
   opacity: 0.7;
 }
+
 #header_container #header_bg {
   position: absolute;
   width: 100%;
@@ -123,18 +139,21 @@
   z-index: 1;
   overflow: hidden;
 }
+
 #header_container #header_bg img {
   height: 110vh;
 }
 
 /* 主流智能手机 */
 @media screen and (max-width: 767px) {
+
   /* 在宽度小于 768px 时应用的样式 */
   #header_container {
     height: 30vh;
     margin-top: 0;
   }
 }
+
 /* title texts in header */
 #title {
   position: relative;
@@ -144,6 +163,7 @@
   background-repeat: none;
   padding-top: 50vh;
 }
+
 #title .text2 {
   margin: 0 10vw;
   width: 900px;
@@ -154,6 +174,7 @@
   transform: translate(-70%, -80%);
   z-index: 1;
 }
+
 #title .text {
   position: absolute;
   width: 50vw;
@@ -171,11 +192,13 @@
   user-select: none;
   pointer-events: none;
 }
+
 #title .text span {
   display: inline-block;
   vertical-align: -12%;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
 }
+
 #title .text img {
   vertical-align: -16%;
 }
@@ -186,6 +209,7 @@
     position: relative;
     overflow: visible;
   }
+
   #title .text {
     position: relative;
     width: 100vw;
@@ -194,18 +218,21 @@
     height: 20vh;
     background-size: auto;
   }
+
   #title .text img {
     position: absolute;
     height: 15vh;
     left: 0;
     bottom: 0;
   }
+
   #title .text span {
     position: absolute;
     font-size: 15vw;
     right: 10vw;
     line-height: 30vh;
   }
+
   #title .text2 {
     position: absolute;
     width: 100vw;
@@ -214,6 +241,7 @@
     transform: translateX(-70%) translateY(30%);
   }
 }
+
 *,
 html,
 body {
@@ -222,6 +250,7 @@ body {
   font-family: "Roboto";
   box-sizing: border-box;
 }
+
 * a,
 html a,
 body a {
@@ -232,6 +261,7 @@ body a {
   font-size: 1.1rem;
   text-align: center;
 }
+
 * a:hover,
 html a:hover,
 body a:hover {
@@ -252,10 +282,12 @@ body a:hover {
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.9);
   background-image: url("./images/footer_bg_1.jfif");
 }
-#footer > * {
+
+#footer>* {
   margin: 0;
   padding: 0;
 }
+
 #footer .row {
   color: white;
   font-family: "Roboto";
@@ -263,6 +295,7 @@ body a:hover {
   text-align: center;
   padding: 1rem;
 }
+
 #footer .footerSlogan {
   font-family: "Plus Jakarta Sans";
   font-size: 3.5rem;
@@ -277,6 +310,7 @@ body a:hover {
   font-size: auto;
   display: block;
 }
+
 #footer .footerSlogan .floating {
   position: absolute;
   width: 120px;
@@ -289,17 +323,21 @@ body a:hover {
   user-select: none;
   pointer-events: none;
 }
+
 @keyframes floating {
   0% {
     transform: translate(0, 0px);
   }
+
   50% {
     transform: translate(0, -10px);
   }
+
   100% {
     transform: translate(0, 0px);
   }
 }
+
 #footer img {
   width: 3rem;
   vertical-align: text-bottom;
@@ -312,35 +350,43 @@ body a:hover {
     background-repeat: no-repeat;
   }
 }
+
 #navbar {
   padding: 0;
   margin: 0;
   width: 100vw;
   overflow: hidden;
 }
-#navbar > * {
+
+#navbar>* {
   margin: 0;
   padding: 0;
 }
+
 #navbar .scrolled {
   background-color: #254a5d;
 }
+
 #navbar .scrolled .text-color {
   color: white;
 }
+
 #navbar .navbarBrand {
   display: inline-block;
   vertical-align: middle;
 }
+
 #navbar .navbarBrand img {
   width: 2rem;
   margin-left: 0.1vw;
   margin-right: 2vw;
 }
+
 #navbar Nav {
   font-family: "Roboto";
   font-size: 1.1rem;
 }
+
 #navbar Nav img {
   width: 1.5rem;
 }
@@ -354,45 +400,59 @@ body a:hover {
   height: 50vh;
   z-index: 1;
 }
+
 #intro .darkTheme {
   background-color: #202124 !important;
 }
+
 #intro .darkTheme .hexagonGrid {
   background-color: #202124;
 }
+
 #intro .darkTheme .hexagon {
   background-color: #202124;
 }
+
 #intro .darkTheme .hexagon::after {
   border-top: 28.87px solid #202124;
 }
+
 #intro .darkTheme .hexagon::before {
   border-bottom: 28.87px solid #202124;
 }
+
 #intro .darkTheme .nodejs {
   background-image: url("./images/hexagon/nodejs_logo_dark.png");
 }
+
 #intro .darkTheme .wordpress {
   background-image: url("./images/hexagon/Wordpress_Blue_logo.png");
 }
+
 #intro .darkTheme .html_css_js {
   background-image: url("./images/hexagon/html_css_js_logo_dark.png");
 }
+
 #intro .darkTheme .next {
   background-image: url("./images/hexagon/next_logo_dark.png");
 }
+
 #intro .darkTheme .express {
   background-image: url("./images/hexagon/express_logo_dark.webp");
 }
+
 #intro .darkTheme .git {
   background-image: url("./images/hexagon/git_logo_dark.png");
 }
+
 #intro .darkTheme .dva {
   background-image: url("./images/hexagon/dva_dark.png");
 }
+
 #intro .darkTheme .saa {
   background-image: url("./images/hexagon/saa_dark.png");
 }
+
 #intro h1 {
   font-family: "Plus Jakarta Sans";
   font-size: 3.5rem;
@@ -400,6 +460,7 @@ body a:hover {
   text-align: center;
   margin-bottom: 6vh;
 }
+
 #intro p {
   font-family: "Roboto";
   font-size: 1.3rem;
@@ -414,6 +475,7 @@ body a:hover {
   position: relative;
   z-index: 1;
 }
+
 .hexagonGrid #cursor {
   border: #000000 solid 2px;
   width: 60%;
@@ -428,17 +490,21 @@ body a:hover {
   animation: glower 60s linear infinite;
   filter: blur(40px);
 }
+
 @keyframes glower {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
 }
+
 .hexagonGrid .row {
   display: block;
   width: 100%;
@@ -451,6 +517,7 @@ body a:hover {
   margin-top: -35px;
   margin-left: -33px;
 }
+
 .hexagonGrid .row .hexagon {
   position: relative;
   width: 100px;
@@ -460,6 +527,7 @@ body a:hover {
   display: block;
   padding: 0;
 }
+
 .hexagonGrid .row .hexagon::after {
   content: "";
   position: absolute;
@@ -470,6 +538,7 @@ body a:hover {
   width: 0;
   border-top: 28.87px solid #F5F5F7;
 }
+
 .hexagonGrid .row .hexagon::before {
   content: "";
   position: absolute;
@@ -479,9 +548,11 @@ body a:hover {
   bottom: 100%;
   border-bottom: 28.87px solid #F5F5F7;
 }
+
 .hexagonGrid .row.row-moved {
   margin-left: 19px;
 }
+
 .hexagonGrid .row .nodejs {
   background-repeat: no-repeat;
   background-size: contain;
@@ -489,6 +560,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/nodejs_logo_light.png");
 }
+
 .hexagonGrid .row .wordpress {
   background-repeat: no-repeat;
   background-size: contain;
@@ -496,6 +568,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/Wordpress_Blue_logo.png");
 }
+
 .hexagonGrid .row .react {
   background-repeat: no-repeat;
   background-size: contain;
@@ -503,6 +576,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/react_logo.png");
 }
+
 .hexagonGrid .row .mongodb {
   background-repeat: no-repeat;
   background-size: contain;
@@ -510,6 +584,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/mongodb_logo.png");
 }
+
 .hexagonGrid .row .html_css_js {
   background-repeat: no-repeat;
   background-size: contain;
@@ -517,6 +592,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/html_css_js_logo_light.png");
 }
+
 .hexagonGrid .row .php {
   background-repeat: no-repeat;
   background-size: contain;
@@ -524,6 +600,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/php_logo.png");
 }
+
 .hexagonGrid .row .bootstrap {
   background-repeat: no-repeat;
   background-size: contain;
@@ -531,6 +608,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/bootstrap_logo.png");
 }
+
 .hexagonGrid .row .mysql {
   background-repeat: no-repeat;
   background-size: contain;
@@ -538,6 +616,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/mysql_logo.png");
 }
+
 .hexagonGrid .row .vanillaExtract {
   background-repeat: no-repeat;
   background-size: contain;
@@ -545,6 +624,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/vanillaextract_logo.png");
 }
+
 .hexagonGrid .row .sass {
   background-repeat: no-repeat;
   background-size: contain;
@@ -552,6 +632,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/sass_logo.png");
 }
+
 .hexagonGrid .row .typescript {
   background-repeat: no-repeat;
   background-size: contain;
@@ -559,6 +640,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/ts_logo.png");
 }
+
 .hexagonGrid .row .graphql {
   background-repeat: no-repeat;
   background-size: contain;
@@ -566,6 +648,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/graphql_logo.png");
 }
+
 .hexagonGrid .row .firestore {
   background-repeat: no-repeat;
   background-size: contain;
@@ -573,6 +656,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/firestore_logo.png");
 }
+
 .hexagonGrid .row .docker {
   background-repeat: no-repeat;
   background-size: contain;
@@ -580,6 +664,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/docker_logo.png");
 }
+
 .hexagonGrid .row .git {
   background-repeat: no-repeat;
   background-size: contain;
@@ -587,6 +672,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/git_logo_light.png");
 }
+
 .hexagonGrid .row .express {
   background-repeat: no-repeat;
   background-size: contain;
@@ -594,6 +680,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/express_logo_light.webp");
 }
+
 .hexagonGrid .row .next {
   background-repeat: no-repeat;
   background-size: contain;
@@ -601,6 +688,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/next_logo_light.png");
 }
+
 .hexagonGrid .row .dva {
   background-repeat: no-repeat;
   background-size: contain;
@@ -608,6 +696,7 @@ body a:hover {
   transition: opacity ease-in 3s;
   background-image: url("./images/hexagon/dva_light.png");
 }
+
 .hexagonGrid .row .saa {
   background-repeat: no-repeat;
   background-size: contain;
@@ -620,9 +709,11 @@ body a:hover {
   background: #F5F5F7 !important;
   opacity: 0.5 !important;
 }
+
 .default_light::after {
   border-top: 28.87px solid #F5F5F7 !important;
 }
+
 .default_light::before {
   border-bottom: 28.87px solid #F5F5F7 !important;
 }
@@ -631,9 +722,11 @@ body a:hover {
   background: #202124 !important;
   opacity: 0.5 !important;
 }
+
 .default_dark::after {
   border-top: 28.87px solid #202124 !important;
 }
+
 .default_dark::before {
   border-bottom: 28.87px solid #202124 !important;
 }
@@ -652,12 +745,14 @@ body a:hover {
     margin-top: 30vh;
     margin-bottom: 100vh;
   }
+
   .introText {
     position: relative;
     margin-top: 10vh;
     margin-left: 0;
     margin-bottom: 20vh;
   }
+
   .hexagonGrid {
     width: 150%;
     height: 100%;
@@ -665,6 +760,7 @@ body a:hover {
     position: relative;
     margin-left: -20%;
   }
+
   .hexagonGrid #cursor {
     width: 60%;
     height: 32%;
@@ -673,13 +769,16 @@ body a:hover {
     margin-left: 20%;
   }
 }
+
 /* 笔记本电脑 */
 @media screen and (max-width: 1199px) and (min-width: 768px) {
+
   /* 在宽度小于 1200px 且大于等于 992px 时应用的样式 */
   #intro {
     margin-top: 30vh;
     margin-bottom: 120vh;
   }
+
   .hexagonGrid {
     width: 150%;
     height: 100%;
@@ -687,6 +786,7 @@ body a:hover {
     position: relative;
     margin-left: -20%;
   }
+
   .hexagonGrid #cursor {
     width: 60%;
     height: 60%;
@@ -695,14 +795,17 @@ body a:hover {
     margin-left: 20%;
   }
 }
+
 /* 主流智能手机 */
 @media screen and (max-width: 767px) {
+
   /* 在宽度小于 768px 时应用的样式 */
   #intro {
     margin-top: 30vh;
     margin-bottom: 130vh;
     position: relative;
   }
+
   .hexagonGrid {
     width: 200%;
     height: 100%;
@@ -713,6 +816,7 @@ body a:hover {
     margin: 0 auto;
     margin-left: -90%;
   }
+
   .hexagonGrid #cursor {
     width: 200%;
     height: 60%;
@@ -720,21 +824,25 @@ body a:hover {
     position: absolute;
   }
 }
+
 #qualification {
   margin-bottom: 30vh;
   margin-top: 30vh;
   /* target the Accordion.Item */
 }
+
 @media screen and (max-width: 768px) {
   #qualification {
     margin-top: 180vh;
   }
 }
+
 @media screen and (max-width: 400px) {
   #qualification {
     margin-top: 210vh;
   }
 }
+
 #qualification h1 {
   font-family: "Plus Jakarta Sans";
   font-size: 3.5rem;
@@ -742,64 +850,78 @@ body a:hover {
   text-align: center;
   margin-bottom: 6vh;
 }
+
 #qualification .my-accordion {
   --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23ffffff%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
   --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill=%27white%27 fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
 }
+
 #qualification .holmesglen {
   background-color: red;
   background-image: url("./images/hg_logo.png");
   background-position: 95% 100%;
   background-repeat: no-repeat;
 }
+
 #qualification .holmesglen p {
   width: 75%;
 }
+
 @media screen and (max-width: 768px) {
   #qualification .holmesglen {
     background-size: 80%;
     background-position: 100% 100%;
   }
+
   #qualification .holmesglen p {
     width: 100%;
   }
 }
+
 #qualification .oc {
   background-image: url("./images/oc_logo.png");
   background-position: 95% 90%;
   background-repeat: no-repeat;
   background-size: 20%;
 }
+
 #qualification .oc p {
   width: 75%;
 }
+
 @media screen and (max-width: 768px) {
   #qualification .oc {
     background-size: 100%;
     background-position: 100% 100%;
   }
+
   #qualification .oc p {
     width: 100%;
   }
 }
+
 #qualification .utas {
   background-image: url("./images/utas_logo.png");
   background-position: 95% 100%;
   background-repeat: no-repeat;
   background-size: 20%;
 }
+
 #qualification .utas p {
   width: 75%;
 }
+
 @media screen and (max-width: 768px) {
   #qualification .utas {
     background-size: 90%;
     background-position: 100% 100%;
   }
+
   #qualification .utas p {
     width: 100%;
   }
 }
+
 #qualification .sisu {
   background-image: url("./images/sisu_logo.png");
   background-position: 100% 90%;
@@ -807,25 +929,31 @@ body a:hover {
   background-size: 28%;
   background-blend-mode: exclusion;
 }
+
 #qualification .sisu p {
   width: 75%;
 }
+
 @media screen and (max-width: 768px) {
   #qualification .sisu {
     background-size: 100%;
     background-position: 100% 100%;
   }
+
   #qualification .sisu p {
     width: 100%;
   }
 }
+
 #qualification div {
   /* target the Accordion header */
 }
+
 #qualification div button {
   background-color: #254a5d;
   color: white;
 }
+
 #qualification div .accordion-body {
   background-color: #F5F5F7;
 }
@@ -834,6 +962,7 @@ body a:hover {
   margin-bottom: 30vh;
   text-align: center;
 }
+
 #projects h1 {
   font-family: "Plus Jakarta Sans";
   font-size: 3.5rem;
@@ -841,26 +970,31 @@ body a:hover {
   text-align: center;
   margin-bottom: 6vh;
 }
+
 #projects .container {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30vh;
 }
+
 @media (max-width: 768px) {
   #projects .container .container {
     max-width: 100vw;
   }
 }
+
 #projects .container .card {
   background-color: #F5F5F7;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+
 #projects .container .card .card-slider {
   height: auto;
   max-height: 120vh;
   overflow: hidden;
 }
+
 #projects .container .card a button {
   position: relative;
   height: 3rem;
@@ -872,6 +1006,7 @@ body a:hover {
   transition: all 0.05s linear;
   font-family: inherit;
 }
+
 #projects .container .card a button:before,
 #projects .container .card a button:after {
   content: "";
@@ -879,47 +1014,57 @@ body a:hover {
   background: #F5F5F7;
   transition: all 0.2s linear;
 }
+
 #projects .container .card a button:before {
   width: calc(100% + 6px);
   height: calc(100% - 16px);
   top: 8px;
   left: -3px;
 }
+
 #projects .container .card a button:after {
   width: calc(100% - 16px);
   height: calc(100% + 6px);
   top: -3px;
   left: 8px;
 }
+
 #projects .container .card a button:active {
   transform: scale(0.95);
 }
+
 #projects .container .card a button:hover:before {
   height: calc(100% - 32px);
   top: 16px;
 }
+
 #projects .container .card a button:hover:after {
   width: calc(100% - 32px);
   left: 16px;
 }
+
 #projects .container .card a button span {
   font-size: "Roboto";
   z-index: 3;
   position: relative;
 }
+
 #projects .container .card h4 {
   padding-top: 50px;
 }
+
 #projects .container .card .w-75 {
   padding: 1rem;
   text-align: justify;
 }
+
 @media (max-width: 768px) {
   #projects .container .card .w-75 {
     width: 100vw;
     padding: 0;
   }
 }
+
 #projects .btn-prev,
 #projects .btn-next {
   color: #254a5d;
@@ -929,21 +1074,26 @@ body a:hover {
   background: transparent;
   border: none;
 }
+
 #projects .btn-prev:hover,
 #projects .btn-next:hover {
   color: white;
   background-color: #254a5d;
 }
+
 @media (max-width: 768px) {
+
   #projects .btn-prev,
   #projects .btn-next {
     top: 9rem;
     font-size: 10vw;
   }
 }
+
 #projects .btn-prev {
   left: 0;
 }
+
 #projects .btn-next {
   right: 0;
 }
@@ -954,6 +1104,7 @@ body a:hover {
   height: auto;
   overflow: hidden;
 }
+
 #dark .thumb-vertical,
 #light .thumb-vertical {
   background-color: rgba(112, 112, 112, 0.526);
@@ -964,9 +1115,11 @@ body a:hover {
 #light {
   background-color: #F5F5F7;
 }
+
 #light .text-color {
   color: black;
 }
+
 #light ._404text {
   color: black;
 }
@@ -974,37 +1127,46 @@ body a:hover {
 #dark {
   background-color: #202124;
 }
+
 #dark .text-color {
   color: white;
 }
+
 #dark ._404text {
   color: white;
 }
+
 #dark h1 {
   color: white;
 }
+
 #dark #contact .darkTheme {
   color: white;
   background-color: #383838;
 }
+
 #dark #intro .darkTheme {
   color: white;
   background-color: #383838;
 }
+
 #dark #qualification .darkTheme {
   color: white;
   background-color: #383838;
 }
+
 #dark #projects .card {
   color: white;
   background-color: #383838;
 }
+
 #dark #projects .card a button,
 #dark #projects .card button:before,
 #dark #projects .card button:after {
   background-color: #383838;
   color: #ffffff;
 }
+
 #dark #contact .d-flex a button,
 #dark #contact .d-flex button:before,
 #dark #contact .d-flex button:after {
@@ -1032,6 +1194,7 @@ body a:hover {
   font-size: xx-large;
   margin-bottom: 5vh;
 }
+
 ._404text button {
   color: white;
   font-family: "Roboto";
@@ -1051,9 +1214,11 @@ body a:hover {
   display: none;
   cursor: pointer;
 }
+
 #backToTopBtn img {
   width: 100%;
 }
+
 #backToTopBtn img:hover {
   content: url("./images/back_to_top2.png");
   background-color: none;
@@ -1063,28 +1228,34 @@ body a:hover {
   font-family: inherit;
   font-size: 1.1rem;
 }
+
 #contact button span {
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
 }
+
 #contact p {
   font-family: "Roboto";
   font-size: 1.1rem;
   vertical-align: middle;
 }
+
 #contact .contact-pic {
   width: 28vw;
   user-select: none;
   pointer-events: none;
 }
+
 #contact .contact-icon img {
   width: 1.5rem;
 }
+
 #contact .d-flex a {
   display: inline-block;
   margin-top: 5rem;
 }
+
 #contact .d-flex a button {
   position: relative;
   height: 3rem;
@@ -1096,6 +1267,7 @@ body a:hover {
   transition: all 0.05s linear;
   font-family: inherit;
 }
+
 #contact .d-flex a button:before,
 #contact .d-flex a button:after {
   content: "";
@@ -1103,29 +1275,35 @@ body a:hover {
   background: #F5F5F7;
   transition: all 0.2s linear;
 }
+
 #contact .d-flex a button:before {
   width: calc(100% + 6px);
   height: calc(100% - 16px);
   top: 8px;
   left: -3px;
 }
+
 #contact .d-flex a button:after {
   width: calc(100% - 16px);
   height: calc(100% + 6px);
   top: -3px;
   left: 8px;
 }
+
 #contact .d-flex a button:active {
   transform: scale(0.95);
 }
+
 #contact .d-flex a button:hover:before {
   height: calc(100% - 32px);
   top: 16px;
 }
+
 #contact .d-flex a button:hover:after {
   width: calc(100% - 32px);
   left: 16px;
 }
+
 #contact .d-flex a button span {
   font-size: "Roboto";
   z-index: 3;
@@ -1140,10 +1318,12 @@ body a:hover {
   vertical-align: bottom;
   animation: typing 4s steps(8) none, blink-caret 0.75s step-end infinite;
 }
+
 @keyframes typing {
   from {
     width: 0.77em;
   }
+
   to {
     width: 5em;
   }
@@ -1151,9 +1331,12 @@ body a:hover {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to {
+
+  from,
+  to {
     border-color: #202124;
   }
+
   50% {
     border-color: rgb(255, 255, 255);
   }
